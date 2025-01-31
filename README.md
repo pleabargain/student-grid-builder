@@ -1,6 +1,8 @@
 # Student Grid Builder
 
 # repo
+https://github.com/pleabargain/student-grid-builder
+
 
 # motivation
 Keep language fresh and interesting for students. Lots of verbs and adjectives in the javascript. You can add more verbs and adjectives to the javascript file if you like. There's probably a way to make this more dynamic but it works and that's all that matters at this point.
