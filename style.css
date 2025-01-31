@@ -87,10 +87,14 @@ body {
     margin: 0.2rem 0;
 }
 
-/* Add underline to verbs and adjectives */
-.verb-list .section-item,
-.adjective-list .section-item {
+.section-item a {
+    color: inherit;
     text-decoration: underline;
+    cursor: pointer;
+}
+
+.section-item a:hover {
+    color: #007bff;
 }
 
 .section-list {

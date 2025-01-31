@@ -14,6 +14,7 @@ A dynamic web application that creates a visual grid of student cards, each feat
 - **Dynamic Student Cards**: Create cards for students with automatically assigned unique verbs and adjectives
 - **Interactive Grid Layout**: Responsive grid design that adapts to different screen sizes
 - **Data Persistence**: Student data is automatically saved in the browser's localStorage
+- **Linked Words**: Each word is linked to a google search
 - **JSON Import/Export**:
   - View current student data in JSON format
   - Import student data from JSON files

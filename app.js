@@ -195,7 +195,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 student.verbs.forEach(verb => {
                     const li = document.createElement('li');
                     li.className = 'section-item';
-                    li.textContent = verb;
+                    const link = document.createElement('a');
+                    link.href = `https://www.google.com/search?q=${encodeURIComponent(verb)}`;
+                    link.target = '_blank';
+                    link.textContent = verb;
+                    li.appendChild(link);
                     verbList.appendChild(li);
                 });
             } else {
@@ -217,7 +221,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 student.adjectives.forEach(adjective => {
                     const li = document.createElement('li');
                     li.className = 'section-item';
-                    li.textContent = adjective;
+                    const link = document.createElement('a');
+                    link.href = `https://www.google.com/search?q=${encodeURIComponent(adjective)}`;
+                    link.target = '_blank';
+                    link.textContent = adjective;
+                    li.appendChild(link);
                     adjectiveList.appendChild(li);
                 });
             }
