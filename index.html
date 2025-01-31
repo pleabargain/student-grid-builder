@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Cards</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Student Grid Builder</h1>
+            <div class="header-buttons">
+                <input type="file" id="jsonFileInput" accept=".json" style="display: none">
+                <button id="loadJson" type="button">Load JSON</button>
+                <button id="viewJson" type="button">View JSON</button>
+            </div>
+        </div>
+        <form id="studentForm">
+            <input type="text" id="studentName" placeholder="Enter student name" required>
+            <button type="submit">Add Student</button>
+        </form>
+        <div id="gridContainer" class="student-grid"></div>
+    </div>
+    
+    <div id="jsonModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Student Data (JSON)</h2>
+                <button id="closeModal">&times;</button>
+            </div>
+            <pre id="jsonDisplay"></pre>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
