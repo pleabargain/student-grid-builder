@@ -1,0 +1,486 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Negotiation Schema",
+  "required": [
+    "negotiationId",
+    "topic",
+    "parties",
+    "conflictPoints",
+    "negotiablePoints",
+    "nonNegotiablePoints",
+    "walkawayConditions"
+  ],
+  "properties": {
+    "negotiationId": {
+      "type": "string",
+      "description": "Unique identifier for the negotiation"
+    },
+    "topic": {
+      "type": "object",
+      "required": ["title", "description", "context"],
+      "properties": {
+        "title": {
+          "type": "string",
+          "pattern": "^[A-Za-z_]+\\{\\d{8}\\}\\.json$",
+          "description": "Title of the negotiation in format: Text{DATESTAMP}.json (e.g., Acquisition_of_Pharmaceutical_Equipment{20250204}.json)"
+        },
+        "description": {
+          "type": "string",
+          "description": "Detailed description of what is being negotiated"
+        },
+        "context": {
+          "type": "string",
+          "description": "Background information and circumstances"
+        },
+        "industry": {
+          "type": "string",
+          "description": "Relevant industry or domain"
+        },
+        "expectedTimeframe": {
+          "type": "string",
+          "description": "Expected duration of negotiation process"
+        }
+      }
+    },
+    "parties": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "role", "interests", "constraints"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Unique identifier for the party"
+          },
+          "name": {
+            "type": "string",
+            "description": "Name of the party"
+          },
+          "role": {
+            "type": "string",
+            "description": "Role in the negotiation"
+          },
+          "interests": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Core interests and objectives"
+          },
+          "constraints": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Limitations or restrictions"
+          },
+          "authorityLevel": {
+            "type": "string",
+            "enum": ["full", "limited", "consultant"],
+            "description": "Decision-making authority"
+          }
+        }
+      }
+    },
+    "conflictPoints": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "description", "severity", "impact"],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "severity": {
+            "type": "string",
+            "enum": ["low", "medium", "high", "critical"]
+          },
+          "impact": {
+            "type": "string",
+            "description": "Impact on overall negotiation"
+          },
+          "relatedPoints": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Related conflict points"
+          }
+        }
+      }
+    },
+    "negotiablePoints": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "topic", "currentPosition", "acceptableRange"],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "topic": {
+            "type": "string"
+          },
+          "currentPosition": {
+            "type": "object",
+            "properties": {
+              "party1Position": {
+                "type": "string"
+              },
+              "party2Position": {
+                "type": "string"
+              }
+            }
+          },
+          "acceptableRange": {
+            "type": "object",
+            "properties": {
+              "minimum": {
+                "type": "string"
+              },
+              "maximum": {
+                "type": "string"
+              },
+              "preferredOutcome": {
+                "type": "string"
+              }
+            }
+          },
+          "priority": {
+            "type": "string",
+            "enum": ["low", "medium", "high"]
+          },
+          "flexibility": {
+            "type": "string",
+            "enum": ["rigid", "moderate", "flexible"]
+          }
+        }
+      }
+    },
+    "nonNegotiablePoints": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "description", "rationale"],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "rationale": {
+            "type": "string",
+            "description": "Reason why this point cannot be negotiated"
+          },
+          "impact": {
+            "type": "string",
+            "description": "Impact on overall negotiation"
+          }
+        }
+      }
+    },
+    "walkawayConditions": {
+      "type": "object",
+      "required": ["party1Conditions", "party2Conditions"],
+      "properties": {
+        "party1Conditions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["condition", "threshold"],
+            "properties": {
+              "condition": {
+                "type": "string"
+              },
+              "threshold": {
+                "type": "string"
+              },
+              "reasoning": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "party2Conditions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["condition", "threshold"],
+            "properties": {
+              "condition": {
+                "type": "string"
+              },
+              "threshold": {
+                "type": "string"
+              },
+              "reasoning": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "strategies": {
+      "type": "object",
+      "properties": {
+        "overallApproach": {
+          "type": "string",
+          "enum": ["competitive", "collaborative", "accommodating", "compromising", "avoiding"],
+          "description": "Primary negotiation strategy being employed"
+        },
+        "longTermObjectives": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "objective": {
+                "type": "string"
+              },
+              "importance": {
+                "type": "string",
+                "enum": ["critical", "high", "medium", "low"]
+              },
+              "timeframe": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "relationshipGoals": {
+          "type": "object",
+          "properties": {
+            "desiredOutcome": {
+              "type": "string",
+              "enum": ["strengthen", "maintain", "professional-distance", "terminate"]
+            },
+            "futureInteractions": {
+              "type": "string",
+              "description": "Expected future relationship dynamics"
+            }
+          }
+        }
+      }
+    },
+    "tactics": {
+      "type": "object",
+      "properties": {
+        "openingApproach": {
+          "type": "object",
+          "properties": {
+            "initialOffer": {
+              "type": "string",
+              "description": "Description of opening position"
+            },
+            "anchoringStrategy": {
+              "type": "string",
+              "description": "How to set initial reference point"
+            }
+          }
+        },
+        "concessionPlan": {
+          "type": "object",
+          "properties": {
+            "sequence": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "stage": {
+                    "type": "string"
+                  },
+                  "possibleConcessions": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "triggerConditions": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            },
+            "pacing": {
+              "type": "string",
+              "description": "Timing and rhythm of concessions"
+            }
+          }
+        },
+        "persuasionTechniques": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "technique": {
+                "type": "string",
+                "enum": ["reciprocity", "social-proof", "authority", "scarcity", "consistency", "liking"]
+              },
+              "applicationContext": {
+                "type": "string"
+              },
+              "fallbackOptions": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "informationGathering": {
+          "type": "object",
+          "properties": {
+            "keyQuestions": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "observationFocus": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "deadlockBreakers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "approach": {
+                "type": "string"
+              },
+              "conditions": {
+                "type": "string"
+              },
+              "risks": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "additionalElements": {
+      "type": "object",
+      "properties": {
+        "timeline": {
+          "type": "object",
+          "properties": {
+            "startDate": {
+              "type": "string",
+              "format": "date"
+            },
+            "endDate": {
+              "type": "string",
+              "format": "date"
+            },
+            "milestones": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "date": {
+                    "type": "string",
+                    "format": "date"
+                  },
+                  "description": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "mediationOptions": {
+          "type": "object",
+          "properties": {
+            "mediatorRequired": {
+              "type": "boolean"
+            },
+            "mediatorPreferences": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "communicationChannels": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["in-person", "video", "phone", "email", "written"]
+          }
+        },
+        "confidentialityAgreement": {
+          "type": "object",
+          "properties": {
+            "required": {
+              "type": "boolean"
+            },
+            "terms": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "alternativeSolutions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "description": {
+                "type": "string"
+              },
+              "impact": {
+                "type": "string"
+              },
+              "feasibility": {
+                "type": "string",
+                "enum": ["low", "medium", "high"]
+              }
+            }
+          }
+        },
+        "riskAssessment": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "riskType": {
+                "type": "string"
+              },
+              "probability": {
+                "type": "string",
+                "enum": ["low", "medium", "high"]
+              },
+              "impact": {
+                "type": "string",
+                "enum": ["low", "medium", "high"]
+              },
+              "mitigationStrategy": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

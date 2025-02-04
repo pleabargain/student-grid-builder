@@ -1,0 +1,99 @@
+{
+  "scenarios": [
+    {
+      "negotiationId": "123456789",
+      "topic": {
+        "title": "Acquiring New Clients for XYZ Inc.",
+        "description": "Negotiation between XYZ Inc. and ABC Corporation for acquiring new clients in the healthcare industry.",
+        "context": "XYZ Inc. is looking to expand its client base, while ABC Corporation seeks to strengthen its position in the market.",
+        "industry": "Healthcare",
+        "expectedTimeframe": "6-8 months"
+      },
+      "parties": [
+        {
+          "id": "party1",
+          "name": "John Doe",
+          "role": "CEO of XYZ Inc.",
+          "interests": [
+            "Growing revenue",
+            "Diversifying client base"
+          ],
+          "constraints": [
+            "Limited budget for marketing",
+            "Competition from established players"
+          ],
+          "authorityLevel": "full"
+        },
+        {
+          "id": "party2",
+          "name": "Jane Smith",
+          "role": "CEO of ABC Corporation",
+          "interests": [
+            "Strengthening market presence",
+            "Increasing revenue through new clients"
+          ],
+          "constraints": [
+            "Competition from emerging players",
+            "Regulatory challenges"
+          ],
+          "authorityLevel": "full"
+        }
+      ],
+      "conflictPoints": [
+        {
+          "id": "conflict1",
+          "description": "Competitive pricing",
+          "severity": "medium",
+          "impact": "Potential loss of market share due to pricing discrepancy.",
+          "relatedPoints": [
+            "Pricing strategy",
+            "Market positioning"
+          ]
+        }
+      ],
+      "negotiablePoints": [
+        {
+          "id": "point1",
+          "topic": "Price structure",
+          "currentPosition": {
+            "party1Position": "$10 per unit (xyzinc.com)",
+            "party2Position": "$12 per unit (abccorp.com)"
+          },
+          "acceptableRange": {
+            "minimum": "$9.50 per unit",
+            "maximum": "$11.50 per unit",
+            "preferredOutcome": "$10.25 per unit"
+          },
+          "priority": "high",
+          "flexibility": "moderate"
+        }
+      ],
+      "nonNegotiablePoints": [
+        {
+          "id": "nonNeg1",
+          "description": "Non-disclosure agreements for proprietary information.",
+          "rationale": "Confidentiality and intellectual property protection are essential.",
+          "impact": "Risk of data breaches or unauthorized use."
+        }
+      ],
+      "walkawayConditions": {
+        "party1Conditions": [
+          {
+            "condition": "Unrealistic pricing demands",
+            "threshold": "$13.00 per unit",
+            "reasoning": "Unwillingness to negotiate on price could result in lost business opportunities."
+          }
+        ],
+        "party2Conditions": [
+          {
+            "condition": "Insufficient budget for marketing",
+            "threshold": "$50,000",
+            "reasoning": "Failure to meet this budget requirement may impact our ability to attract and retain clients."
+          }
+        ]
+      },
+      "strategies": null,
+      "tactics": null
+    }
+  ]
+}

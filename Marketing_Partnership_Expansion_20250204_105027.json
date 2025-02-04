@@ -1,0 +1,154 @@
+{
+  "scenarios": [
+    {
+      "negotiationId": "ABCD1234",
+      "topic": {
+        "title": "Marketing Partnership Expansion",
+        "description": "Our company is considering expanding its marketing partnership with a leading technology firm.",
+        "context": "The expansion would involve increasing our joint marketing efforts and exploring new markets.",
+        "industry": "Technology and Marketing",
+        "expectedTimeframe": "6-12 months"
+      },
+      "parties": [
+        {
+          "id": "party1",
+          "name": "TechCorp",
+          "role": "Partnering Technology Firm",
+          "interests": [
+            "Increased market share",
+            "Improved brand visibility"
+          ],
+          "constraints": [
+            "Limited budget for marketing efforts"
+          ],
+          "authorityLevel": "full"
+        },
+        {
+          "id": "party2",
+          "name": "OurCompany",
+          "role": "Client Company",
+          "interests": [
+            "Enhanced marketing capabilities",
+            "Expanded product reach"
+          ],
+          "constraints": [
+            "Competing priorities within the company"
+          ],
+          "authorityLevel": "limited"
+        }
+      ],
+      "conflictPoints": [
+        {
+          "id": "conflict1",
+          "description": "Pricing and Revenue Sharing",
+          "severity": "medium",
+          "impact": "Potential impact on both parties' profits.",
+          "relatedPoints": [
+            "Market conditions",
+            "Competitor pricing"
+          ]
+        }
+      ],
+      "negotiablePoints": [
+        {
+          "id": "point1",
+          "topic": "Revenue Sharing Model",
+          "currentPosition": {
+            "party1Position": "TechCorp proposes a 50/50 split, while OurCompany prefers 60/40.",
+            "party2Position": "OurCompany counters with a 55/45 split."
+          },
+          "acceptableRange": {
+            "minimum": "50/50",
+            "maximum": "65/35",
+            "preferredOutcome": "60/40"
+          },
+          "priority": "high",
+          "flexibility": "moderate"
+        }
+      ],
+      "nonNegotiablePoints": [
+        {
+          "id": "nonNeg1",
+          "description": "Geographic Expansion Prioritization",
+          "rationale": "The expansion must prioritize regions with high demand and market growth potential.",
+          "impact": "Impact on market share and revenue."
+        }
+      ],
+      "walkawayConditions": {
+        "party1Conditions": [
+          {
+            "condition": "Unacceptable Revenue Sharing Ratio",
+            "threshold": "Above 65/35",
+            "reasoning": "TechCorp's proposal would result in excessive financial losses for OurCompany."
+          }
+        ],
+        "party2Conditions": [
+          {
+            "condition": "Insufficient Geographic Expansion",
+            "threshold": "Expansion to less than 3 regions within the first year",
+            "reasoning": "OurCompany requires significant market growth and revenue potential from this partnership."
+          }
+        ]
+      },
+      "strategies": {
+        "overallApproach": "collaborative",
+        "longTermObjectives": [
+          {
+            "objective": "Establish a strong presence in the emerging markets.",
+            "importance": "critical",
+            "timeframe": "5 years"
+          }
+        ],
+        "relationshipGoals": {
+          "desiredOutcome": "strengthen",
+          "futureInteractions": "Regular communication and joint marketing initiatives."
+        }
+      },
+      "tactics": {
+        "openingApproach": {
+          "initialOffer": "TechCorp proposes a 55/45 revenue sharing model.",
+          "anchoringStrategy": "We begin with an acceptable offer to set the initial tone for negotiations."
+        },
+        "concessionPlan": {
+          "sequence": [
+            {
+              "stage": "Initial Offer and Response",
+              "possibleConcessions": [
+                "Adjusting the proposal to 50/50"
+              ],
+              "triggerConditions": [
+                "OurCompany's first response"
+              ]
+            }
+          ],
+          "pacing": "Gradual adjustments over several rounds"
+        },
+        "persuasionTechniques": [
+          {
+            "technique": "reciprocity",
+            "applicationContext": "Using OurCompany's proposed revenue split as a basis for comparison.",
+            "fallbackOptions": [
+              "Highlighting the market growth potential"
+            ]
+          }
+        ],
+        "informationGathering": {
+          "keyQuestions": [
+            "Market conditions",
+            "Competitor pricing"
+          ],
+          "observationFocus": [
+            "OurCompany's priorities and concerns."
+          ]
+        },
+        "deadlockBreakers": [
+          {
+            "approach": "Joint Problem-Solving",
+            "conditions": "Both parties are willing to compromise on other aspects.",
+            "risks": "Potential for further complications if not carefully managed."
+          }
+        ]
+      }
+    }
+  ]
+}

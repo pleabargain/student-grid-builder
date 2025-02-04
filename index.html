@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Language Cards</title>
+    <title>Negotiation Cards</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <h1>Student Dialog Builder</h1>
+            <h1>Negotiation Party Cards</h1>
             <div class="tab-container">
                 <button class="tab-button active" data-tab="view">View</button>
-                <button class="tab-button" data-tab="create">Create</button>
             </div>
             <div class="header-buttons">
                 <input type="file" id="jsonFileInput" accept=".json" style="display: none">
@@ -22,45 +22,73 @@
             </div>
         </div>
         <div id="viewTab" class="tab-content active">
-            <div id="gridContainer" class="student-grid"></div>
+            <div id="gridContainer" class="negotiation-grid"></div>
         </div>
-
-        <div id="createTab" class="tab-content">
-            <form id="studentForm" class="create-form">
-                <div class="form-group">
-                    <label for="studentName">Name:</label>
-                    <input type="text" id="studentName" placeholder="Enter student name" required>
+        
+        <!-- Templates for dynamic content -->
+        <template id="strategyTemplate">
+            <div class="strategy-section collapsible">
+                <div class="section-header">
+                    <h3>Strategy <i class="fas fa-chess"></i></h3>
+                    <button class="toggle-btn"><i class="fas fa-chevron-down"></i></button>
                 </div>
-                
-                <div class="form-group">
-                    <label for="desires">Desires (comma separated):</label>
-                    <input type="text" id="desires" placeholder="e.g. Growth 📈, Learning 📚">
+                <div class="section-content">
+                    <div class="strategy-approach">
+                        <h4>Overall Approach</h4>
+                        <p class="approach-value"></p>
+                    </div>
+                    <div class="strategy-objectives">
+                        <h4>Long-term Objectives</h4>
+                        <ul class="objectives-list"></ul>
+                    </div>
+                    <div class="strategy-relationship">
+                        <h4>Relationship Goals</h4>
+                        <p class="relationship-outcome"></p>
+                        <p class="future-interactions"></p>
+                    </div>
                 </div>
+            </div>
+        </template>
 
-                <div class="form-group">
-                    <label for="psychology">Psychology (comma separated):</label>
-                    <input type="text" id="psychology" placeholder="e.g. Empathetic ❤️, Focused 🎯">
+        <template id="tacticsTemplate">
+            <div class="tactics-section collapsible">
+                <div class="section-header">
+                    <h3>Tactics <i class="fas fa-tasks"></i></h3>
+                    <button class="toggle-btn"><i class="fas fa-chevron-down"></i></button>
                 </div>
-
-                <div class="form-group">
-                    <label for="business">Business (comma separated):</label>
-                    <input type="text" id="business" placeholder="e.g. Leadership 👑, Innovation 💡">
+                <div class="section-content">
+                    <div class="opening-approach">
+                        <h4>Opening Approach</h4>
+                        <p class="initial-offer"></p>
+                        <p class="anchoring-strategy"></p>
+                    </div>
+                    <div class="concession-plan">
+                        <h4>Concession Plan</h4>
+                        <div class="sequence-list"></div>
+                        <p class="pacing"></p>
+                    </div>
+                    <div class="persuasion-techniques">
+                        <h4>Persuasion Techniques</h4>
+                        <ul class="techniques-list"></ul>
+                    </div>
+                    <div class="information-gathering">
+                        <h4>Information Gathering</h4>
+                        <ul class="questions-list"></ul>
+                        <ul class="observation-list"></ul>
+                    </div>
+                    <div class="deadlock-breakers">
+                        <h4>Deadlock Breakers</h4>
+                        <ul class="breakers-list"></ul>
+                    </div>
                 </div>
-
-                <div class="form-group">
-                    <label for="character">Character (comma separated):</label>
-                    <input type="text" id="character" placeholder="e.g. Reliable ✅, Team Player 🤝">
-                </div>
-
-                <button type="submit" class="submit-btn">Save Student</button>
-            </form>
-        </div>
+            </div>
+        </template>
     </div>
     
     <div id="jsonModal" class="modal">
         <div class="modal-content">
             <div class="modal-header">
-                <h2>Student Data (JSON)</h2>
+                <h2>Negotiation Data (JSON)</h2>
                 <button id="closeModal">&times;</button>
             </div>
             <pre id="jsonDisplay"></pre>

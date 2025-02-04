@@ -1,0 +1,1647 @@
+[2025-02-04 13:36:34,727] [INFO] [negotiationgen] Starting negotiation generation process (PID: 2676)
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:309
+None
+---
+[2025-02-04 13:36:37,885] [INFO] [negotiationgen] Generating scenario 1/1...
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:336
+None
+---
+[2025-02-04 13:36:37,886] [DEBUG] [negotiationgen] Attempt 1/3: Sending request to Ollama
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:217
+None
+---
+[2025-02-04 13:37:26,296] [DEBUG] [negotiationgen] API request completed in 48.41 seconds
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:236
+None
+---
+[2025-02-04 13:37:26,296] [DEBUG] [negotiationgen] Raw API response: {
+  "negotiationId": "ABCD1234",
+  "topic": {
+    "title": "Acquisition of Pharmaceutical Equipment",
+    "description": "The negotiation is between two companies, PharmaTech and MedCorp, to acquire a pharmaceutical equipment manufacturing facility from GenMed. The goal is to negotiate the terms of the acquisition.",
+    "context": "GenMed is facing financial difficulties and needs to sell the facility to stay afloat. Both PharmaTech and MedCorp are interested in acquiring the facility but have different requirements.",
+    "industry": "Pharmaceuticals",
+    "expectedTimeframe": "Within 6 months"
+  },
+  "parties": [
+    {
+      "id": "party1",
+      "name": "PharmaTech",
+      "role": "Buyer",
+      "interests": ["Low acquisition cost, flexible payment terms"],
+      "constraints": ["Limited resources for upfront payment", "Requires a long-term partnership with GenMed"],
+      "authorityLevel": "full"
+    },
+    {
+      "id": "party2",
+      "name": "MedCorp",
+      "role": "Buyer",
+      "interests": ["Low acquisition cost, high revenue potential"],
+      "constraints": ["Limited resources for upfront payment", "Requires a long-term partnership with GenMed"],
+      "authorityLevel": "full"
+    }
+  ],
+  "conflictPoints": [
+    {
+      "id": "conflict1",
+      "description": "Payment terms vs. Long-term partnership",
+      "severity": "medium",
+      "impact": "Delayed payment could impact GenMed's financial situation, while a long-term partnership might reduce PharmaTech's costs in the future.",
+      "relatedPoints": ["PharmaTech's production capabilities", "GenMed's debt obligations"]
+    }
+  ],
+  "negotiablePoints": [
+    {
+      "id": "point1",
+      "topic": "Acquisition Price",
+      "currentPosition": {
+        "party1Position": "$50 million (PharmaTech's initial offer)",
+        "party2Position": "$55 million (MedCorp's initial offer)"
+      },
+      "acceptableRange": {
+        "minimum": "$45 million",
+        "maximum": "$60 million",
+        "preferredOutcome": "$55 million"
+      },
+      "priority": "high",
+      "flexibility": "moderate"
+    },
+    {
+      "id": "point2",
+      "topic": "Payment Terms",
+      "currentPosition": {
+        "party1Position": "60% upfront, 40% over 3 years (PharmaTech's proposed terms)",
+        "party2Position": "50% upfront, 50% over 5 years (MedCorp's proposed terms)"
+      },
+      "acceptableRange": {
+        "minimum": "50% upfront, 50% over 4 years",
+        "maximum": "70% upfront, 30% over 2 years",
+        "preferredOutcome": "60% upfront, 40% over 3 years"
+      },
+      "priority": "high",
+      "flexibility": "moderate"
+    }
+  ],
+  "nonNegotiablePoints": [
+    {
+      "id": "nonNeg1",
+      "description": "GenMed's Debt Obligations",
+      "rationale": "PharmaTech and MedCorp cannot negotiate the debt obligations of GenMed, as they are not directly related to the acquisition.",
+      "impact": "The negotiation is less likely to be successful without addressing GenMed's financial situation."
+    }
+  ],
+  "walkawayConditions": {
+    "party1Conditions": [
+      {
+        "condition": "Acquisition price exceeds $65 million",
+        "threshold": "$67 million",
+        "reasoning": "PharmaTech cannot afford the increased costs"
+      },
+      {
+        "condition": "Payment terms do not allow for immediate payment",
+        "threshold": "No upfront payment",
+        "reasoning": "PharmaTech's production capabilities could be impacted by delayed payments"
+      }
+    ],
+    "party2Conditions": [
+      {
+        "condition": "Acquisition price does not meet MedCorp's revenue expectations",
+        "threshold": "$60 million",
+        "reasoning": "MedCorp requires a high return on investment"
+      },
+      {
+        "condition": "Long-term partnership is not offered",
+        "threshold": "No long-term partnership agreement",
+        "reasoning": "MedCorp requires a stable partnership to ensure future revenue"
+      }
+    ]
+  }
+}
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:239
+None
+---
+[2025-02-04 13:37:26,298] [INFO] [negotiationgen] Successfully generated scenario 1 in 48.41 seconds
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:439
+None
+---
+[2025-02-04 13:37:26,301] [INFO] [negotiationgen] Negotiation generation completed
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:483
+None
+---
+[2025-02-04 13:52:13,629] [INFO] [negotiationgen] Starting negotiation generation process (PID: 10912)
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:309
+None
+---
+[2025-02-04 13:52:15,187] [INFO] [negotiationgen] Generating scenario 1/1...
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:336
+None
+---
+[2025-02-04 13:52:15,188] [DEBUG] [negotiationgen] Attempt 1/3: Sending request to Ollama
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:217
+None
+---
+[2025-02-04 13:52:45,927] [DEBUG] [negotiationgen] API request completed in 30.74 seconds
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:236
+None
+---
+[2025-02-04 13:52:45,927] [DEBUG] [negotiationgen] Raw API response: { "negotiationId": "ABC123", "topic": { "title": "Mergers and Acquisitions Deal", "description": "A comprehensive deal to merge two companies in the technology industry, resulting in a significant market share.", "context": "The background information regarding the two companies involved in the proposed merger.", "industry": "Technology", "expectedTimeframe": "Within the next six months" }, "parties": [ { "id": "party1", "name": "TechCorp Inc.", "role": "Acquirer", "interests": ["Market share", "Financial gain"], "constraints": ["Employee retention", "Competition from new entrants"], "authorityLevel": "full" } , { "id": "party2", "name": "NovaSoft Ltd.", "role": "Target company", "interests": ["Control and direction", "Access to new markets"], "constraints": ["Integration challenges", "Employee morale"], "authorityLevel": "limited" } ] , "conflictPoints": [ { "id": "conflict1", "description": "Resistance from NovaSoft Ltd.'s employees regarding the proposed merger.", "severity": "medium", "impact": "Potential employee exodus and loss of expertise.", "relatedPoints": ["Employee concerns", "Integration challenges"] } ] , "negotiablePoints": [ { "id": "point1", "topic": "Purchase Price Adjustment", "currentPosition": { "party1Position": "$100 million plus performance-based bonuses", "party2Position": "$90 million with a 10% bonus if certain conditions are met" }, "acceptableRange": { "minimum": "$80 million", "maximum": "$120 million", "preferredOutcome": "$110 million" }, "priority": "high", "flexibility": "moderate" } , { "id": "point2", "topic": "Employee Severance Packages", "currentPosition": { "party1Position": "3 months of severance pay per employee", "party2Position": "4 weeks of severance pay per employee" }, "acceptableRange": { "minimum": "2 months of severance pay per employee", "maximum": "5 months of severance pay per employee", "preferredOutcome": "4 months of severance pay per employee" }, "priority": "medium", "flexibility": "rigid" } ] , "nonNegotiablePoints": [ { "id": "nonNeg1", "description": "The proposed merger must meet regulatory approval within the expected timeframe.", "rationale": "Regulatory bodies have strict guidelines for mergers in this industry and require timely completion.", "impact": "Delays or rejections from regulatory bodies could jeopardize the entire deal." } ] , "walkawayConditions": { "party1Conditions": [ { "condition": "NovaSoft Ltd.'s employee base must not drop below 80% of its pre-merger size.", "threshold": "100 employees", "reasoning": "Loss of key talent and expertise could lead to significant financial losses." } ] , "party2Conditions": [ { "condition": "TechCorp Inc. must agree to retain all current NovaSoft Ltd. employees for at least two years post-merger.", "threshold": "All 500 employees", "reasoning": "Loss of talent and experience would severely impact the newly formed company's competitiveness." } ] } }
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:239
+None
+---
+[2025-02-04 13:52:45,927] [INFO] [negotiationgen] Successfully generated scenario 1 in 30.74 seconds
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:439
+None
+---
+[2025-02-04 13:52:45,930] [INFO] [negotiationgen] Negotiation generation completed
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:483
+None
+---
+[2025-02-04 13:55:12,494] [INFO] [negotiationgen] Starting negotiation generation process (PID: 20128)
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:309
+None
+---
+[2025-02-04 13:55:13,483] [INFO] [negotiationgen] Generating scenario 1/1...
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:336
+None
+---
+[2025-02-04 13:55:13,484] [DEBUG] [negotiationgen] Attempt 1/3: Sending request to Ollama
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:217
+None
+---
+[2025-02-04 13:55:49,843] [DEBUG] [negotiationgen] API request completed in 36.36 seconds
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:236
+None
+---
+[2025-02-04 13:55:49,843] [DEBUG] [negotiationgen] Raw API response: {
+  "negotiationId": "ABCD1234",
+  "topic": {
+    "title": "Sale of Raw Materials for Manufacturing",
+    "description": "A chemical plant is looking to purchase raw materials from a supplier to meet its production demands. The supplier has been providing the necessary materials, but the plant manager wants better terms due to increased production costs.",
+    "context": "The plant manager has informed the supplier that the company will need to increase production by 20% in the next quarter, which will lead to higher material usage. The supplier is concerned about being over-extended and wants a more stable demand forecast.",
+    "industry": "Chemicals",
+    "expectedTimeframe": "4 weeks"
+  },
+  "parties": [
+    {
+      "id": "supplier",
+      "name": "Suppliers Inc.",
+      "role": "Supplier",
+      "interests": ["Higher payment rates", "More favorable delivery terms"],
+      "constraints": ["Limited production capacity", "Risk of supply chain disruptions"],
+      "authorityLevel": "full"
+    },
+    {
+      "id": "plant_manager",
+      "name": "ABC Chemical Plant",
+      "role": "Buyer",
+      "interests": ["Lower material costs", "Improved delivery reliability"],
+      "constraints": ["Limited budget for raw materials", "Risk of supply chain disruptions due to plant shutdowns"],
+      "authorityLevel": "full"
+    }
+  ],
+  "conflictPoints": [
+    {
+      "id": "costs",
+      "description": "Disagreement over material costs",
+      "severity": "medium",
+      "impact": "Increased cost burden for both parties, affecting their profit margins.",
+      "relatedPoints": ["Payment terms", "Delivery reliability"]
+    }
+  ],
+  "negotiablePoints": [
+    {
+      "id": "payment_terms",
+      "topic": "Payment Terms",
+      "currentPosition": {
+        "party1Position": "Supplier's proposed payment terms: Net 60 days, 2% discount for early payment",
+        "party2Position": "Plant manager's response: Plant Manager wants payment terms extended to 90 days with a 3% discount for early payment"
+      },
+      "acceptableRange": {
+        "minimum": "Net 60 days",
+        "maximum": "Net 90 days",
+        "preferredOutcome": "Net 75 days, 2.5% discount for early payment"
+      },
+      "priority": "high",
+      "flexibility": "moderate"
+    },
+    {
+      "id": "delivery_reliability",
+      "topic": "Delivery Reliability",
+      "currentPosition": {
+        "party1Position": "Supplier's proposed delivery reliability: 98% on time delivery rate, with a maximum of 2 missed deliveries per quarter",
+        "party2Position": "Plant manager's response: Plant Manager wants a guaranteed delivery reliability of at least 99.5% on time delivery rate"
+      },
+      "acceptableRange": {
+        "minimum": "98% on time delivery rate",
+        "maximum": "100% on time delivery rate",
+        "preferredOutcome": "99.5% on time delivery rate, with a maximum of 1 missed delivery per quarter"
+      },
+      "priority": "medium",
+      "flexibility": "moderate"
+    }
+  ],
+  "nonNegotiablePoints": [
+    {
+      "id": "minimum_order_quantity",
+      "description": "Non-negotiable point: Minimum order quantity",
+      "rationale": "Due to supply chain disruptions and limited production capacity, the supplier cannot fulfill orders below a certain threshold.",
+      "impact": "Increased costs for both parties due to reduced economies of scale"
+    }
+  ],
+  "walkawayConditions": {
+    "party1Conditions": [
+      {
+        "condition": "Unrealistic payment terms",
+        "threshold": "Payment terms extended beyond 120 days",
+        "reasoning": "This would lead to cash flow problems for the supplier, affecting their ability to pay employees and suppliers."
+      }
+    ],
+    "party2Conditions": [
+      {
+        "condition": "Guaranteed delivery reliability of less than 99.5% on time delivery rate",
+        "threshold": "Delivery reliability drops below 98% on time delivery rate for an extended period",
+        "reasoning": "This would cause significant disruptions to the plant's production schedule, affecting their ability to meet customer demands."
+      }
+    ]
+  }
+}
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:239
+None
+---
+[2025-02-04 13:55:49,843] [INFO] [negotiationgen] Successfully generated scenario 1 in 36.36 seconds
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:439
+None
+---
+[2025-02-04 13:55:49,846] [INFO] [negotiationgen] Negotiation generation completed
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:487
+None
+---
+[2025-02-04 14:01:43,933] [INFO] [negotiationgen] Starting negotiation generation process (PID: 6528)
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:416
+None
+---
+[2025-02-04 14:03:29,457] [INFO] [negotiationgen] Generating scenario 1/1...
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:443
+None
+---
+[2025-02-04 14:03:29,457] [DEBUG] [negotiationgen] Attempt 1/3: Sending request to Ollama
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:303
+None
+---
+[2025-02-04 14:03:45,945] [INFO] [negotiationgen] Starting negotiation generation process (PID: 28348)
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:416
+None
+---
+[2025-02-04 14:03:47,456] [INFO] [negotiationgen] Generating scenario 1/1...
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:443
+None
+---
+[2025-02-04 14:03:47,456] [DEBUG] [negotiationgen] Attempt 1/3: Sending request to Ollama
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:303
+None
+---
+[2025-02-04 14:04:24,063] [DEBUG] [negotiationgen] API request completed in 54.61 seconds
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:322
+None
+---
+[2025-02-04 14:04:24,064] [DEBUG] [negotiationgen] Raw API response: {
+  "negotiationId": "ABC123",
+  "topic": {
+    "title": "Supply Chain Disruption Agreement",
+    "description": "Negotiation between a logistics company and a manufacturer to mitigate supply chain disruptions caused by global events.",
+    "context": "The logistics company has been struggling to maintain consistent delivery schedules due to COVID-19-related lockdowns in Asia, affecting their primary supplier.",
+    "industry": "Logistics & Manufacturing",
+    "expectedTimeframe": "6 weeks"
+  },
+  "parties": [
+    {
+      "id": "party1",
+      "name": "Global Logistics Inc.",
+      "role": "Client/Contractor",
+      "interests": ["Timely delivery", "Reduced costs"],
+      "constraints": ["Limited resources for compensation"],
+      "authorityLevel": "full"
+    },
+    {
+      "id": "party2",
+      "name": "East Asia Manufacturing Co.",
+      "role": "Supplier",
+      "interests": ["Stable income", "Minimal impact on operations"],
+      "constraints": ["Vulnerability to global events"],
+      "authorityLevel": "full"
+    }
+  ],
+  "conflictPoints": [
+    {
+      "id": "conflict1",
+      "description": "Disruptions in supply chain logistics due to travel restrictions and lockdowns.",
+      "severity": "high",
+      "impact": "Potential loss of revenue for both parties, affecting overall business performance.",
+      "relatedPoints": ["Uncertainty in delivery schedules", "Strains on resources"]
+    }
+  ],
+  "negotiablePoints": [
+    {
+      "id": "point1",
+      "topic": "Compensation for supply chain disruptions",
+      "currentPosition": {
+        "party1Position": "$10,000 as a one-time payment",
+        "party2Position": "$5,000 as a lump sum"
+      },
+      "acceptableRange": {
+        "minimum": "$5,000",
+        "maximum": "$20,000",
+        "preferredOutcome": "$15,000"
+      },
+      "priority": "high",
+      "flexibility": "moderate"
+    }
+  ],
+  "nonNegotiablePoints": [
+    {
+      "id": "nonNeg1",
+      "description": "The logistics company must adhere to their quality standards for goods shipment.",
+      "rationale": "Ensuring product safety and compliance with regulatory requirements.",
+      "impact": "Potential loss of business if quality standards are compromised."
+    }
+  ],
+  "walkawayConditions": {
+    "party1Conditions": [
+      {
+        "condition": "Unwillingness to negotiate fair compensation for supply chain disruptions",
+        "threshold": "$10,000",
+        "reasoning": "Inability to find a mutually agreeable solution within the acceptable range."
+      }
+    ],
+    "party2Conditions": [
+      {
+        "condition": "Insistence on unreasonable quality standards that conflict with their capabilities",
+        "threshold": "Zero tolerance for compromise",
+        "reasoning": "Refusal to accept any compromise on their operational limitations."
+      }
+    ]
+  },
+  "strategies": {
+    "overallApproach": "collaborative",
+    "longTermObjectives": [
+      {
+        "objective": "Establish long-term, mutually beneficial relationships with suppliers and clients.",
+        "importance": "critical",
+        "timeframe": "12-24 months"
+      }
+    ],
+    "relationshipGoals": {
+      "desiredOutcome": "strengthen",
+      "futureInteractions": "continuing to collaborate on logistics innovations."
+    }
+  },
+  "tactics": {
+    "openingApproach": {
+      "initialOffer": "$15,000 as a starting point for compensation discussion.",
+      "anchoringStrategy": "Setting the lower bound of acceptable compensation"
+    },
+    "concessionPlan": {
+      "sequence": [
+        {
+          "stage": "First round: Exploratory discussion on supply chain disruption impacts",
+          "possibleConcessions": ["$10,000", "$12,500"],
+          "triggerConditions": ["Establishing a baseline for compensation discussion"]
+        },
+        {
+          "stage": "Second round: Negotiation of compensation amount based on agreed impact assessment",
+          "possibleConcessions": ["$15,000 (party 1's preferred)", "$18,000 (party 2's preferred)"],
+          "triggerConditions": ["Reaching an agreement on the impact and acceptable range"]
+        }
+      ],
+      "pacing": "Sequential escalation"
+    },
+    "persuasionTechniques": [
+      {
+        "technique": "social-proof",
+        "applicationContext": "Highlighting mutual benefits of cooperation, e.g., maintaining business relationships.",
+        "fallbackOptions": ["Using data-driven arguments to support compensation claims"]
+      }
+    ],
+    "informationGathering": {
+      "keyQuestions": ["What are the most recent disruptions experienced?", "How will this agreement impact operations?"],
+      "observationFocus": ["Monitoring for changes in supply chain dynamics and potential triggers"]
+    },
+    "deadlockBreakers": [
+      {"approach": "Seeking external mediation or advice from industry experts to facilitate compromise.", "conditions": "Reaching an impasse after negotiations.",
+       "risks": "Risk of being perceived as weak or lacking in negotiation skills."}
+    ]
+  }
+}
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:325
+None
+---
+[2025-02-04 14:04:24,064] [INFO] [negotiationgen] Successfully generated scenario 1 in 54.61 seconds
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:596
+None
+---
+[2025-02-04 14:04:24,067] [INFO] [negotiationgen] Negotiation generation completed
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:644
+None
+---
+[2025-02-04 14:05:01,023] [DEBUG] [negotiationgen] API request completed in 73.57 seconds
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:322
+None
+---
+[2025-02-04 14:05:01,023] [DEBUG] [negotiationgen] Raw API response: { "negotiationId": "A123456", "topic": { "title": "Renegotiation of Software Licensing Fee", "description": "The software company, SoftTech Inc., is looking to renegotiate the licensing fee for their proprietary software with a major client, XYZ Corporation. The current agreement has been in place for five years, and both parties are seeking changes.", "context": "The software industry has experienced significant growth over the past decade, leading to an increase in demand for SoftTech Inc.'s software solutions. As a result, the company is eager to adjust the licensing fee to reflect this increased value.", "industry": "Information Technology", "expectedTimeframe": "The renegotiation process is expected to take approximately six months, with a target completion date of March 31st."}, "parties": [{ "id": "A1234567", "name": "SoftTech Inc.", "role": "Software provider", "interests": ["Revenue increase", "Improved relationship"], "constraints": ["Maintaining current market share"], "authorityLevel": "full"}, { "id": "A6543210", "name": "XYZ Corporation", "role": "Client", "interests": ["Cost reduction", "Increased flexibility"], "constraints": ["Protecting intellectual property"], "authorityLevel": "limited"}], "conflictPoints": [{ "id": "C12345", "description": "The primary point of conflict is the licensing fee, which SoftTech Inc. feels should be adjusted upwards due to increased demand and revenue growth.", "severity": "high", "impact": "Significant financial implications for XYZ Corporation.", "relatedPoints": ["Intellectual property rights"]}], "negotiablePoints": [{ "id": "P1234", "topic": "Licensing Fee Adjustment", "currentPosition": { "party1Position": "$500,000 per annum (up from $350,000)", "party2Position": "$400,000 per annum (down from $450,000)"}, "acceptableRange": { "minimum": "$420,000 per annum", "maximum": "$550,000 per annum", "preferredOutcome": "$480,000 per annum"}, "priority": "high", "flexibility": "moderate"}], "nonNegotiablePoints": [{ "id": "NN1234", "description": "SoftTech Inc. reserves the right to terminate the agreement if XYZ Corporation fails to meet certain revenue targets.", "rationale": "The company needs to ensure they are receiving a fair return on their investment in software development and maintenance.", "impact": "Potential loss of market share and reputation damage."}], "walkawayConditions": { "party1Conditions": [{ "condition": "Revenue shortfall exceeding $10 million", "threshold": "$12 million", "reasoning": "If XYZ Corporation fails to meet this threshold, SoftTech Inc. will reassess their position and consider termination of the agreement."}], "party2Conditions": [{ "condition": "Increased licensing fee by more than 20%", "threshold": "22%", "reasoning": "If the fee increase exceeds this threshold, XYZ Corporation reserves the right to seek alternative software solutions."}]}, "strategies": { "overallApproach": "collaborative", "longTermObjectives": [{ "objective": "Increased revenue and market share for SoftTech Inc.", "importance": "high", "timeframe": "Five years"}], "relationshipGoals": { "desiredOutcome": "strengthen", "futureInteractions": "regular business consultations"}}}
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:325
+None
+---
+[2025-02-04 14:05:01,035] [ERROR] [negotiationgen] Tactics/Strategies validation error
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:238
+None
+---
+[2025-02-04 14:05:01,035] [ERROR] [negotiationgen] Schema validation error in field tactics_strategies: 1 validation error for Tactics
+  Input should be a valid dictionary or instance of Tactics [type=model_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.10/v/model_type
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:339
+None
+---
+[2025-02-04 14:05:01,035] [WARNING] [negotiationgen] Error on attempt 1: 1 validation error for Tactics
+  Input should be a valid dictionary or instance of Tactics [type=model_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.10/v/model_type. Retrying in 2 seconds...
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:352
+None
+---
+[2025-02-04 14:05:03,037] [DEBUG] [negotiationgen] Attempt 2/3: Sending request to Ollama
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:303
+None
+---
+[2025-02-04 14:06:06,674] [INFO] [negotiationgen] Operation cancelled by user after 140.73 seconds
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:662
+None
+---
+[2025-02-04 14:07:30,323] [INFO] [negotiationgen] Starting negotiation generation process (PID: 27604)
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:456
+None
+---
+[2025-02-04 14:08:14,534] [INFO] [negotiationgen] Starting negotiation generation process (PID: 24372)
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:456
+None
+---
+[2025-02-04 14:08:15,928] [INFO] [negotiationgen] Generating scenario 1/1...
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:483
+None
+---
+[2025-02-04 14:08:15,928] [DEBUG] [negotiationgen] Attempt 1/3: Sending request to Ollama
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:343
+None
+---
+[2025-02-04 14:08:43,801] [DEBUG] [negotiationgen] API request completed in 27.87 seconds
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:362
+None
+---
+[2025-02-04 14:08:43,801] [DEBUG] [negotiationgen] Raw API response: { "negotiationId": "123456789", "topic": { "title": "Acquiring New Clients for XYZ Inc.", "description": "Negotiation between XYZ Inc. and ABC Corporation for acquiring new clients in the healthcare industry.", "context": "XYZ Inc. is looking to expand its client base, while ABC Corporation seeks to strengthen its position in the market.", "industry": "Healthcare", "expectedTimeframe": "6-8 months"}, "parties": [{ "id": "party1", "name": "John Doe", "role": "CEO of XYZ Inc.", "interests": ["Growing revenue", "Diversifying client base"], "constraints": ["Limited budget for marketing", "Competition from established players"], "authorityLevel": "full"}, { "id": "party2", "name": "Jane Smith", "role": "CEO of ABC Corporation", "interests": ["Strengthening market presence", "Increasing revenue through new clients"], "constraints": ["Competition from emerging players", "Regulatory challenges"], "authorityLevel": "full"}], "conflictPoints": [{ "id": "conflict1", "description": "Competitive pricing", "severity": "medium", "impact": "Potential loss of market share due to pricing discrepancy.", "relatedPoints": ["Pricing strategy", "Market positioning"]}], "negotiablePoints": [{ "id": "point1", "topic": "Price structure", "currentPosition": { "party1Position": "$10 per unit (xyzinc.com)", "party2Position": "$12 per unit (abccorp.com)"}, "acceptableRange": { "minimum": "$9.50 per unit", "maximum": "$11.50 per unit", "preferredOutcome": "$10.25 per unit"}, "priority": "high", "flexibility": "moderate"}], "nonNegotiablePoints": [{ "id": "nonNeg1", "description": "Non-disclosure agreements for proprietary information.", "rationale": "Confidentiality and intellectual property protection are essential.", "impact": "Risk of data breaches or unauthorized use."}], "walkawayConditions": { "party1Conditions": [{ "condition": "Unrealistic pricing demands", "threshold": "$13.00 per unit", "reasoning": "Unwillingness to negotiate on price could result in lost business opportunities."}], "party2Conditions": [{ "condition": "Insufficient budget for marketing", "threshold": "$50,000", "reasoning": "Failure to meet this budget requirement may impact our ability to attract and retain clients."}]}}
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:365
+None
+---
+[2025-02-04 14:08:43,801] [WARNING] [negotiationgen] Optional fields missing
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:261
+None
+---
+[2025-02-04 14:08:43,802] [WARNING] [negotiationgen] Optional fields missing
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:261
+None
+---
+[2025-02-04 14:08:43,802] [INFO] [negotiationgen] Successfully generated scenario 1 in 27.87 seconds
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:636
+None
+---
+[2025-02-04 14:08:43,816] [INFO] [negotiationgen] Negotiation generation completed
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:684
+None
+---
+[2025-02-04 14:34:48,625] [INFO] [negotiationgen] Starting negotiation generation process (PID: 3696)
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:456
+None
+---
+[2025-02-04 14:34:50,403] [INFO] [negotiationgen] Generating scenario 1/1...
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:483
+None
+---
+[2025-02-04 14:34:50,403] [DEBUG] [negotiationgen] Attempt 1/3: Sending request to Ollama
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:343
+None
+---
+[2025-02-04 14:35:58,117] [DEBUG] [negotiationgen] API request completed in 67.71 seconds
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:362
+None
+---
+[2025-02-04 14:35:58,117] [DEBUG] [negotiationgen] Raw API response: {
+  "negotiationId": "ABCD1234",
+  "topic": {
+    "title": "Supply Chain Optimization",
+    "description": "Negotiating a new partnership agreement to improve logistics and reduce costs for our joint venture.",
+    "context": "Our company has been working with Partner X to optimize supply chain operations. The current agreement is set to expire in six months, and we're looking to negotiate a new deal that meets both parties' interests.",
+    "industry": "Manufacturing",
+    "expectedTimeframe": "Three months"
+  },
+  "parties": [
+    {
+      "id": "Party1",
+      "name": "ABC Inc.",
+      "role": "Contractor and supplier",
+      "interests": ["Improved logistics efficiency", "Increased revenue through bulk purchases"],
+      "constraints": ["Limited capacity for inventory management", "Concerns about reliability of Partner X's supply chain"],
+      "authorityLevel": "full"
+    },
+    {
+      "id": "Party2",
+      "name": "XYZ Corporation",
+      "role": "Client and end-user",
+      "interests": ["Reduced costs through optimized logistics", "Increased flexibility in inventory management"],
+      "constraints": ["Limited resources for investing in new infrastructure", "Concerns about Partner X's ability to meet delivery commitments"],
+      "authorityLevel": "full"
+    }
+  ],
+  "conflictPoints": [
+    {
+      "id": "Conflict1",
+      "description": "Disagreement over the level of control each party wants over the supply chain.",
+      "severity": "medium",
+      "impact": "Potential delays and increased costs if not resolved.",
+      "relatedPoints": ["Concerns about reliability of Partner X's supply chain", "Desire for increased flexibility in inventory management"]
+    }
+  ],
+  "negotiablePoints": [
+    {
+      "id": "Point1",
+      "topic": "Revenue Share Agreement",
+      "currentPosition": {
+        "party1Position": "ABC Inc.: 60% revenue share; XYZ Corporation: 40%",
+        "party2Position": "XYZ Corporation: 55% revenue share; ABC Inc.: 45%"
+      },
+      "acceptableRange": {
+        "minimum": "50% revenue share for ABC Inc.; 70% for XYZ Corporation",
+        "maximum": "80% revenue share for ABC Inc.; 20% for XYZ Corporation",
+        "preferredOutcome": "55/45 split"
+      },
+      "priority": "high",
+      "flexibility": "moderate"
+    }
+  ],
+  "nonNegotiablePoints": [
+    {
+      "id": "Non-Neg1",
+      "description": "Partner X's requirement for a minimum order quantity of $100,000 to qualify for preferred pricing.",
+      "rationale": "This is a non-negotiable condition due to the high costs associated with processing smaller orders.",
+      "impact": "Potential reduction in revenue opportunities if Partner X refuses to reduce this threshold."
+    }
+  ],
+  "walkawayConditions": {
+    "party1Conditions": [
+      {
+        "condition": "Partner X's refusal to agree on a higher minimum order quantity",
+        "threshold": "$50,000",
+        "reasoning": "This amount is deemed acceptable by ABC Inc., as it still meets their revenue goals and allows for some flexibility."
+      }
+    ],
+    "party2Conditions": [
+      {
+        "condition": "ABC Inc.'s insistence on a higher revenue share beyond the preferred outcome",
+        "threshold": "60%",
+        "reasoning": "This amount is considered too high by XYZ Corporation, as it would result in significant losses for their business."
+      }
+    ]
+  },
+  "strategies": {
+    "overallApproach": "collaborative",
+    "longTermObjectives": [
+      {
+        "objective": "Establish a long-term partnership with Partner X to secure a stable supply chain and reduced costs.",
+        "importance": "critical",
+        "timeframe": "Five years"
+      }
+    ],
+    "relationshipGoals": {
+      "desiredOutcome": "strengthen",
+      "futureInteractions": "regular communication and mutual support in optimizing supply chain operations."
+    }
+  },
+  "tactics": {
+    "openingApproach": {
+      "initialOffer": "ABC Inc. proposes a revenue share agreement of 60% for ABC Inc. and 40% for XYZ Corporation.",
+      "anchoringStrategy": "Using the preferred outcome as an anchor to establish a starting point for negotiations."
+    },
+    "concessionPlan": {
+      "sequence": [
+        {
+          "stage": "Initial negotiation",
+          "possibleConcessions": ["Reducing revenue share from 60% to 55%", "Increasing minimum order quantity"],
+          "triggerConditions": ["Partner X's response to initial offer"]
+        }
+      ],
+      "pacing": "gradual and flexible, adjusting pace based on partner responses."
+    },
+    "persuasionTechniques": [
+      {
+        "technique": "reciprocity",
+        "applicationContext": "Highlighting Partner X's benefits from the proposed agreement, such as increased revenue through bulk purchases.",
+        "fallbackOptions": ["Using data and market analysis to demonstrate the value of the agreement."]
+      }
+    ]
+  ,
+  "informationGathering": {
+    "keyQuestions": [
+      "What are the current costs associated with Partner X's supply chain?",
+      "How does Partner X perceive our company's reliability in meeting delivery commitments?",
+      "Are there any other companies or partners that XYZ Corporation is considering for supply chain partnerships?"
+    ]
+  ,
+  "observationFocus": [
+    "Partners' communication styles and willingness to compromise",
+    "Their attitudes towards risk management and contingency planning"
+  ]
+} ,
+  "deadlockBreakers": [
+    {
+      "approach": "Seeking additional data or analysis to support the negotiation position",
+      "conditions": "Insufficient information about Partner X's costs, their perception of our reliability, and market trends affecting supply chain partners."
+    , "risks": "Risk of further delay if unable to find sufficient information"
+  }
+] } }
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:365
+None
+---
+[2025-02-04 14:35:58,118] [INFO] [negotiationgen] Successfully generated scenario 1 in 67.72 seconds
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:636
+None
+---
+[2025-02-04 14:35:58,120] [INFO] [negotiationgen] Negotiation generation completed
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:684
+None
+---
+[2025-02-04 14:37:38,234] [INFO] [negotiationgen] Starting negotiation generation process (PID: 34276)
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:456
+None
+---
+[2025-02-04 14:37:39,498] [INFO] [negotiationgen] Generating scenario 1/2...
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:483
+None
+---
+[2025-02-04 14:37:39,498] [DEBUG] [negotiationgen] Attempt 1/3: Sending request to Ollama
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:343
+None
+---
+[2025-02-04 14:38:44,716] [DEBUG] [negotiationgen] API request completed in 65.22 seconds
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:362
+None
+---
+[2025-02-04 14:38:44,716] [DEBUG] [negotiationgen] Raw API response: {
+  "negotiationId": "Negotiation-001",
+  "topic": {
+    "title": "Software Licensing Agreement",
+    "description": "A new company, TechCorp, wants to license its proprietary software, called 'SmartInvoicing', to a medium-sized accounting firm, AccountantPro.",
+    "context": "TechCorp is looking for a long-term partnership with AccountantPro, while AccountantPro seeks to reduce costs and ensure high-quality service delivery.",
+    "industry": "Software Licensing",
+    "expectedTimeframe": "6-12 months"
+  },
+  "parties": [
+    {
+      "id": "party1",
+      "name": "TechCorp",
+      "role": "Proprietary Software Developer",
+      "interests": ["High Royalty Rates", "Long-term Partnership"],
+      "constraints": ["Limited Budget for Licensing Fees", "Quality of Service Expectations"],
+      "authorityLevel": "full"
+    },
+    {
+      "id": "party2",
+      "name": "AccountantPro",
+      "role": "Medium-Sized Accounting Firm",
+      "interests": ["Cost-Effective Solutions", "Reliable Software Support"],
+      "constraints": ["Limited Budget for Licensing Fees", "High-Quality Service Delivery Expectations"],
+      "authorityLevel": "full"
+    }
+  ],
+  "conflictPoints": [
+    {
+      "id": "conflict1",
+      "description": "Royalty Rates vs. Licensing Fees",
+      "severity": "medium",
+      "impact": "Potential revenue impact for both parties.",
+      "relatedPoints": ["Quality of Service Expectations", "Long-term Partnership"]
+    }
+  ],
+  "negotiablePoints": [
+    {
+      "id": "point1",
+      "topic": "Licensing Fee Structure",
+      "currentPosition": {
+        "party1Position": "TechCorp wants a flat fee of $10,000 per year.",
+        "party2Position": "AccountantPro offers to pay 8% of annual revenue."
+      },
+      "acceptableRange": {
+        "minimum": "$7,500 per year",
+        "maximum": "$12,000 per year",
+        "preferredOutcome": "Revenue-based fee capping at 10%"
+      },
+      "priority": "high",
+      "flexibility": "moderate"
+    },
+    {
+      "id": "point2",
+      "topic": "Quality of Service Expectations",
+      "currentPosition": {
+        "party1Position": "TechCorp offers premium support for an additional $5,000 per year.",
+        "party2Position": "AccountantPro requests 24/7 priority support."
+      },
+      "acceptableRange": {
+        "minimum": "Standard business hours support (10am-6pm)",
+        "maximum": "24/7 priority support with additional $3,000 fee",
+        "preferredOutcome": "Flexible support plans based on customer needs"
+      },
+      "priority": "medium",
+      "flexibility": "rigid"
+    }
+  ],
+  "nonNegotiablePoints": [
+    {
+      "id": "nonNeg1",
+      "description": "Intellectual Property Rights",
+      "rationale": "TechCorp's proprietary software is highly complex and cannot be reversed-engineered or shared.",
+      "impact": "Loss of competitive advantage for AccountantPro if licensing terms are not met."
+    }
+  ],
+  "walkawayConditions": {
+    "party1Conditions": [
+      {
+        "condition": "AccountantPro fails to meet minimum annual revenue threshold",
+        "threshold": "$750,000 per year",
+        "reasoning": "Inability to sustain costs without adequate revenue growth."
+      }
+    ],
+    "party2Conditions": [
+      {
+        "condition": "TechCorp fails to maintain quality of service standards",
+        "threshold": "3% monthly decrease in customer satisfaction ratings",
+        "reasoning": "AccountantPro's reputation and revenue would be impacted."
+      }
+    ]
+  },
+  "strategies": {
+    "overallApproach": "collaborative",
+    "longTermObjectives": [
+      {
+        "objective": "Long-term partnership with AccountantPro to expand SmartInvoicing adoption across industries.",
+        "importance": "high",
+        "timeframe": "5-7 years"
+      }
+    ],
+    "relationshipGoals": {
+      "desiredOutcome": "strengthen",
+      "futureInteractions": "Regular check-ins, joint marketing efforts, and co-development of new software features."
+    }
+  },
+  "tactics": {
+    "openingApproach": {
+      "initialOffer": "$9,000 per year (midpoint of TechCorp's initial offer)",
+      "anchoringStrategy": "Using the midpoint as a starting point to encourage AccountantPro to make concessions"
+    },
+    "concessionPlan": {
+      "sequence": [
+        {
+          "stage": "Initial Offer Response",
+          "possibleConcessions": ["Consider a revenue-based fee capping at 9%"],
+          "triggerConditions": ["AccountantPro's initial response"]
+        }
+      ]
+    ,
+    "pacing": "Agreeing to AccountantPro's proposed fee structure and adjusting TechCorp's support plans accordingly"
+    },
+    "persuasionTechniques": [
+      {
+        "technique": "social-proof",
+        "applicationContext": "Highlighting the benefits of a long-term partnership and shared success metrics."
+      }
+    ]
+  ,
+    "informationGathering": {
+      "keyQuestions": ["What are AccountantPro's projected annual revenue growth rates?", "How do you envision our software supporting your business goals?"]
+    ,
+    "observationFocus": [
+      "Assessing the size and complexity of AccountantPro's current system infrastructure.",
+      "Understanding their existing pain points and areas for improvement."
+    ]
+  }
+  ,
+    "deadlockBreakers": [
+      {
+        "approach": "Offering customized onboarding support to ensure seamless integration of SmartInvoicing into AccountantPro's systems.",
+        "conditions": "Only if both parties agree to review and refine the proposed fee structure."
+      ,
+      "risks": "Potential for TechCorp to lose revenue opportunities or reputation damage if unable to deliver quality support services on time."
+    }
+  ]
+} }
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:365
+None
+---
+[2025-02-04 14:38:44,717] [INFO] [negotiationgen] Successfully generated scenario 1 in 65.22 seconds
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:636
+None
+---
+[2025-02-04 14:38:44,717] [INFO] [negotiationgen] Generating scenario 2/2...
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:483
+None
+---
+[2025-02-04 14:38:44,717] [DEBUG] [negotiationgen] Attempt 1/3: Sending request to Ollama
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:343
+None
+---
+[2025-02-04 14:39:48,710] [DEBUG] [negotiationgen] API request completed in 63.99 seconds
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:362
+None
+---
+[2025-02-04 14:39:48,710] [DEBUG] [negotiationgen] Raw API response: {
+  "negotiationId": "2023-04-15 Negotiation A",
+  "topic": {
+    "title": "Partnership Agreement for Sustainable Energy Solutions",
+    "description": "This negotiation is between two companies, GreenTech Inc. and EnergySavvy Ltd., aiming to establish a partnership for sustainable energy solutions.",
+    "context": "The renewable energy market has seen significant growth in recent years, driven by increasing awareness about climate change and government incentives.",
+    "industry": "Renewable Energy",
+    "expectedTimeframe": "6 months"
+  },
+  "parties": [
+    {
+      "id": "party1",
+      "name": "GreenTech Inc.",
+      "role": "Investor",
+      "interests": ["Market share", "Technology development", "Revenue growth"],
+      "constraints": ["Technical capabilities", "Financial resources", "Strategic alignment"],
+      "authorityLevel": "full"
+    },
+    {
+      "id": "party2",
+      "name": "EnergySavvy Ltd.",
+      "role": "Vendor",
+      "interests": ["Partnership agreement structure", "Intellectual property protection", "Market access"],
+      "constraints": ["Regulatory environment", "Competition from other vendors", "Contractual obligations"],
+      "authorityLevel": "limited"
+    }
+  ],
+  "conflictPoints": [
+    {
+      "id": "conflict1",
+      "description": "Difference in opinion on the partnership agreement structure.",
+      "severity": "medium",
+      "impact": "Potential delay in project implementation and revenue growth.",
+      "relatedPoints": ["Intellectual property protection", "Market access"]
+    }
+  ],
+  "negotiablePoints": [
+    {
+      "id": "point1",
+      "topic": "Partnership agreement structure",
+      "currentPosition": {
+        "party1Position": "GreenTech Inc. wants a majority stake in the partnership.",
+        "party2Position": "EnergySavvy Ltd. prefers a joint venture structure."
+      },
+      "acceptableRange": {
+        "minimum": "50:50 joint venture",
+        "maximum": "70:30 GreenTech Inc.'s share",
+        "preferredOutcome": "65:35 GreenTech Inc.'s share"
+      },
+      "priority": "high",
+      "flexibility": "moderate"
+    },
+    {
+      "id": "point2",
+      "topic": "Intellectual property protection",
+      "currentPosition": {
+        "party1Position": "GreenTech Inc. wants exclusive rights to the technology.",
+        "party2Position": "EnergySavvy Ltd. prefers a non-exclusive license."
+      },
+      "acceptableRange": {
+        "minimum": "Exclusive license for 5 years.",
+        "maximum": "Non-exclusive license with options for extension.",
+        "preferredOutcome": "Non-exclusive license with a 10-year option."
+      },
+      "priority": "medium",
+      "flexibility": "rigid"
+    }
+  ],
+  "nonNegotiablePoints": [
+    {
+      "id": "nonNeg1",
+      "description": "GreenTech Inc. wants EnergySavvy Ltd. to commit to a minimum annual investment of $10 million.",
+      "rationale": "To ensure the project's financial viability and alignment with GreenTech Inc.'s strategic goals.",
+      "impact": "If EnergySavvy Ltd. fails to meet this commitment, GreenTech Inc. reserves the right to renegotiate or terminate the partnership agreement."
+    }
+  ],
+  "walkawayConditions": {
+    "party1Conditions": [
+      {
+        "condition": "EnergySavvy Ltd.'s failure to commit to the minimum annual investment.",
+        "threshold": "$5 million",
+        "reasoning": "If EnergySavvy Ltd. fails to meet this threshold, GreenTech Inc. considers the partnership agreement unsustainable."
+      }
+    ],
+    "party2Conditions": [
+      {
+        "condition": "GreenTech Inc.'s majority stake requirement being met without adequate compensation.",
+        "threshold": "65:35 ratio",
+        "reasoning": "If EnergySavvy Ltd. feels that GreenTech Inc.'s share is excessive, the partnership agreement may become unwieldy."
+      }
+    ]
+  },
+  "strategies": {
+    "overallApproach": "collaborative",
+    "longTermObjectives": [
+      {
+        "objective": "Establish a sustainable and profitable renewable energy business.",
+        "importance": "high",
+        "timeframe": "5 years"
+      }
+    ],
+    "relationshipGoals": {
+      "desiredOutcome": "strengthen",
+      "futureInteractions": "Regular check-ins and progress updates."
+    }
+  },
+  "tactics": {
+    "openingApproach": {
+      "initialOffer": "65:35 ratio for GreenTech Inc.'s share.",
+      "anchoringStrategy": "Using the preferred outcome as a starting point."
+    },
+    "concessionPlan": {
+      "sequence": [
+        {
+          "stage": "First concession",
+          "possibleConcessions": ["40:60 joint venture structure"]
+        ,
+        "triggerConditions": ["EnergySavvy Ltd.'s proposal of a non-exclusive license."]
+        }
+      ],
+      "pacing": "GreenTech Inc. makes the first concession after EnergySavvy Ltd. agrees to meet the minimum annual investment threshold."
+    },
+    "persuasionTechniques": [
+      {
+        "technique": "reciprocity",
+        "applicationContext": "When discussing intellectual property protection, GreenTech Inc. emphasizes its commitment to fair and mutually beneficial agreements."
+      }
+    ]
+  ,
+    "informationGathering": {
+      "keyQuestions": ["EnergySavvy Ltd.'s willingness to commit to the minimum annual investment.", "GreenTech Inc.'s flexibility on technology development timelines."],
+      "observationFocus": [
+        "EnergySavvy Ltd.'s presentation style and ability to articulate its vision.",
+        "GreenTech Inc.'s willingness to listen to EnergySavvy Ltd.'s concerns."
+      ]
+    }
+  ,
+    "deadlockBreakers": [
+      {
+        "approach": "Joint brainstorming session to address outstanding issues.",
+        "conditions": "Both parties are willing and available for the session within a short timeframe (e.g., 2-3 days)."
+      ,
+      "risks": "Delays in project implementation or revenue growth if the session does not yield sufficient progress."
+    }
+  ]
+}
+}
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:365
+None
+---
+[2025-02-04 14:39:48,711] [INFO] [negotiationgen] Successfully generated scenario 2 in 63.99 seconds
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:636
+None
+---
+[2025-02-04 14:39:48,713] [INFO] [negotiationgen] Negotiation generation completed
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:684
+None
+---
+[2025-02-04 14:44:24,809] [INFO] [negotiationgen] Starting negotiation generation process (PID: 35388)
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:456
+None
+---
+[2025-02-04 14:44:26,089] [INFO] [negotiationgen] Generating scenario 1/2...
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:483
+None
+---
+[2025-02-04 14:44:26,090] [DEBUG] [negotiationgen] Attempt 1/3: Sending request to Ollama
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:343
+None
+---
+[2025-02-04 14:45:18,450] [DEBUG] [negotiationgen] API request completed in 52.36 seconds
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:362
+None
+---
+[2025-02-04 14:45:18,451] [DEBUG] [negotiationgen] Raw API response: {
+  "negotiationId": "12345",
+  "topic": {
+    "title": "Renegotiating a Supply Contract",
+    "description": "The first party wants to renegotiate the terms of their current supply contract with the second party due to changes in market conditions and increasing competition.",
+    "context": "The two companies have a long-standing relationship and have successfully collaborated on multiple projects. However, the first party feels that they are being taken advantage of by the second party's rising costs.",
+    "industry": "Manufacturing",
+    "expectedTimeframe": "3-6 months"
+  },
+  "parties": [
+    {
+      "id": "party1",
+      "name": "NovaTech Inc.",
+      "role": "Buyer",
+      "interests": ["Cost reduction", "Increased market share"],
+      "constraints": ["Limited financial resources", "Dependence on supplier"],
+      "authorityLevel": "full"
+    },
+    {
+      "id": "party2",
+      "name": "Apex Manufacturing Co.",
+      "role": "Seller",
+      "interests": ["Higher profit margins", "Long-term partnership"],
+      "constraints": ["Increasing production costs", "Limited capacity for new contracts"],
+      "authorityLevel": "full"
+    }
+  ],
+  "conflictPoints": [
+    {
+      "id": "conflict1",
+      "description": "The current contract price is too high, and the first party wants a reduction.",
+      "severity": "medium",
+      "impact": "Potential loss of business if not renegotiated.",
+      "relatedPoints": ["Supplier's increasing costs", "Market competition"]
+    }
+  ],
+  "negotiablePoints": [
+    {
+      "id": "point1",
+      "topic": "Contract price reduction",
+      "currentPosition": {
+        "party1Position": "10% discount from current price",
+        "party2Position": "5% increase in price"
+      },
+      "acceptableRange": {
+        "minimum": "-15%",
+        "maximum": "5%",
+        "preferredOutcome": "-5%"
+      },
+      "priority": "high",
+      "flexibility": "moderate"
+    }
+  ],
+  "nonNegotiablePoints": [
+    {
+      "id": "nonNeg1",
+      "description": "The length of the contract cannot be increased beyond its current term.",
+      "rationale": "Both parties have agreed on a fixed-term contract, and extending it would require significant changes to the agreement.",
+      "impact": "Potential impact on future business opportunities"
+    }
+  ],
+  "walkawayConditions": {
+    "party1Conditions": [
+      {
+        "condition": "Contract price below 80% of current value",
+        "threshold": "0.8",
+        "reasoning": "If the second party agrees to a contract price lower than 80%, NovaTech Inc. will consider terminating the contract."
+      }
+    ],
+    "party2Conditions": [
+      {
+        "condition": "Price reduction above 15%",
+        "threshold": "0.15",
+        "reasoning": "Apex Manufacturing Co. will reconsider its position if the first party demands a price reduction of more than 15%."
+      }
+    ]
+  },
+  "strategies": {
+    "overallApproach": "collaborative",
+    "longTermObjectives": [
+      {
+        "objective": "Establish a long-term partnership with Apex Manufacturing Co.",
+        "importance": "high",
+        "timeframe": "5-7 years"
+      }
+    ],
+    "relationshipGoals": {
+      "desiredOutcome": "strengthen",
+      "futureInteractions": "Regular business meetings and open communication"
+    }
+  },
+  "tactics": {
+    "openingApproach": {
+      "initialOffer": "Starting with a 5% price reduction offer to gauge Apex Manufacturing Co.'s response.",
+      "anchoringStrategy": "Using the initial offer as a basis for further negotiations."
+    },
+    "concessionPlan": {
+      "sequence": [
+        {
+          "stage": "Initial negotiation phase",
+          "possibleConcessions": ["Additional discounts", "Extended contract term"],
+          "triggerConditions": ["Apex Manufacturing Co.'s response to the initial offer"]
+        }
+      ],
+      "pacing": "Gradual, with a focus on finding a mutually beneficial solution."
+    },
+    "persuasionTechniques": [
+      {
+        "technique": "reciprocity",
+        "applicationContext": "Highlighting Apex Manufacturing Co.'s benefits from the proposed price reduction.",
+        "fallbackOptions": ["Using social proof"]
+      }
+    ],
+    "informationGathering": {
+      "keyQuestions": ["What are Apex Manufacturing Co.'s production costs?", "How does the company plan to address market competition?"],
+      "observationFocus": ["Monitoring Apex Manufacturing Co.'s pricing strategy and production capacity"
+      ]
+    },
+    "deadlockBreakers": [
+      {
+        "approach": "Offering additional incentives for a long-term contract",
+        "conditions": "If negotiations stall, consider offering exclusive rights to supply NovaTech Inc. with specific materials.",
+        "risks": "Potential impact on future business opportunities if Apex Manufacturing Co. feels pressured into concessions."
+      }
+    ]
+  }
+}
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:365
+None
+---
+[2025-02-04 14:45:18,453] [INFO] [negotiationgen] Successfully generated scenario 1 in 52.36 seconds and saved to Renegotiating_a_Supply_Contract_20250204_104518.json
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:646
+None
+---
+[2025-02-04 14:45:18,453] [INFO] [negotiationgen] Generating scenario 2/2...
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:483
+None
+---
+[2025-02-04 14:45:18,454] [DEBUG] [negotiationgen] Attempt 1/3: Sending request to Ollama
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:343
+None
+---
+[2025-02-04 14:46:37,295] [DEBUG] [negotiationgen] API request completed in 78.84 seconds
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:362
+None
+---
+[2025-02-04 14:46:37,295] [DEBUG] [negotiationgen] Raw API response: {
+  "negotiationId": "ABC123",
+  "topic": {
+    "title": "Software Licensing Agreement",
+    "description": "This is a negotiation between two companies, TechCorp and InnovateInc, to agree on the terms of a software licensing agreement. The software in question is a proprietary intellectual property developed by TechCorp.",
+    "context": "The software has been in development for several years, and both parties have invested significant resources into its creation. The current agreement is set to expire soon, and both parties are eager to renegotiate the terms.",
+    "industry": "Software Licensing",
+    "expectedTimeframe": "2-3 months"
+  },
+  "parties": [
+    {
+      "id": "party1",
+      "name": "TechCorp",
+      "role": "Licensee",
+      "interests": ["Low royalty rate", "Clear and concise documentation", "Flexible payment terms"],
+      "constraints": ["High upfront costs", "Complexity of the software's functionality"],
+      "authorityLevel": "full"
+    },
+    {
+      "id": "party2",
+      "name": "InnovateInc",
+      "role": "Licensing Provider",
+      "interests": ["Higher royalty rate", "More aggressive sales tactics", "Increased control over documentation and updates"],
+      "constraints": ["Low upfront costs", "Limited technical support"],
+      "authorityLevel": "full"
+    }
+  ],
+  "conflictPoints": [
+    {
+      "id": "conflict1",
+      "description": "The parties are unable to agree on the royalty rate. TechCorp believes a lower rate is necessary for their business, while InnovateInc demands a higher rate.",
+      "severity": "high",
+      "impact": "Delaying or terminating the agreement could have significant financial implications for both parties.",
+      "relatedPoints": ["The complexity of the software's functionality", "InnovateInc's desire for increased control over documentation and updates"]
+    }
+  ],
+  "negotiablePoints": [
+    {
+      "id": "point1",
+      "topic": "Royalty Rate",
+      "currentPosition": {
+        "party1Position": "10% of net sales revenue",
+        "party2Position": "20% of net sales revenue"
+      },
+      "acceptableRange": {
+        "minimum": "8%",
+        "maximum": "15%",
+        "preferredOutcome": "12.5%"
+      },
+      "priority": "high",
+      "flexibility": "moderate"
+    },
+    {
+      "id": "point2",
+      "topic": "Payment Terms",
+      "currentPosition": {
+        "party1Position": "Net 30 days",
+        "party2Position": "Net 60 days"
+      },
+      "acceptableRange": {
+        "minimum": "Net 45 days",
+        "maximum": "Net 90 days",
+        "preferredOutcome": "Net 60 days"
+      },
+      "priority": "medium",
+      "flexibility": "rigid"
+    }
+  ],
+  "nonNegotiablePoints": [
+    {
+      "id": "nonNeg1",
+      "description": "The software's intellectual property rights are non-negotiable.",
+      "rationale": "The software is a proprietary development and cannot be modified or shared without the express permission of InnovateInc.",
+      "impact": "Any attempt to negotiate changes to the intellectual property rights could result in the termination of the agreement."
+    }
+  ],
+  "walkawayConditions": {
+    "party1Conditions": [
+      {
+        "condition": "Royalty rate exceeds 15%",
+        "threshold": "15%",
+        "reasoning": "This rate is deemed too high by TechCorp, which could result in significant financial losses."
+      },
+      {
+        "condition": "InnovateInc demands exclusive rights to the software's intellectual property.",
+        "threshold": "None",
+        "reasoning": "TechCorp cannot agree to such a demand, as it would severely limit their ability to develop and distribute the software."
+      }
+    ],
+    "party2Conditions": [
+      {
+        "condition": "Royalty rate falls below 8%",
+        "threshold": "8%",
+        "reasoning": "InnovateInc believes this rate is too low, which could result in significant financial losses from reduced revenue."
+      },
+      {
+        "condition": "TechCorp demands more aggressive sales tactics than InnovateInc can commit to.",
+        "threshold": "None",
+        "reasoning": "InnovateInc cannot agree to such a demand, as it would require them to compromise their business model and potentially harm their relationships with customers."
+      }
+    ]
+  },
+  "strategies": {
+    "overallApproach": "collaborative",
+    "longTermObjectives": [
+      {
+        "objective": "Establish a stable and profitable software licensing agreement that meets the needs of both parties.",
+        "importance": "high",
+        "timeframe": "6-12 months"
+      }
+    ],
+    "relationshipGoals": {
+      "desiredOutcome": "strengthen",
+      "futureInteractions": "negotiate future agreements, provide technical support and updates."
+    }
+  },
+  "tactics": {
+    "openingApproach": {
+      "initialOffer": "TechCorp makes a compromise offer on the royalty rate that falls within the acceptable range.",
+      "anchoringStrategy": "Use InnovateInc's preferred outcome as an anchor for negotiations, but with a more favorable position for TechCorp."
+    },
+    "concessionPlan": {
+      "sequence": [
+        {"stage": "How to close", "possibleConcessions": ["Doc sharing", "Payment terms"] , "triggerConditions": ["Royalty rate falls below 12%"]},
+        {"stage": "How to open", "possibleConcessions": ["TechCorp demands more aggressive sales tactics"], "triggerConditions":["InnovateInc agrees to the new rate"]},
+      {"stage":"negotiation closing" , "possibleConcessions":["Payment terms","Royalty Rate"] , "triggerConditions":["Agreement reached on 2 major concessions"]}
+      ]
+    ,
+    "pacing": "TechCorp will pace their concessions to InnovateInc, increasing the frequency and amount of concessions as InnovateInc agrees to more of TechCorp's demands."
+  }
+  ,
+  "persuasionTechniques": [
+   {"technique":"social-proof" , "applicationContext": "InnovateInc's desire for control over documentation and updates"},
+   {"technique": "scarcity", "applicationContext": "TechCorp's concerns about the royalty rate being too high"}
+  ]
+  ,
+  "informationGathering": {
+    "keyQuestions": [
+      "What are InnovateInc's minimum requirements for a software licensing agreement?",
+      "How would TechCorp benefit from renegotiating the payment terms?"
+    ],
+    "observationFocus": ["InnovateInc's sales strategy", "TechCorp's business model"]
+  }
+  ,
+  "deadlockBreakers": [
+    {
+      "approach": "Offer a customized solution that meets InnovateInc's needs while still being beneficial to TechCorp.",
+      "conditions": "If both parties agree on the royalty rate and payment terms, but are unable to reach an agreement on the intellectual property rights."
+    ,
+    "risks": "TechCorp may need to compromise on the software's intellectual property rights, which could have unintended consequences for their business."
+  },
+  {
+    "approach": "Offer a phased implementation plan that allows TechCorp to phase in the software and gradually increase revenue without having to pay the full royalty rate.",
+    "conditions": "If both parties agree on the royalty rate and payment terms, but are unable to reach an agreement on the intellectual property rights."
+  ,
+   "risks": "InnovateInc may demand additional compensation or concessions in exchange for allowing TechCorp to phase in the implementation plan"
+  }
+] } }
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:365
+None
+---
+[2025-02-04 14:46:37,296] [INFO] [negotiationgen] Successfully generated scenario 2 in 78.84 seconds and saved to Software_Licensing_Agreement_20250204_104637.json
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:646
+None
+---
+[2025-02-04 14:46:37,297] [INFO] [negotiationgen] Negotiation generation completed
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:682
+None
+---
+[2025-02-04 14:48:47,450] [INFO] [negotiationgen] Starting negotiation generation process (PID: 34248)
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:456
+None
+---
+[2025-02-04 14:48:50,691] [INFO] [negotiationgen] Generating scenario 1/2...
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:483
+None
+---
+[2025-02-04 14:48:50,691] [DEBUG] [negotiationgen] Attempt 1/3: Sending request to Ollama
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:343
+None
+---
+[2025-02-04 14:49:42,195] [DEBUG] [negotiationgen] API request completed in 51.50 seconds
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:362
+None
+---
+[2025-02-04 14:49:42,196] [DEBUG] [negotiationgen] Raw API response: {
+  "negotiationId": "ABC123",
+  "topic": {
+    "title": "Acquisition of New Manufacturing Equipment",
+    "description": "Our company, GreenTech Inc., is seeking to expand its production capacity by acquiring new manufacturing equipment. The current equipment is outdated and in need of replacement. We are looking for a reliable partner to supply the necessary equipment.",
+    "context": "The global demand for sustainable energy solutions has increased significantly over the past few years. As a result, we have received numerous inquiries from potential partners interested in collaborating with us.",
+    "industry": "Renewable Energy",
+    "expectedTimeframe": "6-12 months"
+  },
+  "parties": [
+    {
+      "id": "party1",
+      "name": "GreenTech Inc.",
+      "role": "Buyer",
+      "interests": ["Reliable supplier", "Competitive pricing", "High-quality equipment"],
+      "constraints": ["Budget constraints", "Limited time for implementation"],
+      "authorityLevel": "full"
+    },
+    {
+      "id": "party2",
+      "name": "EcoMachines Ltd.",
+      "role": "Seller",
+      "interests": ["Establish long-term relationship", "Gain market share", "Competitive pricing"],
+      "constraints": ["Competitor pressure from other suppliers", "Limited resources for production"],
+      "authorityLevel": "full"
+    }
+  ],
+  "conflictPoints": [
+    {
+      "id": "conflict1",
+      "description": "Price discrepancy",
+      "severity": "medium",
+      "impact": "Delayed implementation and potential loss of market share.",
+      "relatedPoints": ["Quality issues with existing equipment", "Unforeseen production delays"]
+    }
+  ],
+  "negotiablePoints": [
+    {
+      "id": "point1",
+      "topic": "Equipment Pricing",
+      "currentPosition": {
+        "party1Position": "$500,000",
+        "party2Position": "$550,000"
+      },
+      "acceptableRange": {
+        "minimum": "$475,000",
+        "maximum": "$525,000",
+        "preferredOutcome": "$500,000"
+      },
+      "priority": "high",
+      "flexibility": "moderate"
+    }
+  ],
+  "nonNegotiablePoints": [
+    {
+      "id": "nonNeg1",
+      "description": "Equipment Quality Standards",
+      "rationale": "Our company has strict quality standards that must be met to ensure customer satisfaction.",
+      "impact": "Potential damage to our reputation if the equipment does not meet our standards."
+    }
+  ],
+  "walkawayConditions": {
+    "party1Conditions": [
+      {
+        "condition": "Price below minimum acceptable range",
+        "threshold": "$450,000",
+        "reasoning": "If the price falls below this threshold, we risk losing market share to competitors and negatively impact our revenue."
+      }
+    ],
+    "party2Conditions": [
+      {
+        "condition": "Equipment specifications do not meet our standards",
+        "threshold": "Inadequate certification and testing protocols",
+        "reasoning": "If the equipment does not meet our quality standards, we will be forced to consider alternative suppliers."
+      }
+    ]
+  },
+  "strategies": {
+    "overallApproach": "collaborative",
+    "longTermObjectives": [
+      {
+        "objective": "Establish a strong partnership with EcoMachines Ltd. to secure long-term supply agreements and expand our market share.",
+        "importance": "critical",
+        "timeframe": "2-5 years"
+      }
+    ],
+    "relationshipGoals": {
+      "desiredOutcome": "strengthen",
+      "futureInteractions": "establish regular communication channels and joint business planning."
+    }
+  },
+  "tactics": {
+    "openingApproach": {
+      "initialOffer": "$525,000",
+      "anchoringStrategy": "using a high opening offer to set the tone for the negotiation"
+    },
+    "concessionPlan": {
+      "sequence": [
+        {
+          "stage": "Initial discussion and pricing",
+          "possibleConcessions": ["Considering alternative suppliers", "Accepting lower price"],
+          "triggerConditions": ["Party 2's willingness to compromise"]
+        }
+      ],
+      "pacing": "aggressive"
+    },
+    "persuasionTechniques": [
+      {
+        "technique": "reciprocity",
+        "applicationContext": "emphasizing the benefits of our company for EcoMachines Ltd.",
+        "fallbackOptions": ["using social proof"]
+      }
+    ],
+    "informationGathering": {
+      "keyQuestions": ["EcoMachines Ltd.'s current production capacity", "Their target market share"],
+      "observationFocus": ["Partnership opportunities with EcoMachines Ltd."]
+    },
+    "deadlockBreakers": [
+      {
+        "approach": "joint problem-solving",
+        "conditions": "when both parties are willing to compromise and find a mutually beneficial solution.",
+        "risks": "potential for unequal distribution of costs"
+      }
+    ]
+  }
+}
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:365
+None
+---
+[2025-02-04 14:49:42,198] [INFO] [negotiationgen] Successfully generated scenario 1 in 51.51 seconds and saved to Acquisition_of_New_Manufacturing_Equipment_20250204_104942.json
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:646
+None
+---
+[2025-02-04 14:49:42,199] [INFO] [negotiationgen] Generating scenario 2/2...
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:483
+None
+---
+[2025-02-04 14:49:42,199] [DEBUG] [negotiationgen] Attempt 1/3: Sending request to Ollama
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:343
+None
+---
+[2025-02-04 14:50:27,004] [DEBUG] [negotiationgen] API request completed in 44.81 seconds
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:362
+None
+---
+[2025-02-04 14:50:27,004] [DEBUG] [negotiationgen] Raw API response: {
+  "negotiationId": "ABCD1234",
+  "topic": {
+    "title": "Marketing Partnership Expansion",
+    "description": "Our company is considering expanding its marketing partnership with a leading technology firm.",
+    "context": "The expansion would involve increasing our joint marketing efforts and exploring new markets.",
+    "industry": "Technology and Marketing",
+    "expectedTimeframe": "6-12 months"
+  },
+  "parties": [
+    {
+      "id": "party1",
+      "name": "TechCorp",
+      "role": "Partnering Technology Firm",
+      "interests": ["Increased market share", "Improved brand visibility"],
+      "constraints": ["Limited budget for marketing efforts"],
+      "authorityLevel": "full"
+    },
+    {
+      "id": "party2",
+      "name": "OurCompany",
+      "role": "Client Company",
+      "interests": ["Enhanced marketing capabilities", "Expanded product reach"],
+      "constraints": ["Competing priorities within the company"],
+      "authorityLevel": "limited"
+    }
+  ],
+  "conflictPoints": [
+    {
+      "id": "conflict1",
+      "description": "Pricing and Revenue Sharing",
+      "severity": "medium",
+      "impact": "Potential impact on both parties' profits.",
+      "relatedPoints": ["Market conditions", "Competitor pricing"]
+    }
+  ],
+  "negotiablePoints": [
+    {
+      "id": "point1",
+      "topic": "Revenue Sharing Model",
+      "currentPosition": {
+        "party1Position": "TechCorp proposes a 50/50 split, while OurCompany prefers 60/40.",
+        "party2Position": "OurCompany counters with a 55/45 split."
+      },
+      "acceptableRange": {
+        "minimum": "50/50",
+        "maximum": "65/35",
+        "preferredOutcome": "60/40"
+      },
+      "priority": "high",
+      "flexibility": "moderate"
+    }
+  ],
+  "nonNegotiablePoints": [
+    {
+      "id": "nonNeg1",
+      "description": "Geographic Expansion Prioritization",
+      "rationale": "The expansion must prioritize regions with high demand and market growth potential.",
+      "impact": "Impact on market share and revenue."
+    }
+  ],
+  "walkawayConditions": {
+    "party1Conditions": [
+      {
+        "condition": "Unacceptable Revenue Sharing Ratio",
+        "threshold": "Above 65/35",
+        "reasoning": "TechCorp's proposal would result in excessive financial losses for OurCompany."
+      }
+    ],
+    "party2Conditions": [
+      {
+        "condition": "Insufficient Geographic Expansion",
+        "threshold": "Expansion to less than 3 regions within the first year",
+        "reasoning": "OurCompany requires significant market growth and revenue potential from this partnership."
+      }
+    ]
+  },
+  "strategies": {
+    "overallApproach": "collaborative",
+    "longTermObjectives": [
+      {
+        "objective": "Establish a strong presence in the emerging markets.",
+        "importance": "critical",
+        "timeframe": "5 years"
+      }
+    ],
+    "relationshipGoals": {
+      "desiredOutcome": "strengthen",
+      "futureInteractions": "Regular communication and joint marketing initiatives."
+    }
+  },
+  "tactics": {
+    "openingApproach": {
+      "initialOffer": "TechCorp proposes a 55/45 revenue sharing model.",
+      "anchoringStrategy": "We begin with an acceptable offer to set the initial tone for negotiations."
+    },
+    "concessionPlan": {
+      "sequence": [
+        {
+          "stage": "Initial Offer and Response",
+          "possibleConcessions": ["Adjusting the proposal to 50/50"],
+          "triggerConditions": ["OurCompany's first response"]
+        }
+      ],
+      "pacing": "Gradual adjustments over several rounds"
+    },
+    "persuasionTechniques": [
+      {
+        "technique": "reciprocity",
+        "applicationContext": "Using OurCompany's proposed revenue split as a basis for comparison.",
+        "fallbackOptions": ["Highlighting the market growth potential"]
+      }
+    ],
+    "informationGathering": {
+      "keyQuestions": ["Market conditions", "Competitor pricing"],
+      "observationFocus": ["OurCompany's priorities and concerns."
+      ]
+    },
+    "deadlockBreakers": [
+      {
+        "approach": "Joint Problem-Solving",
+        "conditions": "Both parties are willing to compromise on other aspects.",
+        "risks": "Potential for further complications if not carefully managed."
+      }
+    ]
+  }
+}
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:365
+None
+---
+[2025-02-04 14:50:27,005] [INFO] [negotiationgen] Successfully generated scenario 2 in 44.81 seconds and saved to Marketing_Partnership_Expansion_20250204_105027.json
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:646
+None
+---
+[2025-02-04 14:50:27,005] [INFO] [negotiationgen] Negotiation generation completed
+Context: C:\Users\denni\Documents\negotiation-builder\negotiationgen.py:682
+None
+---
