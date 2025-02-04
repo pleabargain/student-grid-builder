@@ -1,53 +1,51 @@
 # Product Context
 
 ## Purpose
-The Student Dialog Builder is designed to create structured, visually appealing student profile cards that combine traditional profile information with rich metadata about student characteristics, behaviors, and aspirations. This tool serves as a foundation for generating more natural and context-aware dialog systems for educational applications.
+The Negotiation Generator is designed to create realistic, detailed negotiation scenarios for training, simulation, and analysis purposes. It leverages the llama3.2 language model to generate comprehensive negotiation scenarios that follow a structured schema.
 
 ## Problems Solved
+1. **Training Data Generation**
+   - Creates diverse negotiation scenarios for training purposes
+   - Generates consistent, well-structured data
+   - Provides realistic negotiation contexts
 
-1. **Structured Student Data Representation**
-   - Organizes complex student attributes in a clear, hierarchical structure
-   - Combines factual data with behavioral and psychological insights
-   - Enforces data consistency through JSON schema validation
+2. **Scenario Complexity**
+   - Handles multi-party negotiations
+   - Manages conflicting interests
+   - Generates realistic constraints and conditions
 
-2. **Visual Profile Management**
-   - Presents student information in an intuitive grid layout
-   - Uses emoji indicators for quick visual recognition
-   - Implements responsive design for various screen sizes
+3. **Data Quality**
+   - Ensures schema compliance
+   - Validates logical consistency
+   - Maintains realistic relationships between elements
 
-3. **Categorized Trait System**
-   - Separates student traits into meaningful categories:
-     * Character: Personal qualities and interpersonal skills
-     * Business: Professional and organizational capabilities
-     * Psychology: Mental and emotional characteristics
-     * Desires: Goals and aspirations
+## Core Functionality
 
-4. **Dynamic Behavior Tagging**
-   - Captures student actions through verb tags
-   - Describes student qualities through adjective tags
-   - Enables quick filtering and pattern recognition
+### Generation Engine
+- Uses llama3.2 model via Ollama
+- Implements structured prompting
+- Handles complex JSON generation
 
-## Intended Usage
+### Validation System
+- Schema validation using Pydantic
+- Logical consistency checks
+- Error handling and recovery
 
-The system is designed to:
-1. Help educators better understand student profiles
-2. Support the development of personalized learning experiences
-3. Aid in creating more natural student-system interactions
-4. Facilitate pattern recognition in student behaviors and characteristics
+### Output Management
+- JSON file generation
+- Error logging
+- Progress tracking
+
+## Expected Behavior
+1. Accept user input for scenario parameters
+2. Generate complete negotiation scenario
+3. Validate against schema
+4. Save to structured output
+5. Provide error handling and logging
 
 ## Success Criteria
-
-1. **Data Quality**
-   - All student profiles conform to the defined JSON schema
-   - Categories and traits are meaningful and well-organized
-   - Emoji indicators are contextually appropriate
-
-2. **User Experience**
-   - Profile cards are easily scannable
-   - Information hierarchy is clear and intuitive
-   - Interface is responsive and accessible
-
-3. **System Performance**
-   - Fast loading of student profiles
-   - Efficient error handling and logging
-   - Scalable to handle multiple student records
+- Generated scenarios match schema
+- Content is logically consistent
+- Error handling is robust
+- Performance is reliable
+- Output is useful for training/simulation

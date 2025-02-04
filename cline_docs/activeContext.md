@@ -1,64 +1,56 @@
 # Active Context
 
-## Current State
-Last Updated: 2025-02-04T06:25:50.000Z
+## Current Task
+Creating negotiationgen.py - a Python script to generate negotiation scenarios using llama3.2
 
-### Active Development
-The Student Dialog Builder is currently in its initial release state with core functionality complete. The system successfully:
-- Serves student profile data through a Flask backend
-- Displays profiles in a responsive grid layout
-- Implements comprehensive error logging
-- Uses structured JSON data with schema validation
+## Current Status
+- Implementation complete
+- Ready for testing and validation
 
-### Recent Changes
-1. Initial system implementation completed
-2. Core documentation created:
-   - Project overview and architecture
-   - Product context and goals
-   - System patterns and technical decisions
-   - Development setup and guidelines
-   - Progress tracking
+## Recent Changes
+[2025-02-04T09:31:46.000Z]
+- Created initial project structure
+- Added requirements.txt
+- Created documentation files
 
-### Current Focus
-Documentation and system stabilization phase:
-1. Comprehensive documentation created
-2. Core functionality verified
-3. Error handling implemented
-4. Basic user interface complete
+[2025-02-04T09:34:46.000Z]
+- Completed negotiationgen.py implementation
+- Implemented Pydantic models for schema validation
+- Added error handling and logging system
+- Set up Ollama integration with llama3.2
 
 ## Next Steps
+1. Testing Phase:
+   - Run test scenarios
+   - Validate output quality
+   - Monitor error logs
+   - Check schema compliance
 
-### Immediate Actions
-1. Begin gathering user feedback on:
-   - Profile card layout
-   - Category organization
-   - Tag system effectiveness
-   - Overall user experience
+2. Validation Priorities:
+   - Test error handling
+   - Verify JSON schema compliance
+   - Check logical consistency
+   - Validate logging system
 
-2. Monitor system performance:
-   - Error log analysis
-   - Template rendering speed
-   - JSON data loading efficiency
+3. Testing Requirements:
+   - Schema validation
+   - Error handling
+   - Generation quality
+   - Performance metrics
 
-3. Plan first iteration of improvements:
-   - Prioritize planned features
-   - Define acceptance criteria
-   - Create development timeline
+## Current Challenges
+- Complex schema structure needs careful Pydantic modeling
+- Need to ensure logical consistency in generated scenarios
+- Must handle potential Ollama API failures gracefully
 
-### Upcoming Work
-Based on the progress.md file, the next development phase will focus on:
-1. Data Management improvements
-2. Search and filter capabilities
-3. User interface enhancements
+## Dependencies
+- Ollama with llama3.2 model
+- Python packages:
+  - ollama
+  - pydantic
+  - python-json-logger
 
-### Technical Debt
-No significant technical debt at this stage, but areas to watch:
-1. JSON file scaling
-2. Error log rotation
-3. Template performance with larger datasets
-
-## Current Environment
-- Development server running on localhost:5000
-- File-based JSON storage
-- Error logging active
-- Debug mode enabled
+## Notes
+- Following patterns from charactergen.py
+- Using JSON schema from negotiation-schema.json
+- Implementing comprehensive error logging

@@ -2,134 +2,108 @@
 
 ## Architecture Overview
 
-The Student Dialog Builder follows a simple but effective web application architecture:
-
-1. **Server Layer (Flask)**
-   - Single endpoint (/) handling GET requests
-   - JSON file-based data storage
-   - Error logging with rotation
-   - Template rendering with Jinja2
-
-2. **Data Layer**
-   - JSON Schema validation
-   - Structured student profile data
-   - File-based persistence
-
-3. **Presentation Layer**
-   - Responsive grid layout
-   - CSS-based card components
-   - Dynamic tag rendering
-   - Category-based information grouping
-
-## Key Technical Decisions
-
-### 1. Flask Framework
-- **Why**: Lightweight, easy to set up, perfect for single-page applications
-- **Benefits**:
-  * Simple routing system
-  * Built-in template engine
-  * Easy error handling
-  * Development server included
-
-### 2. JSON Data Storage
-- **Why**: Simple, human-readable, schema-validated data format
-- **Benefits**:
-  * No database setup required
-  * Easy to version control
-  * Schema enforcement
-  * Simple to modify and extend
-
-### 3. CSS Grid Layout
-- **Why**: Modern, responsive layout system
-- **Benefits**:
-  * Automatic responsive behavior
-  * Clean, maintainable CSS
-  * Flexible card sizing
-  * Gap handling built-in
-
-### 4. Error Logging
-- **Why**: Centralized error tracking and debugging
-- **Implementation**:
-  * RotatingFileHandler for log management
-  * Structured log format
-  * Exception capture and logging
-
-## Data Patterns
-
-### Student Profile Schema
-```json
-{
-  "name": "string",
-  "verbs": ["string"],
-  "adjectives": ["string"],
-  "categories": {
-    "character": [{"text": "string", "emoji": "string"}],
-    "business": [{"text": "string", "emoji": "string"}],
-    "psychology": [{"text": "string", "emoji": "string"}],
-    "desires": [{"text": "string", "emoji": "string"}]
-  }
-}
+### Core Components
+```mermaid
+graph TD
+    A[User Interface] --> B[Generation Engine]
+    B --> C[Validation Layer]
+    C --> D[Output Handler]
+    
+    subgraph Generation Engine
+        B1[Ollama Client] --> B2[JSON Constructor]
+        B2 --> B3[Content Validator]
+    end
+    
+    subgraph Validation Layer
+        C1[Schema Validator] --> C2[Logic Validator]
+        C2 --> C3[Consistency Checker]
+    end
 ```
 
-### Category Pattern
-Each category follows the pattern:
-```json
-{
-  "text": "Human readable description",
-  "emoji": "Visual indicator"
-}
-```
+## Technical Decisions
 
-## UI Patterns
+### 1. Model Selection
+- Using llama3.2 via Ollama
+- Reasons:
+  * Proven capability for structured output
+  * Good performance with JSON generation
+  * Consistent with existing system
 
-### Card Component
-- Consistent padding and spacing
-- Box shadow for depth
-- Rounded corners
-- White background
-- Light border
+### 2. Data Validation
+- Pydantic for schema validation
+- Benefits:
+  * Type safety
+  * Automatic validation
+  * Clear error messages
+  * JSON schema support
 
-### Tag System
-- Pill-shaped design
-- Light background
-- Flexible wrapping
-- Consistent spacing
+### 3. Error Handling
+- Hierarchical error system
+- Categories:
+  * API Errors
+  * Validation Errors
+  * JSON Processing Errors
+  * General Errors
 
-### Category Display
-- Title in bold
-- Items in flex container
-- Emoji + text combination
-- Consistent spacing between items
+### 4. Logging System
+- Rotating file logs
+- Structured logging format
+- Separate error and general logs
 
-## Error Handling Pattern
+## Design Patterns
 
-1. Try-Except Block:
-```python
-try:
-    # Operation
-except Exception as e:
-    logger.error(f"Error message: {str(e)}")
-    return error_response
-```
+### 1. Factory Pattern
+- Used for scenario generation
+- Separates creation logic
+- Enables extensibility
 
-2. Log Format:
-```
-timestamp - name - level - message
-```
+### 2. Strategy Pattern
+- Handles different generation approaches
+- Allows for future expansion
+- Maintains clean interfaces
 
-## Future-Proof Patterns
+### 3. Observer Pattern
+- Monitors generation progress
+- Handles logging events
+- Manages error reporting
 
-1. **Extensible Data Schema**
-   - Categories can be added/modified
-   - New profile attributes can be included
-   - Emoji system can be expanded
+## Best Practices
 
-2. **Responsive Design**
-   - Grid adapts to screen size
-   - Card components are flexible
-   - Text wraps appropriately
+### Code Organization
+- Clear module structure
+- Separation of concerns
+- Consistent naming conventions
 
-3. **Error Management**
-   - Centralized logging
-   - Structured error responses
-   - Debug-friendly messages
+### Error Management
+- Comprehensive error hierarchy
+- Detailed error messages
+- Proper error propagation
+
+### Validation Strategy
+- Multi-layer validation
+- Early failure detection
+- Clear feedback mechanisms
+
+## Performance Considerations
+
+### Optimization Points
+- Caching mechanisms
+- Batch processing
+- Resource management
+
+### Scalability
+- Modular design
+- Configurable components
+- Resource efficient
+
+## Testing Strategy
+
+### Unit Tests
+- Component isolation
+- Error case coverage
+- Boundary testing
+
+### Integration Tests
+- End-to-end workflows
+- System interaction
+- Performance metrics
