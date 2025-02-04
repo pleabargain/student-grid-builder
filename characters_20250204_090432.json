@@ -1,0 +1,118 @@
+{
+  "students": [
+    {
+      "name": "Evelyn A. Thompson",
+      "verbs": [
+        "manages",
+        "negotiates",
+        "analyzes",
+        "communicates"
+      ],
+      "adjectives": [
+        "pragmatic",
+        "assertive",
+        " analytical",
+        "compassionate"
+      ],
+      "categories": {
+        "character": [
+          {
+            "text": "Driven and results-oriented, Evelyn always strives to achieve her goals.",
+            "emoji": ""
+          },
+          {
+            "text": "Despite her tough exterior, Evelyn has a soft spot for those in need and is fiercely loyal to her friends and family.",
+            "emoji": ""
+          }
+        ],
+        "business": [
+          {
+            "text": "Evelyn has extensive experience in business development and strategic planning, with a proven track record of driving growth and revenue increases.",
+            "emoji": ""
+          },
+          {
+            "text": "She is skilled at building and maintaining strong relationships with clients, partners, and colleagues, which has been key to her success in the industry.",
+            "emoji": ""
+          }
+        ],
+        "psychology": [
+          {
+            "text": "Evelyn's type-A personality can sometimes lead to stress and burnout if she doesn't prioritize self-care and set healthy boundaries.",
+            "emoji": ""
+          },
+          {
+            "text": "Despite her competitive nature, Evelyn is deeply empathetic and has a strong sense of justice, which motivates her to advocate for underrepresented groups and causes.",
+            "emoji": ""
+          }
+        ],
+        "desires": [
+          {
+            "text": "Evelyn hopes to one day start her own business or non-profit organization that focuses on promoting women's empowerment and education in developing countries.",
+            "emoji": ""
+          },
+          {
+            "text": "She also dreams of traveling the world and experiencing different cultures, which she believes will broaden her perspective and help her become a more well-rounded person.",
+            "emoji": ""
+          }
+        ]
+      }
+    },
+    {
+      "name": "Eleanor Victoria Thompson",
+      "verbs": [
+        "manages",
+        "negotiates",
+        "analyzes",
+        "strategizes"
+      ],
+      "adjectives": [
+        "pragmatic",
+        "results-driven",
+        "empathetic",
+        "competitive"
+      ],
+      "categories": {
+        "character": [
+          {
+            "text": "Perseveres through challenges with determination and resilience 🏋️‍♀️",
+            "emoji": "🏋️‍♀️"
+          },
+          {
+            "text": "Values honesty and transparency in all professional interactions 💼",
+            "emoji": "💼"
+          }
+        ],
+        "business": [
+          {
+            "text": "Has expertise in marketing strategy and team leadership 📈",
+            "emoji": "📈"
+          },
+          {
+            "text": "Is skilled in data analysis and visualization using tools like Excel and Tableau 📊",
+            "emoji": "📊"
+          }
+        ],
+        "psychology": [
+          {
+            "text": "Recognizes the importance of self-care and stress management for overall well-being 🧘‍♀️",
+            "emoji": "🧘‍♀️"
+          },
+          {
+            "text": "Empathizes with others' perspectives and can effectively communicate in a team setting 👥",
+            "emoji": "👥"
+          }
+        ],
+        "desires": [
+          {
+            "text": "Seeks opportunities for professional growth and leadership development 💼",
+            "emoji": "💼"
+          },
+          {
+            "text": "Wants to make a positive impact on her community through volunteer work 🌎",
+            "emoji": "🌎"
+          }
+        ]
+      }
+    }
+  ]
+}

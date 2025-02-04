@@ -1,4 +1,21 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Tab functionality
+    const tabButtons = document.querySelectorAll('.tab-button');
+    const tabContents = document.querySelectorAll('.tab-content');
+    
+    tabButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const tabId = button.getAttribute('data-tab');
+            
+            // Update active states
+            tabButtons.forEach(btn => btn.classList.remove('active'));
+            tabContents.forEach(content => content.classList.remove('active'));
+            
+            button.classList.add('active');
+            document.getElementById(tabId + 'Tab').classList.add('active');
+        });
+    });
+
     const studentForm = document.getElementById('studentForm');
     const studentNameInput = document.getElementById('studentName');
     const gridContainer = document.getElementById('gridContainer');
@@ -8,109 +25,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const closeModalBtn = document.getElementById('closeModal');
     const loadJsonBtn = document.getElementById('loadJson');
     const jsonFileInput = document.getElementById('jsonFileInput');
+    const clearAllBtn = document.getElementById('clearAll');
 
     // Track used words in the session
     let usedVerbs = new Set();
     let usedAdjectives = new Set();
     
-    const adjectives = [
-        'creative', 'intelligent', 'curious', 'diligent', 'ambitious',
-        'thoughtful', 'innovative', 'focused', 'dedicated', 'resourceful',
-        'analytical', 'enthusiastic', 'organized', 'persistent', 'adaptable',
-        'collaborative', 'confident', 'dynamic', 'efficient', 'flexible',
-        'insightful', 'logical', 'motivated', 'observant', 'proactive',
-        'reliable', 'strategic', 'systematic', 'versatile', 'visionary',
-        'articulate', 'balanced', 'competent', 'determined', 'empathetic',
-        'forward-thinking', 'genuine', 'harmonious', 'imaginative', 'judicious',
-        'creative', 'intelligent', 'curious', 'diligent', 'ambitious',
-    'thoughtful', 'innovative', 'focused', 'dedicated', 'resourceful',
-    'analytical', 'enthusiastic', 'organized', 'persistent', 'adaptable',
-    'collaborative', 'confident', 'dynamic', 'efficient', 'flexible',
-    'insightful', 'logical', 'motivated', 'observant', 'proactive',
-    'reliable', 'strategic', 'systematic', 'versatile', 'visionary',
-    'articulate', 'balanced', 'competent', 'determined', 'empathetic',
-    'forward-thinking', 'genuine', 'harmonious', 'imaginative', 'judicious',
-    'knowledgeable', 'methodical', 'nurturing', 'optimistic', 'passionate',
-    'quick-thinking', 'resilient', 'skillful', 'thorough', 'understanding',
-    'valuable', 'wise', 'zealous', 'authentic', 'brilliant',
-    'capable', 'diplomatic', 'energetic', 'faithful', 'graceful',
-    'helpful', 'independent', 'judicial', 'kind', 'learned',
-    'mindful', 'noble', 'objective', 'practical', 'qualified',
-    'respectful', 'sincere', 'talented', 'unifying', 'vigilant',
-    'wholehearted', 'expert', 'youthful', 'zestful', 'ambitious',
-    'astute', 'broadminded', 'conscientious', 'decisive', 'enterprising',
-    'fair-minded', 'growth-oriented', 'honorable', 'innovative', 'judicious',
-    'keen', 'leading-edge', 'masterful', 'notable', 'open-minded',
-    'perceptive', 'quality-driven', 'results-oriented', 'successful', 'trustworthy',
-    'accomplished', 'adept', 'agile', 'assertive', 'attentive',
-    'bold', 'candid', 'committed', 'communicative', 'constructive',
-    'courageous', 'credible', 'cultivated', 'dependable', 'detail-oriented',
-    'disciplined', 'dutiful', 'effective', 'eloquent', 'ethical',
-    'exceptional', 'exemplary', 'experienced', 'far-sighted', 'forthright',
-    'goal-oriented', 'grounded', 'guiding', 'hardworking', 'humble',
-    'idealistic', 'influential', 'inspiring', 'intellectual', 'intuitive',
-    'inventive', 'invested', 'leadership-oriented', 'learned', 'mature',
-    'measured', 'mentoring', 'meticulous', 'multifaceted', 'patient',
-    'persevering', 'persuasive', 'pioneering', 'precise', 'principled',
-    'professional', 'proficient', 'progressive', 'punctual', 'purposeful',
-    'rational', 'receptive', 'reflective', 'resolute', 'responsible',
-    'sagacious', 'scholarly', 'self-aware', 'service-oriented', 'sharp',
-    'steadfast', 'team-oriented', 'tenacious', 'transformative', 'transparent',
-    'unbiased', 'upstanding', 'value-driven', 'well-rounded', 'willing',
-        'knowledgeable', 'methodical', 'nurturing', 'optimistic', 'passionate',
-        'quick-thinking', 'resilient', 'skillful', 'thorough', 'understanding',
-        'valuable', 'wise', 'zealous', 'authentic', 'brilliant',
-        'capable', 'diplomatic', 'energetic', 'faithful', 'graceful',
-        'helpful', 'independent', 'judicial', 'kind', 'learned',
-        'mindful', 'noble', 'objective', 'practical', 'qualified',
-        'respectful', 'sincere', 'talented', 'unifying', 'vigilant',
-        'wholehearted', 'expert', 'youthful', 'zestful', 'ambitious',
-        'astute', 'broadminded', 'conscientious', 'decisive', 'enterprising',
-        'fair-minded', 'growth-oriented', 'honorable', 'innovative', 'judicious',
-        'keen', 'leading-edge', 'masterful', 'notable', 'open-minded',
-        'perceptive', 'quality-driven', 'results-oriented', 'successful', 'trustworthy'
-    ];
-
-    const verbs = [
-        'running', 'jumping', 'dancing', 'singing', 'reading',
-        'writing', 'coding', 'drawing', 'painting', 'studying',
-        'thinking', 'creating', 'building', 'designing', 'exploring',
-        'swimming', 'skating', 'cycling', 'jogging', 'hiking',
-        'running', 'jumping', 'dancing', 'singing', 'reading',
-'writing', 'coding', 'drawing', 'painting', 'studying',
-'thinking', 'creating', 'building', 'designing', 'exploring',
-'swimming', 'skating', 'cycling', 'jogging', 'hiking',
-'climbing', 'cooking', 'baking', 'brewing', 'crafting',
-'teaching', 'learning', 'playing', 'practicing', 'performing',
-'sculpting', 'knitting', 'sewing', 'weaving', 'carving',
-'planning', 'organizing', 'analyzing', 'researching', 'testing',
-'exercising', 'stretching', 'meditating', 'breathing', 'relaxing',
-'filming', 'editing', 'recording', 'mixing', 'producing',
-'gardening', 'planting', 'growing', 'nurturing', 'harvesting',
-'typing', 'clicking', 'scrolling', 'browsing', 'searching',
-'sketching', 'doodling', 'coloring', 'shading', 'illustrating',
-'programming', 'debugging', 'testing', 'deploying', 'maintaining',
-'writing', 'drafting', 'editing', 'revising', 'publishing',
-'composing', 'arranging', 'conducting', 'practicing', 'performing',
-'photographing', 'capturing', 'processing', 'printing', 'sharing',
-'brainstorming', 'ideating', 'conceptualizing', 'planning', 'executing',
-'measuring', 'calculating', 'computing', 'solving', 'proving',
-'presenting', 'speaking', 'teaching', 'explaining', 'demonstrating',
-'archiving', 'cataloging', 'organizing', 'sorting', 'filing',
-'innovating', 'inventing', 'discovering', 'experimenting', 'testing',
-'directing', 'managing', 'leading', 'coordinating', 'facilitating',
-        'climbing', 'cooking', 'baking', 'brewing', 'crafting',
-        'teaching', 'learning', 'playing', 'practicing', 'performing', 
-        'sculpting', 'knitting', 'sewing', 'weaving', 'carving',
-        'planning', 'organizing', 'analyzing', 'researching', 'testing',
-        'exercising', 'stretching', 'meditating', 'breathing', 'relaxing',
-        'filming', 'editing', 'recording', 'mixing', 'producing',
-        'gardening', 'planting', 'growing', 'nurturing', 'harvesting',
-        'typing', 'clicking', 'scrolling', 'browsing', 'searching',
-        'sketching', 'doodling', 'coloring', 'shading', 'illustrating',
-        'programming', 'debugging', 'testing', 'deploying', 'maintaining',
-    ];
-
     // Load existing students from localStorage
     let students = JSON.parse(localStorage.getItem('students') || '[]');
     
@@ -151,19 +71,105 @@ document.addEventListener('DOMContentLoaded', () => {
         return getRandomItems(adjectives, usedAdjectives);
     }
 
+    // Error logging function
+    async function logError(error, context = '') {
+        const timestamp = new Date().toISOString();
+        const errorLog = `[${timestamp}] [ERROR] ${context}\n${error.stack || error}\n---\n`;
+        
+        console.error(errorLog);
+        
+        // Append to error.log file
+        try {
+            const response = await fetch('/log-error', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'text/plain',
+                },
+                body: errorLog
+            });
+            
+            if (!response.ok) {
+                console.error('Failed to log error to server');
+            }
+        } catch (e) {
+            // If server is not running, write to error.log directly
+            const fs = require('fs');
+            fs.appendFileSync('error.log', errorLog + '\n');
+        }
+    }
+
+    // Parse comma-separated input with emoji
+    function parseCommaInput(input) {
+        return input.split(',').map(item => {
+            const trimmed = item.trim();
+            // Extract emoji and text
+            const match = trimmed.match(/^(.*?)(\s*[^\w\s]+)$/);
+            if (match) {
+                return {
+                    text: match[1].trim(),
+                    emoji: match[2].trim()
+                };
+            }
+            // If no emoji found, return text only
+            return {
+                text: trimmed,
+                emoji: '📌' // Default emoji
+            };
+        }).filter(item => item.text); // Remove empty entries
+    }
+
     studentForm.addEventListener('submit', (e) => {
         e.preventDefault();
         
-        const name = studentNameInput.value.trim();
-        if (name) {
-            students.push({
+        try {
+            const name = studentNameInput.value.trim();
+            if (!name) {
+                throw new Error('Name is required');
+            }
+
+            const newStudent = {
                 name,
                 verbs: getRandomVerbs(),
-                adjectives: getRandomAdjectives()
-            });
+                adjectives: getRandomAdjectives(),
+                categories: {
+                    desires: parseCommaInput(document.getElementById('desires').value),
+                    psychology: parseCommaInput(document.getElementById('psychology').value),
+                    business: parseCommaInput(document.getElementById('business').value),
+                    character: parseCommaInput(document.getElementById('character').value)
+                }
+            };
+
+            students.push(newStudent);
             localStorage.setItem('students', JSON.stringify(students));
             updateGrid();
-            studentNameInput.value = '';
+
+            // Reset form
+            studentForm.reset();
+
+            // Show success message
+            const successMsg = document.createElement('div');
+            successMsg.className = 'success-message';
+            successMsg.textContent = 'Student added successfully!';
+            studentForm.insertBefore(successMsg, studentForm.firstChild);
+
+            // Remove success message after 3 seconds
+            setTimeout(() => {
+                successMsg.remove();
+            }, 3000);
+
+        } catch (error) {
+            logError(error, 'Error adding student');
+            
+            // Show error message to user
+            const errorMsg = document.createElement('div');
+            errorMsg.className = 'error-message';
+            errorMsg.textContent = error.message || 'Error adding student';
+            studentForm.insertBefore(errorMsg, studentForm.firstChild);
+
+            // Remove error message after 5 seconds
+            setTimeout(() => {
+                errorMsg.remove();
+            }, 5000);
         }
     });
 
@@ -180,9 +186,61 @@ document.addEventListener('DOMContentLoaded', () => {
             
             const nameDiv = document.createElement('div');
             nameDiv.className = 'student-name';
-            nameDiv.textContent = student.name || student; // Handle legacy data format
+            nameDiv.textContent = student.name || student;
             
+            // Create new sections
+            const createSection = (title, items, emoji) => {
+                const container = document.createElement('div');
+                container.className = 'section-container';
+                
+                const sectionTitle = document.createElement('div');
+                sectionTitle.className = 'section-title';
+                sectionTitle.innerHTML = `${emoji} ${title}`;
+                
+                const list = document.createElement('ul');
+                list.className = 'section-list';
+                
+                // Select and display one random item from the category
+                if (items && items.length > 0) {
+                    const randomItem = items[Math.floor(Math.random() * items.length)];
+                    const li = document.createElement('li');
+                    li.className = 'section-item';
+                    li.innerHTML = `<span class="emoji-large">${randomItem.emoji}</span> ${randomItem.text}`;
+                    list.appendChild(li);
+                }
+                
+                const divider = document.createElement('div');
+                divider.className = 'section-divider';
+                
+                container.appendChild(sectionTitle);
+                container.appendChild(list);
+                container.appendChild(divider);
+                return container;
+            };
+
+            // Add sections in correct order
+            card.appendChild(deleteBtn);
+            card.appendChild(nameDiv);
+            
+            if (student.categories) {
+                const sections = [
+                    { name: 'CHARACTER', data: student.categories.character, emoji: '👤' },
+                    { name: 'BUSINESS', data: student.categories.business, emoji: '💼' },
+                    { name: 'PSYCHOLOGY', data: student.categories.psychology, emoji: '🧠' },
+                    { name: 'DESIRES', data: student.categories.desires, emoji: '💫' }
+                ];
+
+                sections.forEach(section => {
+                    if (section.data) {
+                        card.appendChild(createSection(section.name, section.data, section.emoji));
+                    }
+                });
+            }
+
             // Create verbs section
+            const verbContainer = document.createElement('div');
+            verbContainer.className = 'section-container';
+            
             const verbTitle = document.createElement('div');
             verbTitle.className = 'section-title';
             verbTitle.textContent = 'VERBS';
@@ -190,7 +248,6 @@ document.addEventListener('DOMContentLoaded', () => {
             const verbList = document.createElement('ul');
             verbList.className = 'section-list verb-list';
             
-            // Handle both new and legacy data formats
             if (student.verbs) {
                 student.verbs.forEach(verb => {
                     const li = document.createElement('li');
@@ -202,14 +259,20 @@ document.addEventListener('DOMContentLoaded', () => {
                     li.appendChild(link);
                     verbList.appendChild(li);
                 });
-            } else {
-                const li = document.createElement('li');
-                li.className = 'section-item';
-                li.textContent = student.verb || verbs[Math.floor(Math.random() * verbs.length)];
-                verbList.appendChild(li);
             }
 
+            const verbDivider = document.createElement('div');
+            verbDivider.className = 'section-divider';
+            
+            verbContainer.appendChild(verbTitle);
+            verbContainer.appendChild(verbList);
+            verbContainer.appendChild(verbDivider);
+            card.appendChild(verbContainer);
+
             // Create adjectives section
+            const adjectiveContainer = document.createElement('div');
+            adjectiveContainer.className = 'section-container';
+            
             const adjectiveTitle = document.createElement('div');
             adjectiveTitle.className = 'section-title';
             adjectiveTitle.textContent = 'ADJECTIVES';
@@ -217,46 +280,6 @@ document.addEventListener('DOMContentLoaded', () => {
             const adjectiveList = document.createElement('ul');
             adjectiveList.className = 'section-list adjective-list';
 
-            // Create new sections
-            const createSection = (title, items, emoji) => {
-                const container = document.createElement('div');
-                const sectionTitle = document.createElement('div');
-                sectionTitle.className = 'section-title';
-                sectionTitle.innerHTML = `${emoji} ${title}`;
-                
-                const list = document.createElement('ul');
-                list.className = 'section-list';
-                
-                // Select and display one random item from the category
-                if (items.length > 0) {
-                    const randomItem = items[Math.floor(Math.random() * items.length)];
-                    const li = document.createElement('li');
-                    li.className = 'section-item';
-                    li.innerHTML = `<span class="emoji-large">${randomItem.emoji}</span> ${randomItem.text}`;
-                    list.appendChild(li);
-                }
-                
-                container.appendChild(sectionTitle);
-                container.appendChild(list);
-                return container;
-            };
-
-            // Add new sections
-            if (student.categories) {
-                if (student.categories.character) {
-                    card.appendChild(createSection('CHARACTER', student.categories.character, '👤'));
-                }
-                if (student.categories.business) {
-                    card.appendChild(createSection('BUSINESS', student.categories.business, '💼'));
-                }
-                if (student.categories.psychology) {
-                    card.appendChild(createSection('PSYCHOLOGY', student.categories.psychology, '🧠'));
-                }
-                if (student.categories.desires) {
-                    card.appendChild(createSection('DESIRES', student.categories.desires, '💫'));
-                }
-            }
-            
             if (student.adjectives) {
                 student.adjectives.forEach(adjective => {
                     const li = document.createElement('li');
@@ -269,13 +292,15 @@ document.addEventListener('DOMContentLoaded', () => {
                     adjectiveList.appendChild(li);
                 });
             }
+
+            const adjectiveDivider = document.createElement('div');
+            adjectiveDivider.className = 'section-divider';
             
-            card.appendChild(deleteBtn);
-            card.appendChild(nameDiv);
-            card.appendChild(verbTitle);
-            card.appendChild(verbList);
-            card.appendChild(adjectiveTitle);
-            card.appendChild(adjectiveList);
+            adjectiveContainer.appendChild(adjectiveTitle);
+            adjectiveContainer.appendChild(adjectiveList);
+            adjectiveContainer.appendChild(adjectiveDivider);
+            card.appendChild(adjectiveContainer);
+
             gridContainer.appendChild(card);
         });
     }
@@ -378,4 +403,49 @@ document.addEventListener('DOMContentLoaded', () => {
         };
         reader.readAsText(file);
     });
+
+    // Clear All functionality
+    clearAllBtn.addEventListener('click', () => {
+        if (students.length === 0) {
+            alert('No students to clear.');
+            return;
+        }
+
+        if (confirm('Are you sure you want to clear all students? This action cannot be undone.')) {
+            // Clear all data
+            students = [];
+            localStorage.setItem('students', JSON.stringify(students));
+            usedVerbs.clear();
+            usedAdjectives.clear();
+            
+            // Update the grid
+            updateGrid();
+
+            // Show success message
+            const successMsg = document.createElement('div');
+            successMsg.className = 'success-message';
+            successMsg.textContent = 'All students have been cleared successfully!';
+            gridContainer.insertAdjacentElement('beforebegin', successMsg);
+
+            // Remove success message after 3 seconds
+            setTimeout(() => {
+                successMsg.remove();
+            }, 3000);
+        }
+    });
 });
+
+// Adjectives and verbs arrays
+const adjectives = [
+    'creative', 'intelligent', 'curious', 'diligent', 'ambitious',
+    'thoughtful', 'innovative', 'focused', 'dedicated', 'resourceful',
+    'analytical', 'enthusiastic', 'organized', 'persistent', 'adaptable',
+    'collaborative', 'confident', 'dynamic', 'efficient', 'flexible'
+];
+
+const verbs = [
+    'running', 'jumping', 'dancing', 'singing', 'reading',
+    'writing', 'coding', 'drawing', 'painting', 'studying',
+    'thinking', 'creating', 'building', 'designing', 'exploring',
+    'swimming', 'skating', 'cycling', 'jogging', 'hiking'
+];

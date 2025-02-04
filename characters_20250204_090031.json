@@ -1,0 +1,59 @@
+[
+  {
+    "name": "Alexander Ryan Thompson",
+    "verbs": [
+      "communicates",
+      "analyzes",
+      "problem solves",
+      "delegates"
+    ],
+    "adjectives": [
+      "strategic",
+      "result-driven",
+      "collaborative",
+      "forward-thinking"
+    ],
+    "categories": {
+      "character": [
+        {
+          "text": "Ambitious and driven",
+          "emoji": "📈"
+        },
+        {
+          "text": "Empathetic and understanding",
+          "emoji": "💡"
+        }
+      ],
+      "business": [
+        {
+          "text": "Leadership and management",
+          "emoji": "👥"
+        },
+        {
+          "text": "Strategic planning and execution",
+          "emoji": "📊"
+        }
+      ],
+      "psychology": [
+        {
+          "text": "Self-awareness and introspection",
+          "emoji": "💭"
+        },
+        {
+          "text": "Adaptability and resilience",
+          "emoji": "💪"
+        }
+      ],
+      "desires": [
+        {
+          "text": "Personal growth and development",
+          "emoji": "📚"
+        },
+        {
+          "text": "Building a successful business venture",
+          "emoji": "🏢"
+        }
+      ]
+    }
+  }
+]

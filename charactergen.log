@@ -1,0 +1,1248 @@
+2025-02-04 12:39:00,058 - charactergen - INFO - Starting character generation process
+2025-02-04 12:39:02,578 - charactergen - INFO - Generating character 1/1...
+2025-02-04 12:39:02,578 - charactergen - DEBUG - Sending request to Ollama API
+2025-02-04 12:39:25,039 - charactergen - ERROR - Error parsing generated JSON: Expecting value: line 1 column 1 (char 0)
+2025-02-04 12:39:25,065 - charactergen - ERROR - Error during character generation: Expecting value: line 1 column 1 (char 0)
+2025-02-04 12:39:25,067 - charactergen - DEBUG - Sending request to Ollama API
+2025-02-04 12:39:43,037 - charactergen - DEBUG - Raw API response: {"model":"llama3.2","created_at":"2025-02-04T08:39:43.0358028Z","response":"Here is a character profile in JSON format:\n\n```\n{\n    \"name\": \"Ethan Thompson\",\n    \"verbs\": [\n        {\"verb\": \"Innovate\", \"description\": \"Create new ideas and solutions\"},\n        {\"verb\": \"Negotiate\", \"description\": \"Discuss and agree on terms with others\"},\n        {\"verb\": \"Lead\", \"description\": \"Guide and direct a team or project\"}\n    ],\n    \"adjectives\": [\n        {\"adjective\": \"Ambitious\", \"description\": \"Driven to succeed\"},\n        {\"adjective\": \"Charismatic\", \"description\": \"Attractive and persuasive\"},\n        {\"adjective\": \"Resourceful\", \"description\": \"Skilled at finding creative solutions\"}\n    ],\n    \"categories\": {\n        \"Character Traits\": [\n            {\"trait\": \"Perfectionist\", \"description\": \"Strives for flawlessness in all aspects of life\"},\n            {\"trait\": \"Competitive\", \"description\": \"Always strives to be the best\"}\n        ],\n        \"Business Skills\": [\n            {\"skill\": \"Strategic Thinking\", \"description\": \"Ability to think critically and make sound decisions\"},\n            {\"skill\": \"Communication\", \"description\": \"Effective at conveying ideas and building relationships\"}\n        ],\n        \"Psychological Traits\": [\n            {\"trait\": \"Introverted\", \"description\": \"Prefers solo time and can feel overwhelmed by large crowds\"},\n            {\"trait\": \"Emotionally Intelligent\", \"description\": \"Self-aware and able to manage emotions in a healthy way\"}\n        ],\n        \"Desires\": [\n            {\"desire\": \"Success\", \"description\": \"Achieving recognition and respect in their field\"},\n            {\"desire\": \"Freedom\", \"description\": \"Having the ability to make choices and live life on their own terms\"}\n        ]\n    }\n}\n```\n\nThis character profile includes the following information:\n\n*   Name: Ethan Thompson\n*   Verbs:\n    *   Innovate\n    *   Negotiate\n    *   Lead\n*   Adjectives:\n    *   Ambitious\n    *   Charismatic\n    *   Resourceful\n*   Categories:\n\n    *   **Character Traits**\n\n        *   Perfectionist\n        *   Competitive\n    *   **Business Skills**\n\n        *   Strategic Thinking\n        *   Communication\n    *   **Psychological Traits**\n\n        *   Introverted\n        *   Emotionally Intelligent\n    *   **Desires**\n\n        *   Success\n        *   Freedom","done":true,"done_reason":"stop","context":[128006,9125,128007,271,38766,1303,33025,2696,25,6790,220,2366,18,271,128009,128006,882,128007,271,32215,264,3752,5643,304,4823,3645,13,30834,836,11,62946,320,4109,814,656,705,1008,87678,320,5919,44631,1124,705,323,11306,320,19740,25022,11,2626,7512,11,24064,25022,11,323,32097,570,9062,5699,1288,617,3673,449,1495,323,43465,13,220,128009,128006,78191,128007,271,8586,374,264,3752,5643,304,4823,3645,1473,14196,4077,517,262,330,609,794,330,36,54895,26224,761,262,330,56039,794,2330,286,5324,23129,794,330,644,39142,349,498,330,4789,794,330,4110,502,6848,323,10105,7260,286,5324,23129,794,330,48900,354,6629,498,330,4789,794,330,97654,323,7655,389,3878,449,3885,7260,286,5324,23129,794,330,54963,498,330,4789,794,330,42110,323,2167,264,2128,477,2447,17122,262,3291,262,330,329,87678,794,2330,286,5324,329,51591,794,330,55132,65795,498,330,4789,794,330,99584,311,12265,7260,286,5324,329,51591,794,330,4873,57245,498,330,4789,794,330,1688,70178,323,66343,7260,286,5324,329,51591,794,330,4888,1285,498,330,4789,794,330,19847,4473,520,9455,11782,10105,17122,262,3291,262,330,15865,794,341,286,330,12686,68126,794,2330,310,5324,30532,794,330,3976,13421,380,498,330,4789,794,330,2645,1924,369,26784,33028,304,682,13878,315,2324,7260,310,5324,30532,794,330,76139,3486,498,330,4789,794,330,38195,75651,311,387,279,1888,17122,286,3291,286,330,23562,31340,794,2330,310,5324,30554,794,330,2645,90467,53389,498,330,4789,794,330,35003,311,1781,41440,323,1304,5222,11429,7260,310,5324,30554,794,330,66511,498,330,4789,794,330,68639,520,94165,6848,323,4857,12135,17122,286,3291,286,330,69803,5848,68126,794,2330,310,5324,30532,794,330,62669,22361,498,330,4789,794,330,31078,388,13839,892,323,649,2733,43206,555,3544,35851,7260,310,5324,30532,794,330,2321,6082,750,78188,498,330,4789,794,330,12363,66104,323,3025,311,10299,21958,304,264,9498,1648,17122,286,3291,286,330,5001,3946,794,2330,310,5324,5919,556,794,330,7336,498,330,4789,794,330,72685,4504,18324,323,5201,304,872,2115,7260,310,5324,5919,556,794,330,86872,498,330,4789,794,330,29132,279,5845,311,1304,11709,323,3974,2324,389,872,1866,3878,17122,286,5243,262,457,534,14196,19884,2028,3752,5643,5764,279,2768,2038,1473,9,256,4076,25,63264,26224,198,9,256,6383,1302,512,262,353,256,55947,349,198,262,353,256,75311,6629,198,262,353,256,30982,198,9,256,2467,87678,512,262,353,256,20423,65795,198,262,353,256,4969,57245,198,262,353,256,12027,1285,198,9,256,29312,1473,262,353,256,3146,12686,68126,57277,286,353,256,3700,13421,380,198,286,353,256,79150,198,262,353,256,3146,23562,31340,57277,286,353,256,46661,53389,198,286,353,256,31966,198,262,353,256,3146,69803,5848,68126,57277,286,353,256,53086,22361,198,286,353,256,5867,6082,750,78188,198,262,353,256,3146,5001,3946,57277,286,353,256,13346,198,286,353,256,25320],"total_duration":15921503600,"load_duration":35870300,"prompt_eval_count":75,"prompt_eval_duration":66000000,"eval_count":515,"eval_duration":15818000000}
+2025-02-04 12:39:43,038 - charactergen - DEBUG - Generated text: Here is a character profile in JSON format:
+
+```
+{
+    "name": "Ethan Thompson",
+    "verbs": [
+        {"verb": "Innovate", "description": "Create new ideas and solutions"},
+        {"verb": "Negotiate", "description": "Discuss and agree on terms with others"},
+        {"verb": "Lead", "description": "Guide and direct a team or project"}
+    ],
+    "adjectives": [
+        {"adjective": "Ambitious", "description": "Driven to succeed"},
+        {"adjective": "Charismatic", "description": "Attractive and persuasive"},
+        {"adjective": "Resourceful", "description": "Skilled at finding creative solutions"}
+    ],
+    "categories": {
+        "Character Traits": [
+            {"trait": "Perfectionist", "description": "Strives for flawlessness in all aspects of life"},
+            {"trait": "Competitive", "description": "Always strives to be the best"}
+        ],
+        "Business Skills": [
+            {"skill": "Strategic Thinking", "description": "Ability to think critically and make sound decisions"},
+            {"skill": "Communication", "description": "Effective at conveying ideas and building relationships"}
+        ],
+        "Psychological Traits": [
+            {"trait": "Introverted", "description": "Prefers solo time and can feel overwhelmed by large crowds"},
+            {"trait": "Emotionally Intelligent", "description": "Self-aware and able to manage emotions in a healthy way"}
+        ],
+        "Desires": [
+            {"desire": "Success", "description": "Achieving recognition and respect in their field"},
+            {"desire": "Freedom", "description": "Having the ability to make choices and live life on their own terms"}
+        ]
+    }
+}
+```
+
+This character profile includes the following information:
+
+*   Name: Ethan Thompson
+*   Verbs:
+    *   Innovate
+    *   Negotiate
+    *   Lead
+*   Adjectives:
+    *   Ambitious
+    *   Charismatic
+    *   Resourceful
+*   Categories:
+
+    *   **Character Traits**
+
+        *   Perfectionist
+        *   Competitive
+    *   **Business Skills**
+
+        *   Strategic Thinking
+        *   Communication
+    *   **Psychological Traits**
+
+        *   Introverted
+        *   Emotionally Intelligent
+    *   **Desires**
+
+        *   Success
+        *   Freedom
+2025-02-04 12:39:43,038 - charactergen - ERROR - Error parsing generated JSON: Expecting value: line 1 column 1 (char 0)
+2025-02-04 12:39:43,038 - charactergen - ERROR - Problematic text: Here is a character profile in JSON format:
+
+```
+{
+    "name": "Ethan Thompson",
+    "verbs": [
+        {"verb": "Innovate", "description": "Create new ideas and solutions"},
+        {"verb": "Negotiate", "description": "Discuss and agree on terms with others"},
+        {"verb": "Lead", "description": "Guide and direct a team or project"}
+    ],
+    "adjectives": [
+        {"adjective": "Ambitious", "description": "Driven to succeed"},
+        {"adjective": "Charismatic", "description": "Attractive and persuasive"},
+        {"adjective": "Resourceful", "description": "Skilled at finding creative solutions"}
+    ],
+    "categories": {
+        "Character Traits": [
+            {"trait": "Perfectionist", "description": "Strives for flawlessness in all aspects of life"},
+            {"trait": "Competitive", "description": "Always strives to be the best"}
+        ],
+        "Business Skills": [
+            {"skill": "Strategic Thinking", "description": "Ability to think critically and make sound decisions"},
+            {"skill": "Communication", "description": "Effective at conveying ideas and building relationships"}
+        ],
+        "Psychological Traits": [
+            {"trait": "Introverted", "description": "Prefers solo time and can feel overwhelmed by large crowds"},
+            {"trait": "Emotionally Intelligent", "description": "Self-aware and able to manage emotions in a healthy way"}
+        ],
+        "Desires": [
+            {"desire": "Success", "description": "Achieving recognition and respect in their field"},
+            {"desire": "Freedom", "description": "Having the ability to make choices and live life on their own terms"}
+        ]
+    }
+}
+```
+
+This character profile includes the following information:
+
+*   Name: Ethan Thompson
+*   Verbs:
+    *   Innovate
+    *   Negotiate
+    *   Lead
+*   Adjectives:
+    *   Ambitious
+    *   Charismatic
+    *   Resourceful
+*   Categories:
+
+    *   **Character Traits**
+
+        *   Perfectionist
+        *   Competitive
+    *   **Business Skills**
+
+        *   Strategic Thinking
+        *   Communication
+    *   **Psychological Traits**
+
+        *   Introverted
+        *   Emotionally Intelligent
+    *   **Desires**
+
+        *   Success
+        *   Freedom
+2025-02-04 12:39:43,039 - charactergen - ERROR - Error during character generation: Expecting value: line 1 column 1 (char 0)
+2025-02-04 12:39:43,040 - charactergen - DEBUG - Sending request to Ollama API
+2025-02-04 12:40:07,551 - charactergen - DEBUG - Raw API response: {"model":"llama3.2","created_at":"2025-02-04T08:40:07.5499026Z","response":"Here is a character profile in JSON format:\n\n```json\n{\n  \"name\": \"Alexander 'Lex' Thompson\",\n  \"verbs\": [\n    \"strategize\", \n    \"lead\", \n    \"invent\", \n    \"negotiate\", \n    \"motivate\"\n  ],\n  \"adjectives\": [\n    \"charismatic\", \n    \"ambitious\", \n    \"innovative\", \n    \"confident\", \n    \"resilient\"\n  ],\n  \"categories\": {\n    \"character traits\": {\n      \"Ambition\": \"Seeks to revolutionize the tech industry.\",\n      \"Leadership\": \"Has natural leadership skills and is not afraid to take risks.\"\n    },\n    \"business skills\": {\n      \"Entrepreneurship\": \"Started his own company at age 25 and turned it into a successful startup.\",\n      \"Marketing\": \"Has expertise in digital marketing and knows how to create engaging campaigns.\"\n    },\n    \"psychological traits\": {\n      \"Emotional Intelligence\": \"Highly empathetic and can connect with people from different backgrounds.\",\n      \"Resilience\": \"Can handle failure and keep pushing forward towards his goals.\"\n    },\n    \"desires\": {\n      \"Personal Growth\": \"Wants to learn new skills and expand his knowledge every day.\",\n      \"Legacy\": \"Hopes to leave a lasting impact on the world through his inventions and ideas.\"\n    }\n  }\n}\n```\n\nIn this JSON format, we have:\n\n*   The character's name: `Alexander 'Lex' Thompson`\n*   A list of verbs (actions they do): `strategize`, `lead`, `invent`, `negotiate`, `motivate`\n*   A list of adjectives (describing them): `charismatic`, `ambitious`, `innovative`, `confident`, `resilient`\n*   Four categories:\n\n    *   **Character Traits**:\n\n        |  **Category**  |  **Description**  |\n        |----------------|------------------|\n        | Ambition       | Seeks to revolutionize the tech industry.            |\n        | Leadership     | Has natural leadership skills and is not afraid to take risks. |\n\n    *   **Business Skills**:\n\n        |  **Category**  |  **Description**  |\n        |----------------|------------------|\n        | Entrepreneurship | Started his own company at age 25 and turned it into a successful startup.          |\n        | Marketing       | Has expertise in digital marketing and knows how to create engaging campaigns. |\n\n    *   **Psychological Traits**:\n\n        |  **Category**  |  **Description**  |\n        |----------------|------------------|\n        | Emotional Intelligence | Highly empathetic and can connect with people from different backgrounds.          |\n        | Resilience       | Can handle failure and keep pushing forward towards his goals. |\n\n    *   **Desires**:\n\n        |  **Category**  |  **Description**  |\n        |----------------|------------------|\n        | Personal Growth  | Wants to learn new skills and expand his knowledge every day.          |\n        | Legacy           | Hopes to leave a lasting impact on the world through his inventions and ideas. |\n\nThis format allows you to easily view the character's traits, behaviors, and goals.","done":true,"done_reason":"stop","context":[128006,9125,128007,271,38766,1303,33025,2696,25,6790,220,2366,18,271,128009,128006,882,128007,271,32215,264,3752,5643,304,4823,3645,13,30834,836,11,62946,320,4109,814,656,705,1008,87678,320,5919,44631,1124,705,323,11306,320,19740,25022,11,2626,7512,11,24064,25022,11,323,32097,570,9062,5699,1288,617,3673,449,1495,323,43465,13,220,128009,128006,78191,128007,271,8586,374,264,3752,5643,304,4823,3645,1473,74694,2285,198,517,220,330,609,794,330,78850,364,48878,6,26224,761,220,330,56039,794,2330,262,330,496,1352,553,498,720,262,330,27152,498,720,262,330,258,688,498,720,262,330,29875,354,6629,498,720,262,330,47928,736,702,220,3291,220,330,329,87678,794,2330,262,330,1799,57245,498,720,262,330,3042,65795,498,720,262,330,6258,869,1413,498,720,262,330,6263,1748,498,720,262,330,417,321,1188,702,220,3291,220,330,15865,794,341,262,330,19740,25022,794,341,415,330,55132,684,794,330,1542,21854,311,14110,553,279,13312,5064,10560,415,330,93824,2200,794,330,10493,5933,11692,7512,323,374,539,16984,311,1935,15635,10246,262,1173,262,330,27243,7512,794,341,415,330,71688,56405,5383,794,330,33627,813,1866,2883,520,4325,220,914,323,6656,433,1139,264,6992,21210,10560,415,330,68662,794,330,10493,19248,304,7528,8661,323,8964,1268,311,1893,23387,21343,10246,262,1173,262,330,92109,5848,25022,794,341,415,330,2321,41964,22107,794,330,12243,398,36681,5411,323,649,4667,449,1274,505,2204,36576,10560,415,330,1079,321,1873,794,330,6854,3790,8060,323,2567,17919,4741,7119,813,9021,10246,262,1173,262,330,5919,3946,794,341,415,330,35127,34871,794,330,54,1821,311,4048,502,7512,323,9407,813,6677,1475,1938,10560,415,330,78515,794,330,39,19031,311,5387,264,29869,5536,389,279,1917,1555,813,85149,323,6848,10246,262,457,220,457,534,14196,19884,644,420,4823,3645,11,584,617,1473,9,256,578,3752,596,836,25,1595,78850,364,48878,6,26224,4077,9,256,362,1160,315,62946,320,4109,814,656,1680,1595,496,1352,553,7964,1595,27152,7964,1595,258,688,7964,1595,29875,354,6629,7964,1595,47928,736,4077,9,256,362,1160,315,1008,87678,320,5919,44631,1124,1680,1595,1799,57245,7964,1595,3042,65795,7964,1595,6258,869,1413,7964,1595,6263,1748,7964,1595,417,321,1188,4077,9,256,13625,11306,1473,262,353,256,3146,12686,68126,334,1473,286,765,220,3146,6888,334,220,765,220,3146,5116,334,220,9432,286,765,776,91,776,313,7511,286,765,20423,684,996,765,1369,21854,311,14110,553,279,13312,5064,13,310,9432,286,765,37263,257,765,11697,5933,11692,7512,323,374,539,16984,311,1935,15635,13,36821,262,353,256,3146,23562,31340,334,1473,286,765,220,3146,6888,334,220,765,220,3146,5116,334,220,9432,286,765,776,91,776,313,7511,286,765,69102,5383,765,36912,813,1866,2883,520,4325,220,914,323,6656,433,1139,264,6992,21210,13,692,9432,286,765,18729,996,765,11697,19248,304,7528,8661,323,8964,1268,311,1893,23387,21343,13,36821,262,353,256,3146,69803,5848,68126,334,1473,286,765,220,3146,6888,334,220,765,220,3146,5116,334,220,9432,286,765,776,91,776,313,7511,286,765,95300,22107,765,53485,36681,5411,323,649,4667,449,1274,505,2204,36576,13,692,9432,286,765,1838,321,1873,996,765,3053,3790,8060,323,2567,17919,4741,7119,813,9021,13,36821,262,353,256,3146,5001,3946,334,1473,286,765,220,3146,6888,334,220,765,220,3146,5116,334,220,9432,286,765,776,91,776,313,7511,286,765,19758,34871,220,765,78578,311,4048,502,7512,323,9407,813,6677,1475,1938,13,692,9432,286,765,38987,1881,765,473,19031,311,5387,264,29869,5536,389,279,1917,1555,813,85149,323,6848,13,36821,2028,3645,6276,499,311,6847,1684,279,3752,596,25022,11,28198,11,323,9021,13],"total_duration":22474621200,"load_duration":24581400,"prompt_eval_count":75,"prompt_eval_duration":61000000,"eval_count":680,"eval_duration":22387000000}
+2025-02-04 12:40:07,552 - charactergen - DEBUG - Generated text: Here is a character profile in JSON format:
+
+```json
+{
+  "name": "Alexander 'Lex' Thompson",
+  "verbs": [
+    "strategize", 
+    "lead", 
+    "invent", 
+    "negotiate", 
+    "motivate"
+  ],
+  "adjectives": [
+    "charismatic", 
+    "ambitious", 
+    "innovative", 
+    "confident", 
+    "resilient"
+  ],
+  "categories": {
+    "character traits": {
+      "Ambition": "Seeks to revolutionize the tech industry.",
+      "Leadership": "Has natural leadership skills and is not afraid to take risks."
+    },
+    "business skills": {
+      "Entrepreneurship": "Started his own company at age 25 and turned it into a successful startup.",
+      "Marketing": "Has expertise in digital marketing and knows how to create engaging campaigns."
+    },
+    "psychological traits": {
+      "Emotional Intelligence": "Highly empathetic and can connect with people from different backgrounds.",
+      "Resilience": "Can handle failure and keep pushing forward towards his goals."
+    },
+    "desires": {
+      "Personal Growth": "Wants to learn new skills and expand his knowledge every day.",
+      "Legacy": "Hopes to leave a lasting impact on the world through his inventions and ideas."
+    }
+  }
+}
+```
+
+In this JSON format, we have:
+
+*   The character's name: `Alexander 'Lex' Thompson`
+*   A list of verbs (actions they do): `strategize`, `lead`, `invent`, `negotiate`, `motivate`
+*   A list of adjectives (describing them): `charismatic`, `ambitious`, `innovative`, `confident`, `resilient`
+*   Four categories:
+
+    *   **Character Traits**:
+
+        |  **Category**  |  **Description**  |
+        |----------------|------------------|
+        | Ambition       | Seeks to revolutionize the tech industry.            |
+        | Leadership     | Has natural leadership skills and is not afraid to take risks. |
+
+    *   **Business Skills**:
+
+        |  **Category**  |  **Description**  |
+        |----------------|------------------|
+        | Entrepreneurship | Started his own company at age 25 and turned it into a successful startup.          |
+        | Marketing       | Has expertise in digital marketing and knows how to create engaging campaigns. |
+
+    *   **Psychological Traits**:
+
+        |  **Category**  |  **Description**  |
+        |----------------|------------------|
+        | Emotional Intelligence | Highly empathetic and can connect with people from different backgrounds.          |
+        | Resilience       | Can handle failure and keep pushing forward towards his goals. |
+
+    *   **Desires**:
+
+        |  **Category**  |  **Description**  |
+        |----------------|------------------|
+        | Personal Growth  | Wants to learn new skills and expand his knowledge every day.          |
+        | Legacy           | Hopes to leave a lasting impact on the world through his inventions and ideas. |
+
+This format allows you to easily view the character's traits, behaviors, and goals.
+2025-02-04 12:40:07,552 - charactergen - ERROR - Error parsing generated JSON: Expecting value: line 1 column 1 (char 0)
+2025-02-04 12:40:07,552 - charactergen - ERROR - Problematic text: Here is a character profile in JSON format:
+
+```json
+{
+  "name": "Alexander 'Lex' Thompson",
+  "verbs": [
+    "strategize", 
+    "lead", 
+    "invent", 
+    "negotiate", 
+    "motivate"
+  ],
+  "adjectives": [
+    "charismatic", 
+    "ambitious", 
+    "innovative", 
+    "confident", 
+    "resilient"
+  ],
+  "categories": {
+    "character traits": {
+      "Ambition": "Seeks to revolutionize the tech industry.",
+      "Leadership": "Has natural leadership skills and is not afraid to take risks."
+    },
+    "business skills": {
+      "Entrepreneurship": "Started his own company at age 25 and turned it into a successful startup.",
+      "Marketing": "Has expertise in digital marketing and knows how to create engaging campaigns."
+    },
+    "psychological traits": {
+      "Emotional Intelligence": "Highly empathetic and can connect with people from different backgrounds.",
+      "Resilience": "Can handle failure and keep pushing forward towards his goals."
+    },
+    "desires": {
+      "Personal Growth": "Wants to learn new skills and expand his knowledge every day.",
+      "Legacy": "Hopes to leave a lasting impact on the world through his inventions and ideas."
+    }
+  }
+}
+```
+
+In this JSON format, we have:
+
+*   The character's name: `Alexander 'Lex' Thompson`
+*   A list of verbs (actions they do): `strategize`, `lead`, `invent`, `negotiate`, `motivate`
+*   A list of adjectives (describing them): `charismatic`, `ambitious`, `innovative`, `confident`, `resilient`
+*   Four categories:
+
+    *   **Character Traits**:
+
+        |  **Category**  |  **Description**  |
+        |----------------|------------------|
+        | Ambition       | Seeks to revolutionize the tech industry.            |
+        | Leadership     | Has natural leadership skills and is not afraid to take risks. |
+
+    *   **Business Skills**:
+
+        |  **Category**  |  **Description**  |
+        |----------------|------------------|
+        | Entrepreneurship | Started his own company at age 25 and turned it into a successful startup.          |
+        | Marketing       | Has expertise in digital marketing and knows how to create engaging campaigns. |
+
+    *   **Psychological Traits**:
+
+        |  **Category**  |  **Description**  |
+        |----------------|------------------|
+        | Emotional Intelligence | Highly empathetic and can connect with people from different backgrounds.          |
+        | Resilience       | Can handle failure and keep pushing forward towards his goals. |
+
+    *   **Desires**:
+
+        |  **Category**  |  **Description**  |
+        |----------------|------------------|
+        | Personal Growth  | Wants to learn new skills and expand his knowledge every day.          |
+        | Legacy           | Hopes to leave a lasting impact on the world through his inventions and ideas. |
+
+This format allows you to easily view the character's traits, behaviors, and goals.
+2025-02-04 12:40:07,552 - charactergen - ERROR - Error during character generation: Expecting value: line 1 column 1 (char 0)
+2025-02-04 12:40:07,553 - charactergen - ERROR - Max retry attempts reached
+[2025-02-04 12:44:03,024] [INFO] [charactergen] Starting character generation process (PID: 30452)
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:309
+None
+---
+[2025-02-04 12:44:07,911] [INFO] [charactergen] Generating character 1/1...
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:336
+None
+---
+[2025-02-04 12:44:07,911] [DEBUG] [charactergen] Attempt 1/3: Sending request to Ollama API
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:132
+None
+---
+[2025-02-04 12:44:09,972] [DEBUG] [charactergen] API request completed in 2.06 seconds
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:152
+None
+---
+[2025-02-04 12:44:09,972] [WARNING] [charactergen] API error on attempt 1: API returned status code 404. Retrying in 2 seconds...
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:192
+None
+---
+[2025-02-04 12:44:11,973] [DEBUG] [charactergen] Attempt 2/3: Sending request to Ollama API
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:132
+None
+---
+[2025-02-04 12:44:14,031] [DEBUG] [charactergen] API request completed in 2.06 seconds
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:152
+None
+---
+[2025-02-04 12:44:14,032] [WARNING] [charactergen] API error on attempt 2: API returned status code 404. Retrying in 4 seconds...
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:192
+None
+---
+[2025-02-04 12:44:18,032] [DEBUG] [charactergen] Attempt 3/3: Sending request to Ollama API
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:132
+None
+---
+[2025-02-04 12:44:20,070] [DEBUG] [charactergen] API request completed in 2.04 seconds
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:152
+None
+---
+[2025-02-04 12:44:20,071] [ERROR] [charactergen] API error after 3 attempts: API returned status code 404
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:198
+Stack (most recent call last):
+  File "C:\Users\denni\Documents\student-dialog-builder\charactergen.py", line 435, in <module>
+    main()
+  File "C:\Users\denni\Documents\student-dialog-builder\charactergen.py", line 344, in main
+    character = generate_character("")
+  File "C:\Users\denni\Documents\student-dialog-builder\charactergen.py", line 198, in generate_character
+    logger.error(
+---
+Traceback (most recent call last):
+  File "C:\Users\denni\Documents\student-dialog-builder\charactergen.py", line 156, in generate_character
+    raise APIError(
+APIError: API returned status code 404
+Stack (most recent call last):
+  File "C:\Users\denni\Documents\student-dialog-builder\charactergen.py", line 435, in <module>
+    main()
+  File "C:\Users\denni\Documents\student-dialog-builder\charactergen.py", line 344, in main
+    character = generate_character("")
+  File "C:\Users\denni\Documents\student-dialog-builder\charactergen.py", line 198, in generate_character
+    logger.error(
+[2025-02-04 12:44:20,072] [ERROR] [charactergen] Error on attempt 1/3: Failed after 3 attempts: API returned status code 404
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:359
+Stack (most recent call last):
+  File "C:\Users\denni\Documents\student-dialog-builder\charactergen.py", line 435, in <module>
+    main()
+  File "C:\Users\denni\Documents\student-dialog-builder\charactergen.py", line 359, in main
+    logger.error(
+---
+Traceback (most recent call last):
+  File "C:\Users\denni\Documents\student-dialog-builder\charactergen.py", line 156, in generate_character
+    raise APIError(
+APIError: API returned status code 404
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\denni\Documents\student-dialog-builder\charactergen.py", line 344, in main
+    character = generate_character("")
+                ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denni\Documents\student-dialog-builder\charactergen.py", line 203, in generate_character
+    raise APIError(f"Failed after {max_retries} attempts: {str(e)}")
+APIError: Failed after 3 attempts: API returned status code 404
+Stack (most recent call last):
+  File "C:\Users\denni\Documents\student-dialog-builder\charactergen.py", line 435, in <module>
+    main()
+  File "C:\Users\denni\Documents\student-dialog-builder\charactergen.py", line 359, in main
+    logger.error(
+[2025-02-04 12:44:22,073] [DEBUG] [charactergen] Attempt 1/3: Sending request to Ollama API
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:132
+None
+---
+[2025-02-04 12:44:24,142] [DEBUG] [charactergen] API request completed in 2.07 seconds
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:152
+None
+---
+[2025-02-04 12:44:24,142] [WARNING] [charactergen] API error on attempt 1: API returned status code 404. Retrying in 2 seconds...
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:192
+None
+---
+[2025-02-04 12:44:26,144] [DEBUG] [charactergen] Attempt 2/3: Sending request to Ollama API
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:132
+None
+---
+[2025-02-04 12:44:28,169] [INFO] [charactergen] Operation cancelled by user after 25.14 seconds
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:413
+None
+---
+[2025-02-04 12:45:10,780] [INFO] [charactergen] Starting character generation process (PID: 16396)
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:309
+None
+---
+[2025-02-04 12:45:12,487] [INFO] [charactergen] Generating character 1/1...
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:336
+None
+---
+[2025-02-04 12:45:12,487] [DEBUG] [charactergen] Attempt 1/3: Sending request to Ollama API
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:132
+None
+---
+[2025-02-04 12:45:33,093] [DEBUG] [charactergen] API request completed in 20.61 seconds
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:152
+None
+---
+[2025-02-04 12:45:33,093] [DEBUG] [charactergen] Raw API response: {"model":"llama3.2:latest","created_at":"2025-02-04T08:45:32.6409252Z","response":"Here is a character profile in JSON format:\n\n```\n{\n  \"name\": \"Ethan Thompson\",\n  \"verbs\": [\n    {\"action\": \"leads\", \"description\": \"guides teams to success\"},\n    {\"action\": \"strategizes\", \"description\": \"develops plans for growth and improvement\"},\n    {\"action\": \"motivates\", \"description\": \"inspires others to reach their potential\"}\n  ],\n  \"adjectives\": [\n    {\"trait\": \"confident\", \"description\": \"has high self-esteem and faith in abilities 💪\"},\n    {\"trait\": \"creative\", \"description\": \"thinks outside the box and generates innovative ideas 🎨\"},\n    {\"trait\": \"passionate\", \"description\": \"driven by strong emotions and desires ❤️\"}\n  ],\n  \"categories\": {\n    \"character traits\": [\n      {\"name\": \"Ambitious\", \"description\": \"willing to take risks and push limits to achieve goals 🔥\"},\n      {\"name\": \"Empathetic\", \"description\": \"understands and cares about the feelings of others 💕\"},\n      {\"name\": \"Competitive\", \"description\": \"driven to succeed and outperform others 🏆\"}\n    ],\n    \"business skills\": [\n      {\"name\": \"Strategic Thinker\", \"description\": \"develops plans for growth and improvement 📈\"},\n      {\"name\": \"Communicator\", \"description\": \"effective at building relationships and collaborating with others 💬\"},\n      {\"name\": \"Risk Taker\", \"description\": \"willing to take calculated risks to drive innovation 🔥\"}\n    ],\n    \"psychological traits\": [\n      {\"name\": \"Resilient\", \"description\": \"bounces back from setbacks and failures 🤯\"},\n      {\"name\": \"Adaptable\", \"description\": \"adjusts to new situations and challenges with ease 🔄\"},\n      {\"name\": \"Self-Aware\", \"description\": \"has a deep understanding of strengths, weaknesses, and emotions 🧘\"}\n    ],\n    \"desires\": [\n      {\"name\": \"Success\", \"description\": \"measures self-worth by achievements and recognition 🏆\"},\n      {\"name\": \"Creativity\", \"description\": \"driven to express themselves through art and innovation 🎨\"},\n      {\"name\": \"Connection\", \"description\": \"values deep, meaningful relationships with others 💕\"}\n    ]\n  }\n}\n```\n\nThis profile captures the key characteristics of Ethan Thompson, including his personality traits, business skills, psychological tendencies, and desires.","done":true,"done_reason":"stop","context":[128006,9125,128007,271,38766,1303,33025,2696,25,6790,220,2366,18,271,128009,128006,882,128007,271,32215,264,3752,5643,304,4823,3645,13,30834,836,11,62946,320,4109,814,656,705,1008,87678,320,5919,44631,1124,705,323,11306,320,19740,25022,11,2626,7512,11,24064,25022,11,323,32097,570,9062,5699,1288,617,3673,449,1495,323,43465,13,220,128009,128006,78191,128007,271,8586,374,264,3752,5643,304,4823,3645,1473,14196,4077,517,220,330,609,794,330,36,54895,26224,761,220,330,56039,794,2330,262,5324,1335,794,330,99470,498,330,4789,794,330,24343,288,7411,311,2450,7260,262,5324,1335,794,330,496,1352,4861,498,330,4789,794,330,16219,82,6787,369,6650,323,16048,7260,262,5324,1335,794,330,47928,344,988,498,330,4789,794,330,1354,19505,3885,311,5662,872,4754,17122,220,3291,220,330,329,87678,794,2330,262,5324,30532,794,330,6263,1748,498,330,4789,794,330,4752,1579,659,65906,323,10082,304,18000,64139,103,7260,262,5324,30532,794,330,52817,498,330,4789,794,330,339,15872,4994,279,3830,323,27983,18699,6848,11410,236,101,7260,262,5324,30532,794,330,6519,85999,498,330,4789,794,330,3696,2116,555,3831,21958,323,32097,71570,31643,17122,220,3291,220,330,15865,794,341,262,330,19740,25022,794,2330,415,5324,609,794,330,55132,65795,498,330,4789,794,330,86,9585,311,1935,15635,323,4585,13693,311,11322,9021,96169,98,7260,415,5324,609,794,330,29831,589,5411,498,330,4789,794,330,8154,97815,323,34672,922,279,16024,315,3885,64139,243,7260,415,5324,609,794,330,76139,3486,498,330,4789,794,330,3696,2116,311,12265,323,704,29588,3885,11410,237,228,17122,262,3291,262,330,27243,7512,794,2330,415,5324,609,794,330,2645,90467,21834,261,498,330,4789,794,330,16219,82,6787,369,6650,323,16048,11410,241,230,7260,415,5324,609,794,330,82023,859,498,330,4789,794,330,78995,520,4857,12135,323,73301,449,3885,64139,105,7260,415,5324,609,794,330,86407,350,4506,498,330,4789,794,330,86,9585,311,1935,16997,15635,311,6678,19297,96169,98,17122,262,3291,262,330,92109,5848,25022,794,2330,415,5324,609,794,330,1079,321,1188,498,330,4789,794,330,65,31044,1203,505,97737,323,28950,11410,97,107,7260,415,5324,609,794,330,2654,391,2048,498,330,4789,794,330,39819,82,311,502,15082,323,11774,449,14553,11410,63644,7260,415,5324,609,794,330,12363,6830,1698,498,330,4789,794,330,4752,264,5655,8830,315,36486,11,44667,11,323,21958,11410,100,246,17122,262,3291,262,330,5919,3946,794,2330,415,5324,609,794,330,7336,498,330,4789,794,330,2727,24368,659,2695,2419,555,33997,323,18324,11410,237,228,7260,415,5324,609,794,330,31844,1968,498,330,4789,794,330,3696,2116,311,3237,5694,1555,1989,323,19297,11410,236,101,7260,415,5324,609,794,330,4627,498,330,4789,794,330,3745,5655,11,23222,12135,449,3885,64139,243,17122,262,5243,220,457,534,14196,19884,2028,5643,41255,279,1401,17910,315,63264,26224,11,2737,813,17743,25022,11,2626,7512,11,24064,61555,11,323,32097,13],"total_duration":18087056900,"load_duration":1626547400,"prompt_eval_count":75,"prompt_eval_duration":431000000,"eval_count":527,"eval_duration":16027000000}
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:162
+None
+---
+[2025-02-04 12:45:33,094] [DEBUG] [charactergen] Generated text: Here is a character profile in JSON format:
+
+```
+{
+  "name": "Ethan Thompson",
+  "verbs": [
+    {"action": "leads", "description": "guides teams to success"},
+    {"action": "strategizes", "description": "develops plans for growth and improvement"},
+    {"action": "motivates", "description": "inspires others to reach their potential"}
+  ],
+  "adjectives": [
+    {"trait": "confident", "description": "has high self-esteem and faith in abilities 💪"},
+    {"trait": "creative", "description": "thinks outside the box and generates innovative ideas 🎨"},
+    {"trait": "passionate", "description": "driven by strong emotions and desires ❤️"}
+  ],
+  "categories": {
+    "character traits": [
+      {"name": "Ambitious", "description": "willing to take risks and push limits to achieve goals 🔥"},
+      {"name": "Empathetic", "description": "understands and cares about the feelings of others 💕"},
+      {"name": "Competitive", "description": "driven to succeed and outperform others 🏆"}
+    ],
+    "business skills": [
+      {"name": "Strategic Thinker", "description": "develops plans for growth and improvement 📈"},
+      {"name": "Communicator", "description": "effective at building relationships and collaborating with others 💬"},
+      {"name": "Risk Taker", "description": "willing to take calculated risks to drive innovation 🔥"}
+    ],
+    "psychological traits": [
+      {"name": "Resilient", "description": "bounces back from setbacks and failures 🤯"},
+      {"name": "Adaptable", "description": "adjusts to new situations and challenges with ease 🔄"},
+      {"name": "Self-Aware", "description": "has a deep understanding of strengths, weaknesses, and emotions 🧘"}
+    ],
+    "desires": [
+      {"name": "Success", "description": "measures self-worth by achievements and recognition 🏆"},
+      {"name": "Creativity", "description": "driven to express themselves through art and innovation 🎨"},
+      {"name": "Connection", "description": "values deep, meaningful relationships with others 💕"}
+    ]
+  }
+}
+```
+
+This profile captures the key characteristics of Ethan Thompson, including his personality traits, business skills, psychological tendencies, and desires.
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:174
+None
+---
+[2025-02-04 12:45:33,095] [ERROR] [charactergen] Character validation error: Missing required categories: character, business, psychology
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:290
+Stack (most recent call last):
+  File "C:\Users\denni\Documents\student-dialog-builder\charactergen.py", line 435, in <module>
+    main()
+  File "C:\Users\denni\Documents\student-dialog-builder\charactergen.py", line 347, in main
+    if validate_character(character):
+  File "C:\Users\denni\Documents\student-dialog-builder\charactergen.py", line 290, in validate_character
+    logger.error(
+---
+Traceback (most recent call last):
+  File "C:\Users\denni\Documents\student-dialog-builder\charactergen.py", line 266, in validate_character
+    raise ValidationError(
+ValidationError: Missing required categories: character, business, psychology
+Stack (most recent call last):
+  File "C:\Users\denni\Documents\student-dialog-builder\charactergen.py", line 435, in <module>
+    main()
+  File "C:\Users\denni\Documents\student-dialog-builder\charactergen.py", line 347, in main
+    if validate_character(character):
+  File "C:\Users\denni\Documents\student-dialog-builder\charactergen.py", line 290, in validate_character
+    logger.error(
+[2025-02-04 12:45:33,095] [ERROR] [charactergen] Error on attempt 1/3: Missing required categories: character, business, psychology
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:359
+Stack (most recent call last):
+  File "C:\Users\denni\Documents\student-dialog-builder\charactergen.py", line 435, in <module>
+    main()
+  File "C:\Users\denni\Documents\student-dialog-builder\charactergen.py", line 359, in main
+    logger.error(
+---
+Traceback (most recent call last):
+  File "C:\Users\denni\Documents\student-dialog-builder\charactergen.py", line 347, in main
+    if validate_character(character):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denni\Documents\student-dialog-builder\charactergen.py", line 266, in validate_character
+    raise ValidationError(
+ValidationError: Missing required categories: character, business, psychology
+Stack (most recent call last):
+  File "C:\Users\denni\Documents\student-dialog-builder\charactergen.py", line 435, in <module>
+    main()
+  File "C:\Users\denni\Documents\student-dialog-builder\charactergen.py", line 359, in main
+    logger.error(
+[2025-02-04 12:45:35,097] [DEBUG] [charactergen] Attempt 1/3: Sending request to Ollama API
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:132
+None
+---
+[2025-02-04 12:45:52,774] [DEBUG] [charactergen] API request completed in 17.68 seconds
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:152
+None
+---
+[2025-02-04 12:45:52,774] [DEBUG] [charactergen] Raw API response: {"model":"llama3.2:latest","created_at":"2025-02-04T08:45:52.7729016Z","response":"Here is a character profile in JSON format:\n\n```json\n{\n  \"name\": \"Evelyn Stone\",\n  \"verbs\": [\n    {\"action\": \"investigates\", \"probability\": 80},\n    {\"action\": \"manipulates\", \"probability\": 60},\n    {\"action\": \"analyzes\", \"probability\": 90},\n    {\"action\": \"schemes\", \"probability\": 70},\n    {\"action\": \"deceives\", \"probability\": 50}\n  ],\n  \"adjectives\": [\n    {\"description\": \" Cunning\", \"intensity\": 8},\n    {\"description\": \"Resourceful\", \"intensity\": 7},\n    {\"description\": \"Confident\", \"intensity\": 6},\n    {\"description\": \"Intelligent\", \"intensity\": 9},\n    {\"description\": \"Ambitious\", \"intensity\": 8}\n  ],\n  \"categories\": {\n    \"Character Traits\": [\n      {\"trait\": \"Charismatic leader\", \"emoticon\": 😊},\n      {\"trait\": \"Moral ambiguity\", \"emoticon\": 🤔},\n      {\"trait\": \"Highly intelligent\", \"emoticon\": 💡}\n    ],\n    \"Business Skills\": [\n      {\"skill\": \"Strategic thinking\", \"level\": 9},\n      {\"skill\": \"Negotiation\", \"level\": 8},\n      {\"skill\": \"Marketing\", \"level\": 7}\n    ],\n    \"Psychological Traits\": [\n      {\"trait\": \"Fear of failure\", \"emoticon\": 😨},\n      {\"trait\": \"Need for validation\", \"emoticon\": 🤝},\n      {\"trait\": \"Paranoid tendencies\", \"emoticon\": 👀}\n    ],\n    \"Desires\": [\n      {\"desire\": \"Power and influence\", \"level\": 9},\n      {\"desire\": \"Recognition and respect\", \"level\": 8},\n      {\"desire\": \"Financial security\", \"level\": 7}\n    ]\n  }\n}\n```\n\nThis character profile includes:\n\n* `name`: Evelyn Stone\n* `verbs`: A list of actions the character might take, with probabilities to help inform their behavior\n* `adjectives`: A list of words that describe the character's personality and traits, along with intensity levels (on a scale of 1-10)\n* `categories`: Four categories of traits and skills, each with examples and emojis to help bring the character to life","done":true,"done_reason":"stop","context":[128006,9125,128007,271,38766,1303,33025,2696,25,6790,220,2366,18,271,128009,128006,882,128007,271,32215,264,3752,5643,304,4823,3645,13,30834,836,11,62946,320,4109,814,656,705,1008,87678,320,5919,44631,1124,705,323,11306,320,19740,25022,11,2626,7512,11,24064,25022,11,323,32097,570,9062,5699,1288,617,3673,449,1495,323,43465,13,220,128009,128006,78191,128007,271,8586,374,264,3752,5643,304,4823,3645,1473,74694,2285,198,517,220,330,609,794,330,36,899,1910,14637,761,220,330,56039,794,2330,262,5324,1335,794,330,43114,343,988,498,330,88540,794,220,1490,1613,262,5324,1335,794,330,1543,575,24031,498,330,88540,794,220,1399,1613,262,5324,1335,794,330,44803,32893,498,330,88540,794,220,1954,1613,262,5324,1335,794,330,82,67446,498,330,88540,794,220,2031,1613,262,5324,1335,794,330,451,346,1924,498,330,88540,794,220,1135,534,220,3291,220,330,329,87678,794,2330,262,5324,4789,794,330,68845,498,330,396,8127,794,220,23,1613,262,5324,4789,794,330,4888,1285,498,330,396,8127,794,220,22,1613,262,5324,4789,794,330,15949,1748,498,330,396,8127,794,220,21,1613,262,5324,4789,794,330,1090,21149,498,330,396,8127,794,220,24,1613,262,5324,4789,794,330,55132,65795,498,330,396,8127,794,220,23,534,220,3291,220,330,15865,794,341,262,330,12686,68126,794,2330,415,5324,30532,794,330,4873,57245,7808,498,330,336,354,1965,794,27623,232,1613,415,5324,30532,794,330,44,10020,72868,498,330,336,354,1965,794,11410,97,242,1613,415,5324,30532,794,330,12243,398,25530,498,330,336,354,1965,794,64139,94,534,262,3291,262,330,23562,31340,794,2330,415,5324,30554,794,330,2645,90467,7422,498,330,3374,794,220,24,1613,415,5324,30554,794,330,48900,354,7246,498,330,3374,794,220,23,1613,415,5324,30554,794,330,68662,498,330,3374,794,220,22,534,262,3291,262,330,69803,5848,68126,794,2330,415,5324,30532,794,330,91471,315,8060,498,330,336,354,1965,794,27623,101,1613,415,5324,30532,794,330,24581,369,10741,498,330,336,354,1965,794,11410,97,251,1613,415,5324,30532,794,330,4368,276,590,61555,498,330,336,354,1965,794,62904,222,534,262,3291,262,330,5001,3946,794,2330,415,5324,5919,556,794,330,15335,323,10383,498,330,3374,794,220,24,1613,415,5324,5919,556,794,330,62392,323,5201,498,330,3374,794,220,23,1613,415,5324,5919,556,794,330,57330,4868,498,330,3374,794,220,22,534,262,5243,220,457,534,14196,19884,2028,3752,5643,5764,1473,9,1595,609,45722,96425,14637,198,9,1595,56039,45722,362,1160,315,6299,279,3752,2643,1935,11,449,49316,311,1520,6179,872,7865,198,9,1595,329,87678,45722,362,1160,315,4339,430,7664,279,3752,596,17743,323,25022,11,3235,449,21261,5990,320,263,264,5569,315,220,16,12,605,340,9,1595,15865,45722,13625,11306,315,25022,323,7512,11,1855,449,10507,323,100166,311,1520,4546,279,3752,311,2324],"total_duration":15591162300,"load_duration":36545800,"prompt_eval_count":75,"prompt_eval_duration":111000000,"eval_count":512,"eval_duration":15442000000}
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:162
+None
+---
+[2025-02-04 12:45:52,774] [DEBUG] [charactergen] Generated text: Here is a character profile in JSON format:
+
+```json
+{
+  "name": "Evelyn Stone",
+  "verbs": [
+    {"action": "investigates", "probability": 80},
+    {"action": "manipulates", "probability": 60},
+    {"action": "analyzes", "probability": 90},
+    {"action": "schemes", "probability": 70},
+    {"action": "deceives", "probability": 50}
+  ],
+  "adjectives": [
+    {"description": " Cunning", "intensity": 8},
+    {"description": "Resourceful", "intensity": 7},
+    {"description": "Confident", "intensity": 6},
+    {"description": "Intelligent", "intensity": 9},
+    {"description": "Ambitious", "intensity": 8}
+  ],
+  "categories": {
+    "Character Traits": [
+      {"trait": "Charismatic leader", "emoticon": 😊},
+      {"trait": "Moral ambiguity", "emoticon": 🤔},
+      {"trait": "Highly intelligent", "emoticon": 💡}
+    ],
+    "Business Skills": [
+      {"skill": "Strategic thinking", "level": 9},
+      {"skill": "Negotiation", "level": 8},
+      {"skill": "Marketing", "level": 7}
+    ],
+    "Psychological Traits": [
+      {"trait": "Fear of failure", "emoticon": 😨},
+      {"trait": "Need for validation", "emoticon": 🤝},
+      {"trait": "Paranoid tendencies", "emoticon": 👀}
+    ],
+    "Desires": [
+      {"desire": "Power and influence", "level": 9},
+      {"desire": "Recognition and respect", "level": 8},
+      {"desire": "Financial security", "level": 7}
+    ]
+  }
+}
+```
+
+This character profile includes:
+
+* `name`: Evelyn Stone
+* `verbs`: A list of actions the character might take, with probabilities to help inform their behavior
+* `adjectives`: A list of words that describe the character's personality and traits, along with intensity levels (on a scale of 1-10)
+* `categories`: Four categories of traits and skills, each with examples and emojis to help bring the character to life
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:174
+None
+---
+[2025-02-04 12:45:52,774] [WARNING] [charactergen] JSON processing error on attempt 1: Invalid JSON structure: Expecting value: line 19 column 51 (char 655). Retrying...
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:209
+None
+---
+[2025-02-04 12:45:52,775] [DEBUG] [charactergen] Attempt 2/3: Sending request to Ollama API
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:132
+None
+---
+[2025-02-04 12:46:11,524] [DEBUG] [charactergen] API request completed in 18.75 seconds
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:152
+None
+---
+[2025-02-04 12:46:11,524] [DEBUG] [charactergen] Raw API response: {"model":"llama3.2:latest","created_at":"2025-02-04T08:46:11.5218832Z","response":"Here is a character profile in JSON format:\n\n```\n{\n  \"name\": \"Alex Chen\",\n  \"verbs\": [\n    {\"action\": \"navigates\", \"description\": \"moves through unfamiliar environments\"},\n    {\"action\": \"delegates\", \"description\": \"assigns tasks to team members\"},\n    {\"action\": \"problem-solves\", \"description\": \"finds creative solutions to complex issues\"}\n  ],\n  \"adjectives\": [\n    {\"trait\": \"charismatic\", \"description\": \"has a strong presence and can inspire others 🌟\"},\n    {\"trait\": \" analytical\", \"description\": \"approaches problems with a logical mind 🔍\"},\n    {\"trait\": \"adventurous\", \"description\": \"seeks out new experiences and challenges 🗺️\"}\n  ],\n  \"categories\": {\n    \"character traits\": [\n      {\"name\": \"Confident\", \"text\": \"Has high self-esteem and is not afraid to take risks 💪\"},\n      {\"name\": \"Empathetic\", \"text\": \"Can understand and relate to others' perspectives ❤️\"},\n      {\"name\": \"Competitive\", \"text\": \"Strives for excellence and can be driven by a desire to win 🏆\"}\n    ],\n    \"business skills\": [\n      {\"name\": \"Leadership\", \"text\": \"Has experience leading teams and making strategic decisions 👥\"},\n      {\"name\": \"Communication\", \"text\": \"Is an effective communicator and can articulate complex ideas clearly 💬\"},\n      {\"name\": \"Strategic thinking\", \"text\": \"Can analyze data and make informed, forward-thinking decisions 📊\"}\n    ],\n    \"psychological traits\": [\n      {\"name\": \"Resilience\", \"text\": \"Can bounce back from setbacks and maintain a positive attitude after difficult experiences 💪\"},\n      {\"name\": \"Curiosity\", \"text\": \"Is driven by a desire to learn and explore new ideas 🔍\"},\n      {\"name\": \"Emotional intelligence\", \"text\": \"Understands and manages his own emotions, as well as those of others 🤝\"}\n    ],\n    \"desires\": [\n      {\"name\": \"Success\", \"text\": \"Seeks recognition and accomplishment in his field 💼\"},\n      {\"name\": \"Creativity\", \"text\": \"Wants to express himself through art or music 🎨\"},\n      {\"name\": \"Freedom\", \"text\": \"Values independence and autonomy, and seeks out opportunities for self-expression 🔓\"}\n    ]\n  }\n}\n```\n\nNote: This is just an example character profile and can be modified as needed.","done":true,"done_reason":"stop","context":[128006,9125,128007,271,38766,1303,33025,2696,25,6790,220,2366,18,271,128009,128006,882,128007,271,32215,264,3752,5643,304,4823,3645,13,30834,836,11,62946,320,4109,814,656,705,1008,87678,320,5919,44631,1124,705,323,11306,320,19740,25022,11,2626,7512,11,24064,25022,11,323,32097,570,9062,5699,1288,617,3673,449,1495,323,43465,13,220,128009,128006,78191,128007,271,8586,374,264,3752,5643,304,4823,3645,1473,14196,4077,517,220,330,609,794,330,28487,25507,761,220,330,56039,794,2330,262,5324,1335,794,330,77,3030,988,498,330,4789,794,330,67182,1555,50383,22484,7260,262,5324,1335,794,330,451,54479,498,330,4789,794,330,7128,82,9256,311,2128,3697,7260,262,5324,1335,794,330,35686,1355,18685,498,330,4789,794,330,3990,82,11782,10105,311,6485,4819,17122,220,3291,220,330,329,87678,794,2330,262,5324,30532,794,330,1799,57245,498,330,4789,794,330,4752,264,3831,9546,323,649,31740,3885,11410,234,253,7260,262,5324,30532,794,330,44064,498,330,4789,794,330,16082,14576,5435,449,264,20406,4059,96169,235,7260,262,5324,30532,794,330,329,688,55709,498,330,4789,794,330,325,21854,704,502,11704,323,11774,11410,245,118,31643,17122,220,3291,220,330,15865,794,341,262,330,19740,25022,794,2330,415,5324,609,794,330,15949,1748,498,330,1342,794,330,10493,1579,659,65906,323,374,539,16984,311,1935,15635,64139,103,7260,415,5324,609,794,330,29831,589,5411,498,330,1342,794,330,6854,3619,323,29243,311,3885,6,39555,71570,31643,7260,415,5324,609,794,330,76139,3486,498,330,1342,794,330,2645,1924,369,38656,323,649,387,16625,555,264,12876,311,3243,11410,237,228,17122,262,3291,262,330,27243,7512,794,2330,415,5324,609,794,330,93824,2200,498,330,1342,794,330,10493,3217,6522,7411,323,3339,19092,11429,62904,98,7260,415,5324,609,794,330,66511,498,330,1342,794,330,3957,459,7524,87771,323,649,69318,6485,6848,9539,64139,105,7260,415,5324,609,794,330,2645,90467,7422,498,330,1342,794,330,6854,24564,828,323,1304,16369,11,4741,100051,11429,11410,241,232,17122,262,3291,262,330,92109,5848,25022,794,2330,415,5324,609,794,330,1079,321,1873,498,330,1342,794,330,6854,34782,1203,505,97737,323,10519,264,6928,19451,1306,5107,11704,64139,103,7260,415,5324,609,794,330,17119,33279,498,330,1342,794,330,3957,16625,555,264,12876,311,4048,323,13488,502,6848,96169,235,7260,415,5324,609,794,330,2321,41964,11478,498,330,1342,794,330,16648,97815,323,29972,813,1866,21958,11,439,1664,439,1884,315,3885,11410,97,251,17122,262,3291,262,330,5919,3946,794,2330,415,5324,609,794,330,7336,498,330,1342,794,330,1542,21854,18324,323,61238,304,813,2115,64139,120,7260,415,5324,609,794,330,31844,1968,498,330,1342,794,330,54,1821,311,3237,5678,1555,1989,477,4731,11410,236,101,7260,415,5324,609,794,330,86872,498,330,1342,794,330,6359,24589,323,51360,11,323,26737,704,10708,369,659,82593,96169,241,17122,262,5243,220,457,534,14196,19884,9290,25,1115,374,1120,459,3187,3752,5643,323,649,387,11041,439,4460,13],"total_duration":16705163500,"load_duration":23762400,"prompt_eval_count":75,"prompt_eval_duration":47000000,"eval_count":535,"eval_duration":16632000000}
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:162
+None
+---
+[2025-02-04 12:46:11,524] [DEBUG] [charactergen] Generated text: Here is a character profile in JSON format:
+
+```
+{
+  "name": "Alex Chen",
+  "verbs": [
+    {"action": "navigates", "description": "moves through unfamiliar environments"},
+    {"action": "delegates", "description": "assigns tasks to team members"},
+    {"action": "problem-solves", "description": "finds creative solutions to complex issues"}
+  ],
+  "adjectives": [
+    {"trait": "charismatic", "description": "has a strong presence and can inspire others 🌟"},
+    {"trait": " analytical", "description": "approaches problems with a logical mind 🔍"},
+    {"trait": "adventurous", "description": "seeks out new experiences and challenges 🗺️"}
+  ],
+  "categories": {
+    "character traits": [
+      {"name": "Confident", "text": "Has high self-esteem and is not afraid to take risks 💪"},
+      {"name": "Empathetic", "text": "Can understand and relate to others' perspectives ❤️"},
+      {"name": "Competitive", "text": "Strives for excellence and can be driven by a desire to win 🏆"}
+    ],
+    "business skills": [
+      {"name": "Leadership", "text": "Has experience leading teams and making strategic decisions 👥"},
+      {"name": "Communication", "text": "Is an effective communicator and can articulate complex ideas clearly 💬"},
+      {"name": "Strategic thinking", "text": "Can analyze data and make informed, forward-thinking decisions 📊"}
+    ],
+    "psychological traits": [
+      {"name": "Resilience", "text": "Can bounce back from setbacks and maintain a positive attitude after difficult experiences 💪"},
+      {"name": "Curiosity", "text": "Is driven by a desire to learn and explore new ideas 🔍"},
+      {"name": "Emotional intelligence", "text": "Understands and manages his own emotions, as well as those of others 🤝"}
+    ],
+    "desires": [
+      {"name": "Success", "text": "Seeks recognition and accomplishment in his field 💼"},
+      {"name": "Creativity", "text": "Wants to express himself through art or music 🎨"},
+      {"name": "Freedom", "text": "Values independence and autonomy, and seeks out opportunities for self-expression 🔓"}
+    ]
+  }
+}
+```
+
+Note: This is just an example character profile and can be modified as needed.
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:174
+None
+---
+[2025-02-04 12:46:11,524] [ERROR] [charactergen] Character validation error: Missing required categories: character, business, psychology
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:290
+Stack (most recent call last):
+  File "C:\Users\denni\Documents\student-dialog-builder\charactergen.py", line 435, in <module>
+    main()
+  File "C:\Users\denni\Documents\student-dialog-builder\charactergen.py", line 347, in main
+    if validate_character(character):
+  File "C:\Users\denni\Documents\student-dialog-builder\charactergen.py", line 290, in validate_character
+    logger.error(
+---
+Traceback (most recent call last):
+  File "C:\Users\denni\Documents\student-dialog-builder\charactergen.py", line 266, in validate_character
+    raise ValidationError(
+ValidationError: Missing required categories: character, business, psychology
+Stack (most recent call last):
+  File "C:\Users\denni\Documents\student-dialog-builder\charactergen.py", line 435, in <module>
+    main()
+  File "C:\Users\denni\Documents\student-dialog-builder\charactergen.py", line 347, in main
+    if validate_character(character):
+  File "C:\Users\denni\Documents\student-dialog-builder\charactergen.py", line 290, in validate_character
+    logger.error(
+[2025-02-04 12:46:11,525] [ERROR] [charactergen] Error on attempt 2/3: Missing required categories: character, business, psychology
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:359
+Stack (most recent call last):
+  File "C:\Users\denni\Documents\student-dialog-builder\charactergen.py", line 435, in <module>
+    main()
+  File "C:\Users\denni\Documents\student-dialog-builder\charactergen.py", line 359, in main
+    logger.error(
+---
+Traceback (most recent call last):
+  File "C:\Users\denni\Documents\student-dialog-builder\charactergen.py", line 347, in main
+    if validate_character(character):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denni\Documents\student-dialog-builder\charactergen.py", line 266, in validate_character
+    raise ValidationError(
+ValidationError: Missing required categories: character, business, psychology
+Stack (most recent call last):
+  File "C:\Users\denni\Documents\student-dialog-builder\charactergen.py", line 435, in <module>
+    main()
+  File "C:\Users\denni\Documents\student-dialog-builder\charactergen.py", line 359, in main
+    logger.error(
+[2025-02-04 12:46:15,526] [DEBUG] [charactergen] Attempt 1/3: Sending request to Ollama API
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:132
+None
+---
+[2025-02-04 12:46:33,553] [DEBUG] [charactergen] API request completed in 18.03 seconds
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:152
+None
+---
+[2025-02-04 12:46:33,553] [DEBUG] [charactergen] Raw API response: {"model":"llama3.2:latest","created_at":"2025-02-04T08:46:33.5523342Z","response":"Here is a character profile in JSON format:\n\n```json\n{\n    \"name\": \"Evelyn Stone\",\n    \"verbs\": [\n        {\n            \"action\": \"Strategizes\",\n            \"frequency\": \"Daily\"\n        },\n        {\n            \"action\": \"Negotiates\",\n            \"frequency\": \"Weekly\"\n        },\n        {\n            \"action\": \"Motivates\",\n            \"frequency\": \"As needed\"\n        }\n    ],\n    \"adjectives\": [\n        {\n            \"trait\": \"Ambitious\",\n            \"level\": \"High\"\n        },\n        {\n            \"trait\": \"Competitive\",\n            \"level\": \"Moderate\"\n        },\n        {\n            \"trait\": \"Empathetic\",\n            \"level\": \"Low\"\n        }\n    ],\n    \"categories\": {\n        \"Character Traits\": [\n            {\n                \"name\": \"Confident\",\n                \"description\": \"Evelyn exudes self-assurance in her work and personal life.\"\n            },\n            {\n                \"name\": \"Intelligent\",\n                \"description\": \"She is well-read and has a keen strategic mind.\"\n            }\n        ],\n        \"Business Skills\": [\n            {\n                \"name\": \"Leadership\",\n                \"description\": \"Evelyn is a natural-born leader who inspires loyalty in her team.\"\n            },\n            {\n                \"name\": \"Communication\",\n                \"description\": \"She is articulate and able to convey complex ideas clearly.\"\n            }\n        ],\n        \"Psychological Traits\": [\n            {\n                \"name\": \"Risk Taker\",\n                \"description\": \"Evelyn is willing to take calculated risks to achieve her goals.\"\n            },\n            {\n                \"name\": \"Perfectionist\",\n                \"description\": \"She has high standards for herself and others.\"\n            }\n        ],\n        \"Desires\": [\n            {\n                \"name\": \"Success\",\n                \"description\": \"Evelyn defines success on her own terms and is driven to achieve it.\"\n            },\n            {\n                \"name\": \"Recognition\",\n                \"description\": \"She craves recognition for her work and accomplishments.\"\n            }\n        ]\n    }\n}\n```\n\nThis character profile includes Evelyn's name, verbs (actions she does), adjectives (describing traits), and categories (character traits, business skills, psychological traits, and desires). Each category has items with text and emoji.","done":true,"done_reason":"stop","context":[128006,9125,128007,271,38766,1303,33025,2696,25,6790,220,2366,18,271,128009,128006,882,128007,271,32215,264,3752,5643,304,4823,3645,13,30834,836,11,62946,320,4109,814,656,705,1008,87678,320,5919,44631,1124,705,323,11306,320,19740,25022,11,2626,7512,11,24064,25022,11,323,32097,570,9062,5699,1288,617,3673,449,1495,323,43465,13,220,128009,128006,78191,128007,271,8586,374,264,3752,5643,304,4823,3645,1473,74694,2285,198,517,262,330,609,794,330,36,899,1910,14637,761,262,330,56039,794,2330,286,341,310,330,1335,794,330,2645,1352,4861,761,310,330,47621,794,330,44653,702,286,1173,286,341,310,330,1335,794,330,48900,354,43398,761,310,330,47621,794,330,81616,702,286,1173,286,341,310,330,1335,794,330,61032,344,988,761,310,330,47621,794,330,2170,4460,702,286,457,262,3291,262,330,329,87678,794,2330,286,341,310,330,30532,794,330,55132,65795,761,310,330,3374,794,330,12243,702,286,1173,286,341,310,330,30532,794,330,76139,3486,761,310,330,3374,794,330,69723,349,702,286,1173,286,341,310,330,30532,794,330,29831,589,5411,761,310,330,3374,794,330,25162,702,286,457,262,3291,262,330,15865,794,341,286,330,12686,68126,794,2330,310,341,394,330,609,794,330,15949,1748,761,394,330,4789,794,330,36,899,1910,506,29246,659,35915,5890,304,1077,990,323,4443,2324,10246,310,1173,310,341,394,330,609,794,330,1090,21149,761,394,330,4789,794,330,8100,374,1664,29906,323,706,264,27989,19092,4059,10246,310,457,286,3291,286,330,23562,31340,794,2330,310,341,394,330,609,794,330,93824,2200,761,394,330,4789,794,330,36,899,1910,374,264,5933,40260,7808,889,70390,32883,304,1077,2128,10246,310,1173,310,341,394,330,609,794,330,66511,761,394,330,4789,794,330,8100,374,69318,323,3025,311,20599,6485,6848,9539,10246,310,457,286,3291,286,330,69803,5848,68126,794,2330,310,341,394,330,609,794,330,86407,350,4506,761,394,330,4789,794,330,36,899,1910,374,10032,311,1935,16997,15635,311,11322,1077,9021,10246,310,1173,310,341,394,330,609,794,330,3976,13421,380,761,394,330,4789,794,330,8100,706,1579,10886,369,11937,323,3885,10246,310,457,286,3291,286,330,5001,3946,794,2330,310,341,394,330,609,794,330,7336,761,394,330,4789,794,330,36,899,1910,19170,2450,389,1077,1866,3878,323,374,16625,311,11322,433,10246,310,1173,310,341,394,330,609,794,330,62392,761,394,330,4789,794,330,8100,1589,4798,18324,369,1077,990,323,53881,10246,310,457,286,5243,262,457,534,14196,19884,2028,3752,5643,5764,96425,596,836,11,62946,320,4109,1364,1587,705,1008,87678,320,5919,44631,25022,705,323,11306,320,19740,25022,11,2626,7512,11,24064,25022,11,323,32097,570,9062,5699,706,3673,449,1495,323,43465,13],"total_duration":15993973100,"load_duration":24949800,"prompt_eval_count":75,"prompt_eval_duration":180000000,"eval_count":483,"eval_duration":15787000000}
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:162
+None
+---
+[2025-02-04 12:46:33,554] [DEBUG] [charactergen] Generated text: Here is a character profile in JSON format:
+
+```json
+{
+    "name": "Evelyn Stone",
+    "verbs": [
+        {
+            "action": "Strategizes",
+            "frequency": "Daily"
+        },
+        {
+            "action": "Negotiates",
+            "frequency": "Weekly"
+        },
+        {
+            "action": "Motivates",
+            "frequency": "As needed"
+        }
+    ],
+    "adjectives": [
+        {
+            "trait": "Ambitious",
+            "level": "High"
+        },
+        {
+            "trait": "Competitive",
+            "level": "Moderate"
+        },
+        {
+            "trait": "Empathetic",
+            "level": "Low"
+        }
+    ],
+    "categories": {
+        "Character Traits": [
+            {
+                "name": "Confident",
+                "description": "Evelyn exudes self-assurance in her work and personal life."
+            },
+            {
+                "name": "Intelligent",
+                "description": "She is well-read and has a keen strategic mind."
+            }
+        ],
+        "Business Skills": [
+            {
+                "name": "Leadership",
+                "description": "Evelyn is a natural-born leader who inspires loyalty in her team."
+            },
+            {
+                "name": "Communication",
+                "description": "She is articulate and able to convey complex ideas clearly."
+            }
+        ],
+        "Psychological Traits": [
+            {
+                "name": "Risk Taker",
+                "description": "Evelyn is willing to take calculated risks to achieve her goals."
+            },
+            {
+                "name": "Perfectionist",
+                "description": "She has high standards for herself and others."
+            }
+        ],
+        "Desires": [
+            {
+                "name": "Success",
+                "description": "Evelyn defines success on her own terms and is driven to achieve it."
+            },
+            {
+                "name": "Recognition",
+                "description": "She craves recognition for her work and accomplishments."
+            }
+        ]
+    }
+}
+```
+
+This character profile includes Evelyn's name, verbs (actions she does), adjectives (describing traits), and categories (character traits, business skills, psychological traits, and desires). Each category has items with text and emoji.
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:174
+None
+---
+[2025-02-04 12:46:33,554] [ERROR] [charactergen] Character validation error: Missing required categories: character, business, psychology, desires
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:290
+Stack (most recent call last):
+  File "C:\Users\denni\Documents\student-dialog-builder\charactergen.py", line 435, in <module>
+    main()
+  File "C:\Users\denni\Documents\student-dialog-builder\charactergen.py", line 347, in main
+    if validate_character(character):
+  File "C:\Users\denni\Documents\student-dialog-builder\charactergen.py", line 290, in validate_character
+    logger.error(
+---
+Traceback (most recent call last):
+  File "C:\Users\denni\Documents\student-dialog-builder\charactergen.py", line 266, in validate_character
+    raise ValidationError(
+ValidationError: Missing required categories: character, business, psychology, desires
+Stack (most recent call last):
+  File "C:\Users\denni\Documents\student-dialog-builder\charactergen.py", line 435, in <module>
+    main()
+  File "C:\Users\denni\Documents\student-dialog-builder\charactergen.py", line 347, in main
+    if validate_character(character):
+  File "C:\Users\denni\Documents\student-dialog-builder\charactergen.py", line 290, in validate_character
+    logger.error(
+[2025-02-04 12:46:33,554] [ERROR] [charactergen] Error on attempt 3/3: Missing required categories: character, business, psychology, desires
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:359
+Stack (most recent call last):
+  File "C:\Users\denni\Documents\student-dialog-builder\charactergen.py", line 435, in <module>
+    main()
+  File "C:\Users\denni\Documents\student-dialog-builder\charactergen.py", line 359, in main
+    logger.error(
+---
+Traceback (most recent call last):
+  File "C:\Users\denni\Documents\student-dialog-builder\charactergen.py", line 347, in main
+    if validate_character(character):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denni\Documents\student-dialog-builder\charactergen.py", line 266, in validate_character
+    raise ValidationError(
+ValidationError: Missing required categories: character, business, psychology, desires
+Stack (most recent call last):
+  File "C:\Users\denni\Documents\student-dialog-builder\charactergen.py", line 435, in <module>
+    main()
+  File "C:\Users\denni\Documents\student-dialog-builder\charactergen.py", line 359, in main
+    logger.error(
+[2025-02-04 12:46:33,555] [ERROR] [charactergen] Failed to generate character 1 after 3 attempts
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:368
+Stack (most recent call last):
+  File "C:\Users\denni\Documents\student-dialog-builder\charactergen.py", line 435, in <module>
+    main()
+  File "C:\Users\denni\Documents\student-dialog-builder\charactergen.py", line 368, in main
+    logger.error(
+---
+Traceback (most recent call last):
+  File "C:\Users\denni\Documents\student-dialog-builder\charactergen.py", line 347, in main
+    if validate_character(character):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\denni\Documents\student-dialog-builder\charactergen.py", line 266, in validate_character
+    raise ValidationError(
+ValidationError: Missing required categories: character, business, psychology, desires
+Stack (most recent call last):
+  File "C:\Users\denni\Documents\student-dialog-builder\charactergen.py", line 435, in <module>
+    main()
+  File "C:\Users\denni\Documents\student-dialog-builder\charactergen.py", line 368, in main
+    logger.error(
+[2025-02-04 12:54:35,125] [INFO] [charactergen] Starting character generation process (PID: 32072)
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:262
+None
+---
+[2025-02-04 12:54:36,854] [INFO] [charactergen] Generating character 1/1...
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:289
+None
+---
+[2025-02-04 12:54:36,855] [DEBUG] [charactergen] Attempt 1/3: Sending request to Ollama
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:171
+None
+---
+[2025-02-04 12:54:44,647] [DEBUG] [charactergen] API request completed in 7.79 seconds
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:190
+None
+---
+[2025-02-04 12:54:44,647] [DEBUG] [charactergen] Raw API response: {
+  "name": "Eira Shadowglow",
+  "verbs": [
+    "I'll not be silenced",
+    "The shadows are my home"
+  ],
+  "adjectives": [
+    "enigmatic",
+    "agile",
+    "deadly",
+    "loyal"
+  ],
+  "categories": {
+    "character": [
+      { "text": "Human", "emoji": "" },
+      { "text": "Noble", "emoji": "" }
+    ],
+    "business": []
+  ,
+  "psychology": [],
+  "desires": [
+    {
+      "text": "To uncover the secrets of the ancient forest",
+      "emoji": ""
+    },
+    {
+      "text": "To protect her people from those who seek to harm them",
+      "emoji": ""
+    }
+  ]
+} }
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:193
+None
+---
+[2025-02-04 12:54:44,647] [INFO] [charactergen] Successfully generated character 1 in 7.79 seconds
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:304
+None
+---
+[2025-02-04 12:54:44,648] [INFO] [charactergen] Character generation completed
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:348
+None
+---
+[2025-02-04 13:00:15,244] [INFO] [charactergen] Starting character generation process (PID: 14584)
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:262
+None
+---
+[2025-02-04 13:00:18,605] [INFO] [charactergen] Generating character 1/1...
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:289
+None
+---
+[2025-02-04 13:00:18,606] [DEBUG] [charactergen] Attempt 1/3: Sending request to Ollama
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:171
+None
+---
+[2025-02-04 13:00:31,329] [DEBUG] [charactergen] API request completed in 12.72 seconds
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:190
+None
+---
+[2025-02-04 13:00:31,329] [DEBUG] [charactergen] Raw API response: {
+  "name": "Alexander Ryan Thompson",
+  "verbs": ["communicates", "analyzes", "problem solves", "delegates"],
+  "adjectives": ["strategic", "result-driven", "collaborative", "forward-thinking"],
+  "categories": {
+    "character": [
+      {"text": "Ambitious and driven", "emoji": "📈"},
+      {"text": "Empathetic and understanding", "emoji": "💡"}
+    ],
+    "business": [
+      {"text": "Leadership and management", "emoji": "👥"},
+      {"text": "Strategic planning and execution", "emoji": "📊"}
+    ],
+    "psychology": [
+      {"text": "Self-awareness and introspection", "emoji": "💭"},
+      {"text": "Adaptability and resilience", "emoji": "💪"}
+    ],
+    "desires": [
+      {"text": "Personal growth and development", "emoji": "📚"},
+      {"text": "Building a successful business venture", "emoji": "🏢"}
+    ]
+  }
+}
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:193
+None
+---
+[2025-02-04 13:00:31,329] [INFO] [charactergen] Successfully generated character 1 in 12.72 seconds
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:338
+None
+---
+[2025-02-04 13:00:31,331] [INFO] [charactergen] Character generation completed
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:382
+None
+---
+[2025-02-04 13:04:07,189] [INFO] [charactergen] Starting character generation process (PID: 32092)
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:262
+None
+---
+[2025-02-04 13:04:08,660] [INFO] [charactergen] Generating character 1/2...
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:289
+None
+---
+[2025-02-04 13:04:08,660] [DEBUG] [charactergen] Attempt 1/3: Sending request to Ollama
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:171
+None
+---
+[2025-02-04 13:04:21,507] [DEBUG] [charactergen] API request completed in 12.85 seconds
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:190
+None
+---
+[2025-02-04 13:04:21,507] [DEBUG] [charactergen] Raw API response: {
+  "name": "Evelyn A. Thompson",
+  "verbs": ["manages", "negotiates", "analyzes", "communicates"],
+  "adjectives": ["pragmatic", "assertive", " analytical", "compassionate"],
+  "categories": {
+    "character": [
+      {"text": "Driven and results-oriented, Evelyn always strives to achieve her goals.", "emoji": ""},
+      {"text": "Despite her tough exterior, Evelyn has a soft spot for those in need and is fiercely loyal to her friends and family.", "emoji": ""}
+    ],
+    "business": [
+      {"text": "Evelyn has extensive experience in business development and strategic planning, with a proven track record of driving growth and revenue increases.", "emoji": ""},
+      {"text": "She is skilled at building and maintaining strong relationships with clients, partners, and colleagues, which has been key to her success in the industry.", "emoji": ""}
+    ],
+    "psychology": [
+      {"text": "Evelyn's type-A personality can sometimes lead to stress and burnout if she doesn't prioritize self-care and set healthy boundaries.", "emoji": ""},
+      {"text": "Despite her competitive nature, Evelyn is deeply empathetic and has a strong sense of justice, which motivates her to advocate for underrepresented groups and causes.", "emoji": ""}
+    ],
+    "desires": [
+      {"text": "Evelyn hopes to one day start her own business or non-profit organization that focuses on promoting women's empowerment and education in developing countries.", "emoji": ""},
+      {"text": "She also dreams of traveling the world and experiencing different cultures, which she believes will broaden her perspective and help her become a more well-rounded person.", "emoji": ""}
+    ]
+  }
+}
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:193
+None
+---
+[2025-02-04 13:04:21,507] [INFO] [charactergen] Successfully generated character 1 in 12.85 seconds
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:338
+None
+---
+[2025-02-04 13:04:21,507] [INFO] [charactergen] Generating character 2/2...
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:289
+None
+---
+[2025-02-04 13:04:21,507] [DEBUG] [charactergen] Attempt 1/3: Sending request to Ollama
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:171
+None
+---
+[2025-02-04 13:04:32,431] [DEBUG] [charactergen] API request completed in 10.92 seconds
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:190
+None
+---
+[2025-02-04 13:04:32,431] [DEBUG] [charactergen] Raw API response: {
+  "name": "Eleanor Victoria Thompson",
+  "verbs": ["manages", "negotiates", "analyzes", "strategizes"],
+  "adjectives": ["pragmatic", "results-driven", "empathetic", "competitive"],
+  "categories": {
+    "character": [
+      {"text": "Perseveres through challenges with determination and resilience 🏋️‍♀️", "emoji": "🏋️‍♀️"},
+      {"text": "Values honesty and transparency in all professional interactions 💼", "emoji": "💼"}
+    ],
+    "business": [
+      {"text": "Has expertise in marketing strategy and team leadership 📈", "emoji": "📈"},
+      {"text": "Is skilled in data analysis and visualization using tools like Excel and Tableau 📊", "emoji": "📊"}
+    ],
+    "psychology": [
+      {"text": "Recognizes the importance of self-care and stress management for overall well-being 🧘‍♀️", "emoji": "🧘‍♀️"},
+      {"text": "Empathizes with others' perspectives and can effectively communicate in a team setting 👥", "emoji": "👥"}
+    ],
+    "desires": [
+      {"text": "Seeks opportunities for professional growth and leadership development 💼", "emoji": "💼"},
+      {"text": "Wants to make a positive impact on her community through volunteer work 🌎", "emoji": "🌎"}
+    ]
+  }
+}
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:193
+None
+---
+[2025-02-04 13:04:32,431] [INFO] [charactergen] Successfully generated character 2 in 10.92 seconds
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:338
+None
+---
+[2025-02-04 13:04:32,433] [INFO] [charactergen] Character generation completed
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:382
+None
+---
+[2025-02-04 13:05:39,684] [INFO] [charactergen] Starting character generation process (PID: 16724)
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:262
+None
+---
+[2025-02-04 13:05:46,140] [INFO] [charactergen] Generating character 1/5...
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:289
+None
+---
+[2025-02-04 13:05:46,141] [DEBUG] [charactergen] Attempt 1/3: Sending request to Ollama
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:171
+None
+---
+[2025-02-04 13:05:53,587] [DEBUG] [charactergen] API request completed in 7.45 seconds
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:190
+None
+---
+[2025-02-04 13:05:53,587] [DEBUG] [charactergen] Raw API response: {
+  "name": "Dr. Sofia Patel",
+  "verbs": ["Analyzes", "Teaches", "Researches", "Collaborates"],
+  "adjectives": ["Intelligent", "Empathetic", "Perfectionistic", "Resourceful"],
+  "categories": {
+    "character": [
+      {"text": "Compassionate leader", "emoji": ""},
+      {"text": "Highly driven individual", "emoji": ""}
+    ],
+    "business": [
+      {"text": "Expertise in education policy", "emoji": ""},
+      {"text": "Experience in grant writing and management", "emoji": ""}
+    ],
+    "psychology": [
+      {"text": "Strong interest in positive psychology", "emoji": ""},
+      {"text": "Fascination with social justice and inequality", "emoji": ""}
+    ],
+    "desires": [
+      {"text": "Advocate for greater accessibility in education", "emoji": ""},
+      {"text": "Publish research on promoting diversity and inclusion", "emoji": ""}
+    ]
+  }
+}
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:193
+None
+---
+[2025-02-04 13:05:53,588] [INFO] [charactergen] Successfully generated character 1 in 7.45 seconds
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:338
+None
+---
+[2025-02-04 13:05:53,589] [INFO] [charactergen] Generating character 2/5...
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:289
+None
+---
+[2025-02-04 13:05:53,589] [DEBUG] [charactergen] Attempt 1/3: Sending request to Ollama
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:171
+None
+---
+[2025-02-04 13:05:59,610] [DEBUG] [charactergen] API request completed in 6.02 seconds
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:190
+None
+---
+[2025-02-04 13:05:59,610] [DEBUG] [charactergen] Raw API response: {
+  "name": "Avery Elizabeth Thompson",
+  "verbs": ["Manage", "Communicate", "Analyze", "Create"],
+  "adjectives": ["Competitive", "Empathetic", "Resourceful", "Determined"],
+  "categories": {
+    "character": [
+      {"text": "Perfectionistic", "emoji": ""},
+      {"text": "Loyal", "emoji": ""}
+    ],
+    "business": [
+      {"text": "Project Management", "emoji": ""},
+      {"text": "Data Analysis", "emoji": ""}
+    ],
+    "psychology": [
+      {"text": "Introversion", "emoji": ""},
+      {"text": "Resilience", "emoji": ""}
+    ],
+    "desires": [
+      {"text": "Leadership Role", "emoji": ""},
+      {"text": "Financial Independence", "emoji": ""}
+    ]
+  }
+}
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:193
+None
+---
+[2025-02-04 13:05:59,610] [INFO] [charactergen] Successfully generated character 2 in 6.02 seconds
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:338
+None
+---
+[2025-02-04 13:05:59,611] [INFO] [charactergen] Generating character 3/5...
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:289
+None
+---
+[2025-02-04 13:05:59,611] [DEBUG] [charactergen] Attempt 1/3: Sending request to Ollama
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:171
+None
+---
+[2025-02-04 13:06:10,356] [DEBUG] [charactergen] API request completed in 10.74 seconds
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:190
+None
+---
+[2025-02-04 13:06:10,356] [DEBUG] [charactergen] Raw API response: {
+  "name": "Emily J. Thompson",
+  "verbs": ["manages", "analyzes", "communicates", "strategizes"],
+  "adjectives": ["pragmatic", "introspective", "confident", "meticulous"],
+  "categories": {
+    "character": [
+      {"text": "Emily is fiercely independent and values her autonomy.", "emoji": "🏃‍♀️"},
+      {"text": "She has a strong sense of justice and will not hesitate to speak out against wrongdoing.", "emoji": "🗣️"}
+    ],
+    "business": [
+      {"text": "Emily has expertise in project management and is skilled at prioritizing tasks.", "emoji": "📈"},
+      {"text": "She is also proficient in data analysis and can extract insights from complex datasets.", "emoji": "💡"}
+    ],
+    "psychology": [
+      {"text": "Emily tends to be introverted and may take time to warm up to new people.", "emoji": "🤫"},
+      {"text": "However, she is deeply empathetic and can form strong connections with others.", "emoji": "❤️"}
+    ],
+    "desires": [
+      {"text": "Emily hopes to one day start her own business, where she can apply her skills in a more creative way.", "emoji": "🏢"},
+      {"text": "She also aspires to travel the world and experience different cultures firsthand.", "emoji": "🗺️"}
+    ]
+  }
+}
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:193
+None
+---
+[2025-02-04 13:06:10,356] [INFO] [charactergen] Successfully generated character 3 in 10.74 seconds
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:338
+None
+---
+[2025-02-04 13:06:10,356] [INFO] [charactergen] Generating character 4/5...
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:289
+None
+---
+[2025-02-04 13:06:10,356] [DEBUG] [charactergen] Attempt 1/3: Sending request to Ollama
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:171
+None
+---
+[2025-02-04 13:06:18,443] [DEBUG] [charactergen] API request completed in 8.09 seconds
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:190
+None
+---
+[2025-02-04 13:06:18,443] [DEBUG] [charactergen] Raw API response: {
+  "name": "Evelyn Thompson",
+  "verbs": ["manages", "strategizes", "negotiates", "analyzes"],
+  "adjectives": ["principled", "creative", "witty", "competitive"],
+  "categories": {
+    "character": [
+      {"text": "Resilient and determined", "emoji": "🏆"},
+      {"text": "Possesses a dry sense of humor", "emoji": "😊"}
+    ],
+    "business": [
+      {"text": "Expertise in marketing strategy", "emoji": "📈"},
+      {"text": "Skilled in conflict resolution", "emoji": "💼"}
+    ],
+    "psychology": [
+      {"text": "Highly empathetic and understanding", "emoji": "❤️"},
+      {"text": "Able to think critically and outside the box", "emoji": "🤔"}
+    ],
+    "desires": [
+      {"text": "To start her own sustainable fashion brand", "emoji": "🌿"},
+      {"text": "To travel extensively throughout Asia", "emoji": "✈️"}
+    ]
+  }
+}
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:193
+None
+---
+[2025-02-04 13:06:18,443] [INFO] [charactergen] Successfully generated character 4 in 8.09 seconds
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:338
+None
+---
+[2025-02-04 13:06:18,444] [INFO] [charactergen] Generating character 5/5...
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:289
+None
+---
+[2025-02-04 13:06:18,444] [DEBUG] [charactergen] Attempt 1/3: Sending request to Ollama
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:171
+None
+---
+[2025-02-04 13:06:26,734] [DEBUG] [charactergen] API request completed in 8.29 seconds
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:190
+None
+---
+[2025-02-04 13:06:26,734] [DEBUG] [charactergen] Raw API response: {
+  "name": "Emily Alexandra Patel",
+  "verbs": ["manages", "strategizes", "communicates", "analyzes"],
+  "adjectives": ["ambitious", "curious", "assertive", "resilient"],
+  "categories": {
+    "character": [
+      {"text": "Empathetic listener and team player", "emoji": ""},
+      {"text": "Results-driven problem solver with a strong work ethic", "emoji": ""}
+    ],
+    "business": [
+      {"text": "Expertise in project management and operations", "emoji": ""},
+      {"text": "Proven track record of successfully leading cross-functional teams", "emoji": ""}
+    ],
+    "psychology": [
+      {"text": "Highly motivated by personal and professional growth", "emoji": ""},
+      {"text": "Strong desire to make a positive impact on the organization and community", "emoji": ""}
+    ],
+    "desires": [
+      {"text": "To become a thought leader in her industry through speaking engagements and publications", "emoji": ""},
+      {"text": "To create a sustainable business model that prioritizes social responsibility and environmental stewardship", "emoji": ""}
+    ]
+  }
+}
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:193
+None
+---
+[2025-02-04 13:06:26,734] [INFO] [charactergen] Successfully generated character 5 in 8.29 seconds
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:338
+None
+---
+[2025-02-04 13:06:26,736] [INFO] [charactergen] Character generation completed
+Context: C:\Users\denni\Documents\student-dialog-builder\charactergen.py:382
+None
+---

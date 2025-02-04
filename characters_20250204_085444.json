@@ -1,0 +1,39 @@
+[
+  {
+    "name": "Eira Shadowglow",
+    "verbs": [
+      "I'll not be silenced",
+      "The shadows are my home"
+    ],
+    "adjectives": [
+      "enigmatic",
+      "agile",
+      "deadly",
+      "loyal"
+    ],
+    "categories": {
+      "character": [
+        {
+          "text": "Human",
+          "emoji": ""
+        },
+        {
+          "text": "Noble",
+          "emoji": ""
+        }
+      ],
+      "business": [],
+      "psychology": [],
+      "desires": [
+        {
+          "text": "To uncover the secrets of the ancient forest",
+          "emoji": ""
+        },
+        {
+          "text": "To protect her people from those who seek to harm them",
+          "emoji": ""
+        }
+      ]
+    }
+  }
+]

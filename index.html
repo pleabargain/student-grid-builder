@@ -9,18 +9,52 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>Student Grid Builder</h1>
+            <h1>Student Dialog Builder</h1>
+            <div class="tab-container">
+                <button class="tab-button active" data-tab="view">View</button>
+                <button class="tab-button" data-tab="create">Create</button>
+            </div>
             <div class="header-buttons">
                 <input type="file" id="jsonFileInput" accept=".json" style="display: none">
                 <button id="loadJson" type="button">Load JSON</button>
                 <button id="viewJson" type="button">View JSON</button>
+                <button id="clearAll" type="button" class="danger-btn">Clear All</button>
             </div>
         </div>
-        <form id="studentForm">
-            <input type="text" id="studentName" placeholder="Enter student name" required>
-            <button type="submit">Add Student</button>
-        </form>
-        <div id="gridContainer" class="student-grid"></div>
+        <div id="viewTab" class="tab-content active">
+            <div id="gridContainer" class="student-grid"></div>
+        </div>
+
+        <div id="createTab" class="tab-content">
+            <form id="studentForm" class="create-form">
+                <div class="form-group">
+                    <label for="studentName">Name:</label>
+                    <input type="text" id="studentName" placeholder="Enter student name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="desires">Desires (comma separated):</label>
+                    <input type="text" id="desires" placeholder="e.g. Growth 📈, Learning 📚">
+                </div>
+
+                <div class="form-group">
+                    <label for="psychology">Psychology (comma separated):</label>
+                    <input type="text" id="psychology" placeholder="e.g. Empathetic ❤️, Focused 🎯">
+                </div>
+
+                <div class="form-group">
+                    <label for="business">Business (comma separated):</label>
+                    <input type="text" id="business" placeholder="e.g. Leadership 👑, Innovation 💡">
+                </div>
+
+                <div class="form-group">
+                    <label for="character">Character (comma separated):</label>
+                    <input type="text" id="character" placeholder="e.g. Reliable ✅, Team Player 🤝">
+                </div>
+
+                <button type="submit" class="submit-btn">Save Student</button>
+            </form>
+        </div>
     </div>
     
     <div id="jsonModal" class="modal">
