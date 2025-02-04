@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grid</title>
+    <style>
+        .student-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .student-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .name {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .category {
+            margin: 10px 0;
+        }
+        .category-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .category-items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+        .category-item {
+            background: #f0f0f0;
+            padding: 5px 10px;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            margin: 10px 0;
+        }
+        .tag {
+            background: #e0e0e0;
+            padding: 3px 8px;
+            border-radius: 12px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="student-grid">
+        {% for student in students %}
+        <div class="student-card">
+            <div class="name">{{ student.name }}</div>
+            
+            <div class="tags">
+                {% for verb in student.verbs %}
+                <span class="tag">{{ verb }}</span>
+                {% endfor %}
+                {% for adj in student.adjectives %}
+                <span class="tag">{{ adj }}</span>
+                {% endfor %}
+            </div>
+
+            {% for category_name, items in student.categories.items() %}
+            <div class="category">
+                <div class="category-title">{{ category_name|title }}</div>
+                <div class="category-items">
+                    {% for item in items %}
+                    <div class="category-item">
+                        <span>{{ item.emoji }}</span>
+                        <span>{{ item.text }}</span>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>

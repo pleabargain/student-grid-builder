@@ -1,8 +1,4 @@
-# Student Grid Builder
-
-# repo
-https://github.com/pleabargain/student-grid-builder
-
+# Student Dialog Builder
 
 # motivation
 Keep language fresh and interesting for students. Lots of verbs and adjectives in the javascript. You can add more verbs and adjectives to the javascript file if you like. There's probably a way to make this more dynamic but it works and that's all that matters at this point.
@@ -14,12 +10,10 @@ A dynamic web application that creates a visual grid of student cards, each feat
 - **Dynamic Student Cards**: Create cards for students with automatically assigned unique verbs and adjectives
 - **Interactive Grid Layout**: Responsive grid design that adapts to different screen sizes
 - **Data Persistence**: Student data is automatically saved in the browser's localStorage
-- **Linked Words**: Each word is linked to a google search
 - **JSON Import/Export**:
   - View current student data in JSON format
   - Import student data from JSON files
   - Export functionality through JSON view
-- **Word Uniqueness**: Ensures no repetition in assigned verbs and adjectives across student cards
 - **Delete Functionality**: Remove student cards with a smooth fade-out animation
 
 ## Setup

@@ -216,6 +216,46 @@ document.addEventListener('DOMContentLoaded', () => {
             
             const adjectiveList = document.createElement('ul');
             adjectiveList.className = 'section-list adjective-list';
+
+            // Create new sections
+            const createSection = (title, items, emoji) => {
+                const container = document.createElement('div');
+                const sectionTitle = document.createElement('div');
+                sectionTitle.className = 'section-title';
+                sectionTitle.innerHTML = `${emoji} ${title}`;
+                
+                const list = document.createElement('ul');
+                list.className = 'section-list';
+                
+                // Select and display one random item from the category
+                if (items.length > 0) {
+                    const randomItem = items[Math.floor(Math.random() * items.length)];
+                    const li = document.createElement('li');
+                    li.className = 'section-item';
+                    li.innerHTML = `<span class="emoji-large">${randomItem.emoji}</span> ${randomItem.text}`;
+                    list.appendChild(li);
+                }
+                
+                container.appendChild(sectionTitle);
+                container.appendChild(list);
+                return container;
+            };
+
+            // Add new sections
+            if (student.categories) {
+                if (student.categories.character) {
+                    card.appendChild(createSection('CHARACTER', student.categories.character, '👤'));
+                }
+                if (student.categories.business) {
+                    card.appendChild(createSection('BUSINESS', student.categories.business, '💼'));
+                }
+                if (student.categories.psychology) {
+                    card.appendChild(createSection('PSYCHOLOGY', student.categories.psychology, '🧠'));
+                }
+                if (student.categories.desires) {
+                    card.appendChild(createSection('DESIRES', student.categories.desires, '💫'));
+                }
+            }
             
             if (student.adjectives) {
                 student.adjectives.forEach(adjective => {
